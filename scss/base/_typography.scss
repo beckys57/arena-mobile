@@ -1,0 +1,252 @@
+/*Fonts*/
+@import url(http://fonts.googleapis.com/css?family=Oswald:);
+
+@font-face {
+    font-family: 'Heroic Condensed Regular';
+    src: url('fonts/heroiccondensed-regular-webfont.eot');
+    src: url('fonts/heroiccondensed-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/heroiccondensed-regular-webfont.woff2') format('woff2'),
+         url('fonts/heroiccondensed-regular-webfont.woff') format('woff'),
+         url('fonts/heroiccondensed-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Heroic Condensed Light';
+    src: url('fonts/heroiccondensed-light-webfont.eot');
+    src: url('fonts/heroiccondensed-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/heroiccondensed-light-webfont.woff2') format('woff2'),
+         url('fonts/heroiccondensed-light-webfont.woff') format('woff'),
+         url('fonts/heroiccondensed-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Heroic Condensed Thin';
+    src: url('fonts/heroiccondensed-thin-webfont.eot');
+    src: url('fonts/heroiccondensed-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/heroiccondensed-thin-webfont.woff2') format('woff2'),
+         url('fonts/heroiccondensed-thin-webfont.woff') format('woff'),
+         url('fonts/heroiccondensed-thin-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: -1px;
+}
+
+@font-face {
+    font-family: 'Heroic Condensed Book';
+    src: url('fonts/heroiccondensed-book-webfont.eot');
+    src: url('fonts/heroiccondensed-book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/heroiccondensed-book-webfont.woff2') format('woff2'),
+         url('fonts/heroiccondensed-book-webfont.woff') format('woff'),
+         url('fonts/heroiccondensed-book-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Heroic Condensed Medium';
+    src: url('fonts/heroiccondensed-medium-webfont.eot');
+    src: url('fonts/heroiccondensed-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/heroiccondensed-medium-webfont.woff2') format('woff2'),
+         url('fonts/heroiccondensed-medium-webfont.woff') format('woff'),
+         url('fonts/heroiccondensed-medium-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Heroic Condensed Bold';
+    src: url('fonts/heroiccondensed-bold-webfont.eot');
+    src: url('fonts/heroiccondensed-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/heroiccondensed-bold-webfont.woff2') format('woff2'),
+         url('fonts/heroiccondensed-bold-webfont.woff') format('woff'),
+         url('fonts/heroiccondensed-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Freight Disp Book Italic Regular';
+    src: url('fonts/freightdispbookitalic-webfont.eot');
+    src: url('fonts/freightdispbookitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/freightdispbookitalic-webfont.woff2') format('woff2'),
+         url('fonts/freightdispbookitalic-webfont.woff') format('woff'),
+         url('fonts/freightdispbookitalic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Rg Regular';
+    src: url('fonts/proximanova-regular-webfont.eot');
+    src: url('fonts/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/proximanova-regular-webfont.woff2') format('woff2'),
+         url('fonts/proximanova-regular-webfont.woff') format('woff'),
+         url('fonts/proximanova-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Light';
+    src: url('fonts/proximanova-light-webfont.eot');
+    src: url('fonts/proximanova-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/proximanova-light-webfont.woff2') format('woff2'),
+         url('fonts/proximanova-light-webfont.woff') format('woff'),
+         url('fonts/proximanova-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Semi Bold';
+    src: url('fonts/proximanova-semibold-webfont.eot');
+    src: url('fonts/proximanova-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/proximanova-semibold-webfont.woff2') format('woff2'),
+         url('fonts/proximanova-semibold-webfont.woff') format('woff'),
+         url('fonts/proximanova-semibold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Rg Bold';
+    src: url('fonts/proximanova-bold-webfont.eot');
+    src: url('fonts/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/proximanova-bold-webfont.woff2') format('woff2'),
+         url('fonts/proximanova-bold-webfont.woff') format('woff'),
+         url('fonts/proximanova-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Font Assignments*/
+$heading-bold: 'Heroic Condensed Bold';
+$heading-md: 'Heroic Condensed Medium';
+$heading-rg: 'Heroic Condensed Regular';
+$heading-lt: 'Heroic Condensed Book';
+$heading-lter: 'Heroic Condensed Light';
+$heading-lterer: 'Heroic Condensed Thin';
+$main-font: "Proxima Nova Rg Regular", Helvetica,Arial,sans-serif;
+$main-font-semi-bold: "Proxima Nova Semi Bold", Helvetica,Arial,sans-serif;
+$main-font-bold: "Proxima Nova Rg Bold", Helvetica,Arial,sans-serif;
+$main-font-lt: "Proxima Nova Light", Helvetica,Arial,sans-serif;
+$quote-font: 'Freight Disp Book Italic Regular';
+
+/*Headers*/
+
+h1, h2, h3, h4, h5, h6 {
+  color: inherit;
+  margin-top: 0;
+  font-family: $heading-rg;
+}
+
+h1{
+  font-size: 4em;
+  text-transform: capitalize;
+  font-family: $heading-rg;
+  color: $slate;
+}
+h2{
+  font-size: 2.8em;
+  color: $slate;
+}
+
+h3{
+  font-size: 3em;
+}
+
+h4{
+  font-size:2.2em;
+  text-transform: capitalize;
+}
+
+.large h4, .medium-wide h4, .main h4{
+  font-size: 2.8em;
+}
+
+h6{
+  font-size:1em;
+}
+
+p{
+  font-size:1em; //was 1.06em
+  color: $blue-grey;
+  margin: 0;
+}
+
+//Font styles
+
+.italic{
+    font-style: italic;
+    font-family: $main-font
+}
+
+@media (max-width: $mq-s){
+    body{
+        font-size: 11px !important;
+    }
+}
+
+@media (min-width: $mq-l){
+    body{
+        font-size: 16px !important;
+    }
+}
+
+.small-print {
+    font-size: 0.8em;
+    font-family: $main-font-lt;
+    color: $cloud;
+    text-align: center;
+    padding: 0 $thick $thick $thick;
+}
+
+.small-print a{
+    display: inline-block;
+    padding: $thin;
+    font-family: $main-font-semi-bold;
+    font-size: $medium;
+}
+
+//Makes the first letter of ta paragraph big 'n' beautiful
+.first::first-letter{
+    float: left;
+    padding: 0 0.2em 0 0;
+    color: $slate;
+    font-family: $heading-lt;
+    font-size: 4em;
+    font-weight: 600;
+    line-height: 1;
+    vertical-align: top;
+    display: inline;
+}
+
+.quote p {
+  text-align: center;
+  margin-bottom: 0.5em !important;
+  font-family: $quote-font;
+  font-style: italic;
+  font-size: 2em !important;
+  color: $slate-lt;
+  &:before{
+    content: url("../img/quote-open-text.png");
+    position: relative;
+    top: -0.3em;
+  }
+  &:after{
+    content: url("../img/quote-close-text.png");
+    position: relative;
+    top: -0.3em;
+    left: 0.5em;
+    /* Use text instead of image - need different font
+    content: '"';
+    color: $grey-lt;
+    font-style: normal;*/
+  }
+}

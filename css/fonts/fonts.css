@@ -1,0 +1,119 @@
+
+@font-face {
+    font-family: 'heroic_condensedregular';
+    src: url('heroiccondensed-regular-webfont.eot');
+    src: url('heroiccondensed-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('heroiccondensed-regular-webfont.woff2') format('woff2'),
+         url('heroiccondensed-regular-webfont.woff') format('woff'),
+         url('heroiccondensed-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'heroic_condensedlight';
+    src: url('heroiccondensed-light-webfont.eot');
+    src: url('heroiccondensed-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('heroiccondensed-light-webfont.woff2') format('woff2'),
+         url('heroiccondensed-light-webfont.woff') format('woff'),
+         url('heroiccondensed-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'heroic_condensedthin';
+    src: url('heroiccondensed-thin-webfont.eot');
+    src: url('heroiccondensed-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('heroiccondensed-thin-webfont.woff2') format('woff2'),
+         url('heroiccondensed-thin-webfont.woff') format('woff'),
+         url('heroiccondensed-thin-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'heroic_condensedbook';
+    src: url('heroiccondensed-book-webfont.eot');
+    src: url('heroiccondensed-book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('heroiccondensed-book-webfont.woff2') format('woff2'),
+         url('heroiccondensed-book-webfont.woff') format('woff'),
+         url('heroiccondensed-book-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'freightdispbookitalicregular';
+    src: url('freightdispbookitalic-webfont.eot');
+    src: url('freightdispbookitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('freightdispbookitalic-webfont.woff2') format('woff2'),
+         url('freightdispbookitalic-webfont.woff') format('woff'),
+         url('freightdispbookitalic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'proxima_nova_rgregular';
+    src: url('proximanova-regular-webfont.eot');
+    src: url('proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('proximanova-regular-webfont.woff2') format('woff2'),
+         url('proximanova-regular-webfont.woff') format('woff'),
+         url('proximanova-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'proxima_novalight';
+    src: url('proximanova-light-webfont.eot');
+    src: url('proximanova-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('proximanova-light-webfont.woff2') format('woff2'),
+         url('proximanova-light-webfont.woff') format('woff'),
+         url('proximanova-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'proxima_novasemibold';
+    src: url('proximanova-semibold-webfont.eot');
+    src: url('proximanova-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('proximanova-semibold-webfont.woff2') format('woff2'),
+         url('proximanova-semibold-webfont.woff') format('woff'),
+         url('proximanova-semibold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'proxima_nova_rgbold';
+    src: url('proximanova-bold-webfont.eot');
+    src: url('proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('proximanova-bold-webfont.woff2') format('woff2'),
+         url('proximanova-bold-webfont.woff') format('woff'),
+         url('proximanova-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
