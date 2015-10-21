@@ -1,0 +1,120 @@
+
+
+/*Dropdown*/
+.wrapper-dropdown-5::selection {
+    background: blue; 
+}
+
+.wrapper-dropdown-5::-moz-selection {
+    background: blue; 
+}
+
+.wrapper-dropdown-5 {
+    /* Size & position */
+    position: relative;
+    margin: 0 auto;
+    padding: 0.7em 1em;
+    /* Styles */
+    @include input-border;
+    background: transparent;
+    font-family: $main-font;
+    font-size: 1em;
+    text-align: left;
+    outline: none;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.wrapper-dropdown-5.smaller {
+  width: 10em;
+  padding: 0.7em 2.5em 0.7em 1.2em;
+  font-size: 1em;
+  border-radius: 25px;
+  border-color: $blue-grey;
+  font-family: $main-font-semi-bold;
+  background: url("../img/arrowthin.svg") no-repeat 88% / auto 1.2em;
+}
+
+.wrapper-dropdown-5.bigger {
+  width: auto;
+  background: url("../img/arrowthin.svg") no-repeat 92% / auto 1.2em;
+  padding: 1em 12% 1em 1.2em;
+}
+
+.wrapper-dropdown-5 .dropdown {
+    /* Size & position */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    /* Styles */
+    background: White;
+    border-radius: 0 0 5px 5px;
+    border: 1px solid $clay-blue;
+    border-top: none;
+    border-bottom: none;
+    list-style: none;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    margin:-1px;
+
+    /* Hiding */
+    max-height: 0;
+    overflow: hidden;
+}
+
+.wrapper-dropdown-5 .dropdown li {
+    //padding: 0 10px;
+}
+
+.wrapper-dropdown-5 .dropdown li a {
+    display: block;
+    text-decoration: none;
+    color: $slate-dk;
+    padding: 1em;
+    transition: all 0.3s ease-out;
+    border-bottom: 1px solid $grey-lter;
+}
+
+.wrapper-dropdown-5 .dropdown li:last-of-type a {
+    border: none;
+}
+
+.wrapper-dropdown-5 .dropdown li i {
+    margin-right: 5px;
+    color: inherit;
+    vertical-align: middle;
+}
+
+/* Active state */
+
+.wrapper-dropdown-5.active {
+    border-radius: 5px 15px 0 0;
+    box-shadow: none;
+    border-bottom: none;
+    z-index: 1;
+    border: 1px solid $clay-blue;
+}
+
+
+.wrapper-dropdown-5.active .dropdown {
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    max-height: 400px;
+}
+
+.dropdown li {
+  margin-bottom: 0;
+}
+
+// Section header dropdown styling
+.section-header .dropdown{
+    display: block;
+    margin: auto;
+}

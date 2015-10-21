@@ -1,0 +1,129 @@
+/* Social Media Icons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.social-icon{
+  width:45px;
+  height:45px;
+  border-radius: 50%;
+  border:2px solid $grey-md;
+  background-color:#E3E3E3;
+  display: inline-block;
+  margin-left: $fairly-thick;
+  margin-right:$fairly-thick;
+}
+
+.social-icons-sm{
+  width:100%;
+}
+
+.social-icons-sm a{
+  height: 2.5em;
+  width: 2.5em;
+  display: inline-block;
+  //margin-left: -10px;
+}
+
+$social-media: (facebook, twitter, youtube, snapchat, instagram, google, pinterest);
+@each $platform in $social-media{
+  .social-icons-sm .#{$platform} {
+    background: url("../img/#{$platform}-grey.png") no-repeat;
+    background-size: 100%;
+    &:hover{
+      background: url("../img/#{$platform}.png") no-repeat;
+      background-size: 100%;
+    }
+  }
+  .social-follow .#{$platform} {
+    background: url("../img/#{$platform}.png") no-repeat;
+    background-size: 100%;
+  }
+}
+
+.social-follow > div, .social-icons-sm > div {
+  width: $third;
+  float:left;
+}
+  
+.social-follow{
+  @include full-width;
+  border-bottom: 1px solid $grey-lter;
+  padding: 0 $fairly-thick;
+  background-color: White;
+  text-align: center;
+}
+
+.social-follow a{
+  display: block;
+  height: 5em;
+  width: 5em;
+  margin: 0 auto $thick auto;
+}
+
+.social.smaller{
+  height:75;
+  border-color: $grey-lt;
+}
+
+
+.share-options{
+  @include full-width;
+  color: $clay-blue;
+  font-family: $main-font-semi-bold;
+  & *{
+    float:left;
+    margin-right: 15px;
+  }
+  &:after{
+    @include clearfix;
+  }
+}
+
+/* Share Options
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.share-options .button{
+  height: 2.5em;
+  width: 22.5%;
+  border: 0;
+  margin: 1em 0.5%;
+  &.facebook{
+    background: $facebook-blue url("../img/facebook-white.png") no-repeat 50% center / 40% auto;
+    &:hover{
+      background-color: darken($facebook-blue, 10%);
+    }
+  }
+  &.twitter{
+    background: $twitter-blue url("../img/twitter-white.png") no-repeat 50% center / 40% auto;
+    &:hover{
+      background-color: darken($twitter-blue, 10%);
+    }
+  }
+  &.email{
+    background: $email-orange url("../img/email-white.png") no-repeat 50% center / 40% auto;
+    &:hover{
+      background-color: darken($email-orange, 10%);
+    }
+  }
+  &.share{
+    background: $clay-blue url("../img/share-white.png") no-repeat 50% center / 40% auto;
+    &:hover{
+      background-color: darken($clay-blue, 10%);
+    }
+  }
+}
+
+.share-options span{
+  width: 100%;
+  text-align: center;
+}
+
+@media (max-width: $mq-s){
+  .share-options .button{
+    padding: 0.7em 1.8em;
+  }
+}
+
+@media (min-width: $mq-s){
+  .share-options .button{
+    height: 3.5em;
+  }
+}

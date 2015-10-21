@@ -1,0 +1,13 @@
+@function wizard-width ($quantity){
+	$width: 100%;
+	$gaps: ($quantity - 1);
+	@return ($width / $gaps);
+}
+
+@function wicked-width ($quantity){
+	@return (100% / $quantity);
+}
+
+@function hover-mix-dk ($color){
+	@return mix($color, black, 65%);
+}

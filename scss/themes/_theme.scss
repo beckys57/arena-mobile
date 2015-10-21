@@ -1,0 +1,20 @@
+.color{
+	color: $main-color;
+}
+
+//Theme specific colours
+$main-color-translucent: rgba($main-color, 0.1);
+$main-color-lt: lighten($main-color, 20%);
+$main-color-dk: darken($main-color, 10%);
+$button-color: $main-color;
+$button-dk: $main-color-dk;
+$link-hover: $main-color-dk;
+
+
+input.color-fill[type='button'], .button.color-fill, .button.right{
+  border: 1px solid $button-color;
+  background-color: $button-color;
+  &:hover{
+    background-color: $button-dk;
+  }
+}

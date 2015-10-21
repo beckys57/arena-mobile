@@ -1,0 +1,154 @@
+/*Colors*/
+
+$slate-lt: #4d5558;
+$slate: #4b4f52;
+$slate-dk: #363b3E;
+$slate-dker: #2a2e31;
+$blue-grey: #79848a;
+$blue-grey-lt: #9cA9b1;
+$grey: #777;
+$clay-blue: #b8c5ce;
+$grey-md: #b2b2b2;
+$grey-lt: #cfdce2;
+$grey-lter: #e2e2e2;
+$cloud: #f2f6f9;
+$chalk: #eee;
+$soft-blue: #d9e2e7;
+$ghost-blue: #edf2f5;
+$cyan: rgba(#21bbef,1);
+$red: #ec3219;
+$green: #85c44a;
+$purple: #743b96;
+$orange: #ef893b;
+$yellow: #facc0A;
+$facebook-blue: #38599c;
+$twitter-blue: #4dabf1;
+$email-orange: #f0824d;
+
+/*Color Assignments
+$main-color: $red;
+$main-color-lt: lighten($main-color, 20%);
+$main-color-dk: darken($main-color, 10%);
+$button-color: $main-color;
+$button-dk: $main-color-dk;
+$link-hover: $main-color-dk;*/
+
+$sports: $red;
+$nutrition: $green;
+$fashion: $purple;
+$training: $cyan;
+$entertainment: $orange;
+$interactive: $yellow;
+$prime: $slate;
+
+//Media queries
+
+$mq-xxl: 1380px;
+$mq-xl: 1200px;
+$mq-l: 992px;
+$mq-m: 768px;
+$mq-s: 480px;
+$mq-xs: 320px;
+
+/*Sizes & positioning*/
+
+//For margins, padding etc.
+
+/*
+$extra-thick: 60px;
+$thick: 45px;
+$fairly-thick: 30px;
+$thin: 15px;
+$extra-thin: 5px;
+*/
+
+$extra-thick: 4em;
+$thick: 3em;
+$fairly-thick: 2em;
+$thin: 1em;
+$extra-thin: 0.5em;
+
+$pad-across-xl: $extra-thick 0;
+$pad-across-sm: $thin 0;
+
+//Columns    
+$three-quarters: 75%;
+$two-thirds: 66.66666667%;
+$half: 50%;
+$quarter: 25%;
+$third: 33.33333333%;
+$sixth: 16.66666667%;
+$five-twelfths: 41.66666667%;
+$seven-twelfths: 58.33333333%;
+$fifth: 20%;
+
+//Boxes & bars
+
+$bar: 6rem;
+
+$navbar: 6em;
+
+//Buttons
+
+$chubby-button: 15px 40px;
+
+//Topbar
+$topbar-icon-size: ($bar / 2);
+
+//Font sizes
+
+$small: 0.9em;
+$sm-medium: 1.1em;
+$article-text: 1.06em;
+$medium: 1.2em;
+$medium-lg: 1.3em;
+
+// Line between elements
+$separator: 1px solid rgba($clay-blue, 0.2);
+
+
+/* --------image proportions WxH
+SIZE A
+exercises header, right bar, training search results: 1.6x1
+800 x 500
+400 x 250
+215 x 135
+
+SIZE B
+top story, large 690 x 590px = 1.1694
+small: 330 x 280 = 1.1785 (use large image SIZE B)
+
+SIZE C
+medium-wide:690 x 280px = 2.464285
+article header: 1x2.46428 (or 0.4166667x1 WxH)
+
+SIZE D
+medium-tall:330 x 590px = 0.5593220
+before and after pictures
+
+SIZE E
+aspired look/body image: 180 x 255 = 1x1.25 WxH
+
+SIZE V
+wide short video	760 x 410 = 1.85365853
+
+article:
+- SIZE C header
+- SIZE A right-bar (used for directory search results, recommended article etc.)
+- SIZE B for grid
+- SIZE D optional portrait size
+
+video:
+- SIZE A
+- SIZE V wide short (in article, squidge)
+	760 x 410 = 1.85365853
+
+Circles: W:H = 1:1
+- avatar
+- film reviews
+- repair article preview
+
+body image/aspired look - any size, perhaps size D?
+
+letter from editor: 360 x 550 but not important as long as taller than wide
+*/

@@ -1,0 +1,21 @@
+.category-bar{
+	position: relative;
+	height: 6rem;
+	padding: 0 5%;
+	background-color: $slate-dk;
+	color: $blue-grey-lt;
+	font-family: $main-font;
+	font-size: 1.1em;
+	line-height: 6rem;
+}
+
+.toggle-arrow{
+  position: absolute;
+  width: 3em;
+  height: 6rem;
+  top: 0;
+  right: 2%;
+  background: url("../img/arrow-down.svg") no-repeat 50%;
+  background-size: 30%;
+  cursor: pointer;
+}

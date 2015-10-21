@@ -1,0 +1,38 @@
+.topbar{
+	height: $bar;
+  background-color: white;
+  border-bottom: 1px solid $cloud;
+  overflow: hidden;
+  padding: ($bar / 4);
+}
+
+.topbar .icons{
+  float:right;
+}
+
+.topbar-icon{
+  display: inline-block;
+  margin-left: 0.25rem;
+}
+
+$topbar-icons: sports, nutrition, fashion, training, entertainment, interactive, directory, prime, login, search, share, options, topbar-close;
+@each $category in $topbar-icons{
+  .topbar-icon.#{$category} {
+    background: url("../img/#{$category}.png") no-repeat;
+    width: $topbar-icon-size;
+    height: ($topbar-icon-size); 
+    background-size:100%;
+  }
+  a.active .topbar-icon.#{$category} {
+    background: url("../img/#{$category}-white.png") no-repeat;
+    background-size:100%;
+  }
+}
+
+.topbar-logo{
+  background: White url('../img/welcome_04.png') no-repeat;
+  height: ($topbar-icon-size);
+  width: ($topbar-icon-size + 0.5rem);
+  background-size:100%;
+  float: left;
+}

@@ -1,0 +1,83 @@
+.wrapper{
+	
+}
+
+.centered{
+  text-align: center;
+}
+
+.separator{
+	margin: 1em 0;
+  background-color: #B9C6CE;
+  height:2px;
+  width:2em;
+}
+
+/* Section headers
+-----------------------------------*/
+.section-header{
+	padding: 1.5em 0 0.5em;
+  text-align: center;
+  text-transform: uppercase;
+  & h2{
+    margin: 0.5rem;
+    color: $slate-lt;
+    font-family: $heading-lt;
+  }
+  & .wrapper-dropdown-5{
+    margin-bottom: 1.5em;
+  }
+}
+
+
+.news, .videos, .nutritional-highlights {
+  .section-header{
+    padding: 1.5em 0 0;
+  }
+}
+
+/* Circular elements
+-----------------------------------*/
+.circle{
+  border-radius:50%;
+  width: 15em;
+  height: 15em;
+  background-color: transparent;
+}
+
+
+/* Circular elements
+-----------------------------------*/
+.circle-list h2{
+  font-size: 2.5em;
+  text-transform: uppercase;
+}
+
+.circle-list h3{
+  font-size: 1.7em;
+  font-family: $heading-rg;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  margin: -2px 0 0 0;
+}
+
+.circle-list .results h3{
+  font-size: 2em;
+}
+
+.circle-list a, .category-title{
+  font-family: $main-font-semi-bold;
+  color: $blue-grey-lt;
+  margin-top: 0.25em;
+}
+
+.circle-list .category-title{
+  margin-top: -0.25em;
+}
+
+
+/* Articles
+-----------------------------------*/
+.article{
+  padding: 1rem 5%;
+}

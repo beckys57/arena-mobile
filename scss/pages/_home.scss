@@ -1,0 +1,131 @@
+
+.quote-wrap:before,.open-quote:before{
+  content: '';
+  background: url("../img/quote-open.png") no-repeat;
+  height:50px;
+  width:50px;
+  position: absolute;
+  top: -0.75em;
+  left: -1.5em;
+}
+
+.quote-wrap:after, .close-quote:after{
+  content: '';
+  background: url("../img/quote-close.png") no-repeat;
+  height:50px;
+  width:50px;
+  position: absolute;
+  bottom: -1.5em;
+  right:0;
+}
+
+.interview{
+  position: relative;
+  padding: 3em 5% 0;
+  background-color: $soft-blue;
+  margin-top: 2em;
+  & h2{
+    position: relative;
+    display: block;
+    width: 75%;
+    margin: -1em auto 0;
+    font-size: 5em;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-family: $heading-bold;
+    line-height: 0.85;
+    color: $clay-blue;
+  }
+  & img{
+    margin: 0 5%;
+    width: 90%;
+    height: auto;
+  }
+  
+}
+
+.preview{
+  position: relative;
+  margin: 2em 0;
+}
+
+.question{
+  font-family: $main-font-semi-bold;
+  margin-bottom: 0.5em;
+}
+
+.videos{
+  background-color: $slate-dk;
+  & h2{
+    color: $blue-grey;
+  }
+  & .button{
+    color: $blue-grey;
+  }
+  & .text-overlay{
+    left: 1em;
+    bottom: 1em;
+  }
+  & .play-circle{
+    float: left;
+    bottom: 0;
+  }
+  & .video-text{
+    float: left;
+    margin-left: 1em;
+  }
+}
+
+
+.reviews{
+  position: relative;
+  padding: 0 2.5%;
+  border-bottom: 1px solid $grey-lter;
+  & .circle{
+    display: block;
+    margin: 1em auto;
+  }
+  & .category-title, h3{
+    //display: inline-block;
+    //float: left;
+  }
+}
+
+.result{
+  padding: 1em 1.25em; 
+  border: 1px solid $grey-lter;
+  overflow: auto;
+}
+
+.review-header{
+  width: 100%;
+  position: relative;
+  overflow: auto;
+  display: inline-block;
+  margin: 1em 0;
+}
+
+.score{
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 4em;
+  font-family: $heading-bold;
+  color: $blue-grey-lt;
+  line-height: 1;
+}
+
+@media (max-width: $mq-m){
+  .review-header .text{
+    width: 70%;
+  }
+}
+@media (max-width: $mq-s){
+  .review-header .text{
+    width: 65%;
+  }
+  .score{
+    font-size: 3em;
+  }
+}

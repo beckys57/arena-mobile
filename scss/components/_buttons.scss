@@ -1,0 +1,145 @@
+.play-circle{
+  @include play-circle-size;
+  background: url("../img/play-circle.svg") no-repeat 50% 50% / 100%;
+}
+
+.pause-circle{
+  @include play-circle-size;
+  background: url("../img/pause-circle.svg") no-repeat 50% 50% / 100%;
+}
+
+.side .play-circle, .side .pause-circle{
+  @include play-circle-smaller;
+  &:hover{
+    @include play-circle-smaller;
+  }
+}
+
+
+//Curvy Button
+
+input[type=button],.button{
+  display: inline-block;
+  margin: 2em 0;
+  width: auto;
+  padding: 0.7em 2em;
+  border: 1px solid;
+  border-radius: 50px;
+  border-color: inherit;
+  background-color: transparent;
+  color: inherit; 
+  font-family: $main-font-semi-bold;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+input[type=button].color-fill, .button.color-fill{
+  color: white;
+  border: 0;
+  &:hover{
+    color: white;
+  }
+}
+
+.button.white{
+  border: 1px solid white;
+  color: white;
+  &:hover{
+    background-color: rgba(#FFFFFF, 0.5);
+    color: $slate;
+  }
+}
+
+.button.inverse{
+  background-color: $blue-grey;
+  border-color: $blue-grey;
+  color: white;
+}
+
+.button.fixed{
+  padding: 1em 40px;
+}
+
+.button.right{
+  padding: 1em 0;
+  color:white;
+  &:hover{
+    color: white;
+  }
+}
+
+.button.reverse{
+  background-color: White;
+}
+
+// PREVIOUS / NEXT STEP buttons
+.button-pair{
+  @include clearfix;
+  float:right;
+  padding: $extra-thick $thick;
+}
+
+.button-pair .button{
+  float: right;
+  display: inline-block;
+  width: 10em;
+  margin-left: 2em;
+  padding: 1em 0;
+}
+
+
+//left button (next uses cyan)
+.button.left{
+  float: none;
+  background-color: White;
+  color: $blue-grey;
+  border-color: $blue-grey;
+}
+
+//Upload Button
+
+.button.upload{
+  padding: 1em;
+  background-color: #B8C5CE;
+  border: 0px none;
+  color: #FFF;
+  font-size: 1em;
+  text-align: center;
+  cursor: pointer;
+  &:hover{
+    color: white;
+  }
+  /*
+  left: 165px; //Centers button in 500px width container
+  padding: 15px 20px;
+  width:auto;
+  overflow:hidden;
+  cursor:pointer;
+  text-align:center;
+  background-color: $clay-blue;
+  color:White;
+  border: 0;
+  font-size: 1em;*/
+}
+
+.upload-wrap{
+  text-align: center;
+  margin: auto;
+  width: 12em;
+  /*
+  position: relative;
+  width: 500px;
+  margin: auto;
+  text-align: center;*/
+}
+
+//Radio button
+
+.radio-button{
+  width: 25px;
+  height: 25px;
+  border: 1px solid $grey-md;
+  background-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+}

@@ -175,9 +175,15 @@ h6{
 }
 
 p{
-  font-size:1em; //was 1.06em
-  color: $blue-grey;
+  font-family: $main-font-lt;
+  font-size: 1.1em;
+  color: $slate-dk;
   margin: 0;
+  line-height: 1.2
+}
+
+span{
+    display: block;
 }
 
 //Font styles
@@ -189,13 +195,13 @@ p{
 
 @media (max-width: $mq-s){
     body{
-        font-size: 11px !important;
+        font-size: 18px !important;
     }
 }
 
-@media (min-width: $mq-l){
+@media (max-width: $mq-l){
     body{
-        font-size: 16px !important;
+        font-size: 18px !important;
     }
 }
 
@@ -249,4 +255,11 @@ p{
     color: $grey-lt;
     font-style: normal;*/
   }
+}
+
+.text-overlay{
+  position: absolute;
+  left: 1em;
+  bottom: 1em;
+  right: 1em;
 }

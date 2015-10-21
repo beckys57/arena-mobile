@@ -1,0 +1,221 @@
+//LAYOUT
+
+/* clearfix */
+@mixin clearfix {
+  content: '';
+  display: block;
+  clear: both;
+}
+.clearfix:after{
+  @include clearfix;
+}
+/* Columns */
+@mixin full-width{
+  width:100%;
+  float:left;
+}
+
+@mixin one-quarter{
+  width: $quarter;
+  float:left;
+}
+
+@mixin one-third{
+  width: $third;
+  float:left;
+}
+
+@mixin half{
+  width: $half;
+  float:left;
+}
+
+@mixin five-twelfths{
+  width: $five-twelfths;
+  float:left;
+}
+
+@mixin two-thirds{
+  width: $two-thirds;
+  float:left;
+}
+
+@mixin seven-twelfths{
+  width: $seven-twelfths;
+  float:left;
+}
+
+@mixin three-quarters{
+  width: $three-quarters;
+  float:left;
+}
+
+
+@mixin maintain-ratio($ratio: 1 0.8484848) {
+  $width: 330px;
+  $height: percentage(nth($ratio, 2) / nth($ratio, 1));
+  
+  width: $width;
+  height: $height;
+}
+
+/* GRID SIZING */
+  //Spare code if need to reverse equations (set by grid-item-width instead of grid-width:
+  //$grid-width: (($grid-item-width * 3) + ($gutter * 2));
+
+$gutter: 30px;//($grid-width/100); //If changed, need to change in packery-options.js as well
+
+@mixin moonshake($grid-width){
+  $gutter: ($grid-width / 33);
+  $grid-item-width: (($grid-width - ($gutter * 2)) / 3);
+  $grid-item-height: ($grid-item-width / 1.1785); //Ratio W:H of 1:1785:1
+  .grid{
+    width: $grid-width;
+  }
+  .grid-sizer{
+    width: $grid-item-width;
+    display: none;
+  }
+  .gutter-sizer{
+    width: $gutter;
+  }
+  .grid-item{
+    min-width: ($grid-item-width / 3);
+    overflow: hidden;
+    .small{
+      width: $grid-item-width;
+      height: $grid-item-height;
+    }
+    .medium-wide{
+      width: (($grid-item-width * 2) + $gutter);
+      height: $grid-item-height;
+    }
+    .medium-tall{
+      width: ($grid-item-width);
+      height: (($grid-item-height * 2) + $gutter);
+    }
+    .large{
+      width: (($grid-item-width * 2) + $gutter);
+      height: (($grid-item-height * 2) + $gutter);
+    }
+  }
+}
+
+@mixin moonshake-duo($grid-width){
+  $gutter: ($grid-width / 33);
+  $grid-item-width: (($grid-width - ($gutter)) / 2);
+  $grid-item-height: ($grid-item-width / 1.1785); //Ratio W:H of 1:1785:1
+  .grid{
+    width: $grid-width;
+  }
+  .grid-sizer{
+    width: $grid-item-width;
+    display: none;
+  }
+  .gutter-sizer{
+    width: $gutter;
+  }
+  .grid-item{
+    min-width: ($grid-item-width / 3);
+    overflow: hidden;
+    .small{
+      width: $grid-item-width;
+      height: $grid-item-height;
+    }
+    .medium-wide{
+      width: (($grid-item-width * 2) + $gutter);
+      height: $grid-item-height;
+    }
+    .medium-tall{
+      width: ($grid-item-width);
+      height: (($grid-item-height * 2) + $gutter);
+    }
+    .large{
+      width: (($grid-item-width * 2) + $gutter);
+      height: (($grid-item-height * 2) + $gutter);
+    }
+  }
+}
+
+/* ALIGNMENT */
+
+@mixin vertical-center{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* BORDERS */
+
+@mixin input-border{
+  border: solid 1px $grey-lt;
+  border-radius: 2px;
+}
+
+@mixin bottom-border{
+  border-bottom: 2px solid $cloud !important;
+}
+
+
+/* COLORS */
+
+@mixin scheme-slate{
+  background-color: $slate-dk;
+  color: $blue-grey-lt;
+}
+
+@mixin play-circle-hover{
+  .play-circle {
+     background: url("../img/play-circle-hover.svg") no-repeat 50% 50% / 100%; 
+  }
+  .pause-circle {
+    background: url("../img/pause-circle-hover.svg") no-repeat 50% 50% / 100%; 
+  }
+}
+
+@mixin pause-circle-hover{
+/*  .pause-circle {
+    background: url("../img/pause-circle-hover.svg") no-repeat 50% 50% / 100%; 
+  }
+*/
+}
+
+@mixin play-circle-size{
+  width: 4em;
+  height: 4em;
+}
+
+@mixin play-circle-smaller{
+  height: 3em;
+  width: 3em;
+}
+
+
+/* Shapes */
+
+@mixin circular($diameter: 100px){
+  float:left;
+  border-radius:50%;
+  width: $diameter;
+  height: $diameter;
+}
+
+/* BUTTONS */
+/*
+@mixin filled{
+  padding: 15px 40px;
+  background-color: $button-color;
+  border: 1px solid $button-color;
+  color:white;
+  &:hover{
+    background-color: $button-dk;
+    color: white;
+  }  
+}*/
+
+/* FONT STYLES */
+
+@mixin light-grey{
+  color: $blue-grey;
+  font-family: $heading-lt;
+  font-size: 2.6em;
+}

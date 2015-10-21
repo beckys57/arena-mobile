@@ -1,0 +1,64 @@
+.sitemap{
+  @include full-width;
+  @include bottom-border;
+  padding: 0 5% $thick;
+  background-color: White;
+  color:$grey-md;
+  font-size: 0.9em; 
+  text-align: center;
+  border-top: 1px solid $chalk;
+  font-size: 1em;
+  z-index: 200 !important;
+  clear: both;
+}
+
+.empty-height .sitemap{
+  border-left: 1px solid $cloud;
+}
+
+.with-navbar .sitemap{
+  margin-bottom: -$navbar;
+}
+
+.sitemap h4{
+  font-family: $heading-lt;
+  font-size: 1.9em;
+  line-height: 3;
+  color: $blue-grey-lt;
+}
+
+.sitemap input[type="email"]{
+  padding: 1em;
+  width: 95%;
+  margin-bottom: 1em;
+}
+
+.sitemap input{
+  font-size: 1.1em;
+  font-family: $main-font;
+}
+
+.sitemap input[type="submit"]{
+  margin: 0.5em 0 1em;
+  padding: 1em 3em;
+  font-size: 1em;
+}
+
+
+.sitemap .links{ 
+  overflow: auto;
+  & a{
+    display:block;
+    margin-bottom: 0.5rem;
+  }
+}
+.sitemap .links > div {
+  float:left;
+  width: $half;
+}
+
+@media (max-width: $mq-m){
+  .sitemap a, input[type='submit']{
+    font-size: 0.9em;
+  }
+}

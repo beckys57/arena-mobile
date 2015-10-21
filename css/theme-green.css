@@ -1,0 +1,71 @@
+/*Colors*/
+/*Color Assignments
+$main-color: $red;
+$main-color-lt: lighten($main-color, 20%);
+$main-color-dk: darken($main-color, 10%);
+$button-color: $main-color;
+$button-dk: $main-color-dk;
+$link-hover: $main-color-dk;*/
+/*Sizes & positioning*/
+/*
+$extra-thick: 60px;
+$thick: 45px;
+$fairly-thick: 30px;
+$thin: 15px;
+$extra-thin: 5px;
+*/
+/* --------image proportions WxH
+SIZE A
+exercises header, right bar, training search results: 1.6x1
+800 x 500
+400 x 250
+215 x 135
+
+SIZE B
+top story, large 690 x 590px = 1.1694
+small: 330 x 280 = 1.1785 (use large image SIZE B)
+
+SIZE C
+medium-wide:690 x 280px = 2.464285
+article header: 1x2.46428 (or 0.4166667x1 WxH)
+
+SIZE D
+medium-tall:330 x 590px = 0.5593220
+before and after pictures
+
+SIZE E
+aspired look/body image: 180 x 255 = 1x1.25 WxH
+
+SIZE V
+wide short video	760 x 410 = 1.85365853
+
+article:
+- SIZE C header
+- SIZE A right-bar (used for directory search results, recommended article etc.)
+- SIZE B for grid
+- SIZE D optional portrait size
+
+video:
+- SIZE A
+- SIZE V wide short (in article, squidge)
+	760 x 410 = 1.85365853
+
+Circles: W:H = 1:1
+- avatar
+- film reviews
+- repair article preview
+
+body image/aspired look - any size, perhaps size D?
+
+letter from editor: 360 x 550 but not important as long as taller than wide
+*/
+.color {
+  color: #85c44a; }
+
+input.color-fill[type='button'], .button.color-fill, .button.right {
+  border: 1px solid #85c44a;
+  background-color: #85c44a; }
+  input.color-fill[type='button']:hover, .button.color-fill:hover, .button.right:hover {
+    background-color: #6ca536; }
+
+/*# sourceMappingURL=theme-green.css.map */
