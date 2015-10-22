@@ -83,12 +83,21 @@
   background-size: 100%;
 }
 
+/* Related articles
+-----------------------------------*/
 .related{
   width: 100%;
   background-color: $cloud;
+  margin: 1em 0;
 }
 
-/* Articles
+.related h4 {
+  color: $slate;
+  font-family: $heading-md;
+  font-size: 2em;
+}
+
+/* Comments
 -----------------------------------*/
 .comments{
   padding: 0 5% 1em;

@@ -1,16 +1,4 @@
-
-/* IMAGE SLIDER */
-.headline-slideshow{
-  overflow-x: visible;
-  overflow-y: hidden;
-  position: relative;
-  //height: 42em;
-}
-
-.headline-slide{
-  position: relative;
-  width: 90%;
-  float: left;
+.headliner{
   background-color: $slate-dk;
   & .text-overlay{
     bottom: 20%;

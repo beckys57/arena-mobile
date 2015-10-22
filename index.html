@@ -6,10 +6,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<link rel="stylesheet" href="css/main.css"/>
 	<link rel="stylesheet" href="css/theme-cyan.css"/>
-	<link rel="stylesheet" href="css/components/flickity.css" media="screen"/>
 
 
 	<script type="text/javascript" src="js/flickity.pkgd.min.js"></script>
+	<script type="text/javascript" src="js/flickity-options.js"></script>
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="dropdown.js"></script>
 	<noscript><link rel="stylesheet" type="text/css" href="noJS.css" /></noscript>
@@ -32,8 +32,8 @@
 	</nav>
 	
 	<!--Image slideshow article-->
-	<div class="headliner js-flickity data-flickity-options='{ "cellAlign": "left", "contain": true }">
-		<div class="gallery-cell">
+	<div class="headliner carousel js-flickity" >
+		<div class="headliner-cell">
 			<img src="img/slider.PNG">
 			<div class="text-overlay">
 				<p>28.07.2015 - Posted by Alex Wlather</p>
@@ -42,7 +42,7 @@
 				<a class="button">Read Article</a>
 			</div>
 		</div>
-		<div class="gallery-cell">
+		<div class="headliner-cell">
 			<img src="img/slider.PNG">
 			<div class="text-overlay">
 				<p>28.07.2015 - Posted by Alex Wlather</p>
@@ -51,7 +51,7 @@
 				<a class="button">Read Article</a>
 			</div>
 		</div>
-		<div class="gallery-cell">
+		<div class="headliner-cell">
 			<img src="img/slider.PNG">
 			<div class="text-overlay">
 				<p>28.07.2015 - Posted by Alex Wlather</p>
@@ -60,7 +60,7 @@
 				<a class="button">Read Article</a>
 			</div>
 		</div>
-		<div class="gallery-cell">
+		<div class="headliner-cell">
 			<img src="img/slider.PNG">
 			<div class="text-overlay">
 				<p>28.07.2015 - Posted by Alex Wlather</p>
@@ -91,7 +91,7 @@
 			</div>
 		</div>
 
-		<div class="js-flickity data-flickity-options='{ "cellAlign": "left", "contain": true }">
+		<div class="grid carousel js-flickity">
 			<a class="grid-item">
 				<div class="sports cover">
 					<img src="img/imagine.jpg">
@@ -172,7 +172,21 @@
 			<h2>Nutritional Highlights</h2>
 		</div>
 
-		<div class="nutrition grid">
+		<div class="nutrition grid carousel js-flickity">
+			<a class="grid-item">
+				<div class="cover">
+					<img src="img/imagine.jpg">
+					<div>
+						<div class="text-overlay">
+							<span class="category-title">Category</span>
+							<h4>Headline</h4>
+							<div class="bottom">
+								<span class="date">08:34 pm - 08.07.15</span>
+							</div>	
+						</div>
+					</div>
+				</div>
+			</a>
 			<a class="grid-item">
 				<div class="cover">
 					<img src="img/imagine.jpg">

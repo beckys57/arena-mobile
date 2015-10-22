@@ -1358,6 +1358,30 @@ input[type=button].color-fill, .button.color-fill {
 /*! Flickity v1.1.1
 http://flickity.metafizzy.co
 ---------------------------------------------- */
+.carousel {
+  margin-bottom: 1em;
+  margin-right: -5%; }
+
+.carousel.gallery {
+  margin-bottom: 2em; }
+
+.carousel.gallery-text {
+  width: 100%; }
+  .carousel.gallery-text .gallery-cell {
+    margin-bottom: 2em; }
+
+.gallery-cell, .grid-item {
+  width: 90%;
+  margin-right: 5px; }
+  .gallery-cell img, .grid-item img {
+    width: 100%; }
+
+.grid {
+  margin-bottom: 2em; }
+
+.headliner-cell {
+  width: 90% !important; }
+
 .flickity-enabled {
   position: relative; }
 
@@ -1450,10 +1474,16 @@ http://flickity.metafizzy.co
     font-size: 26px; }
 
 /* ---- page dots ---- */
+.gallery .flickity-page-dots {
+  display: none; }
+
+.grid .flickity-page-dots {
+  bottom: -2em; }
+
 .flickity-page-dots {
   position: absolute;
   width: 100%;
-  bottom: -25px;
+  bottom: 1em;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -1467,8 +1497,8 @@ http://flickity.metafizzy.co
   display: inline-block;
   width: 10px;
   height: 10px;
-  margin: 0 8px;
-  background: #333;
+  margin: 0 0.3em;
+  background: #4d5558;
   border-radius: 50%;
   filter: alpha(opacity=25);
   /* IE8 */
@@ -1480,35 +1510,26 @@ http://flickity.metafizzy.co
   /* IE8 */
   opacity: 1; }
 
-/* IMAGE SLIDER */
-.headline-slideshow {
-  overflow-x: visible;
-  overflow-y: hidden;
-  position: relative; }
-
-.headline-slide {
-  position: relative;
-  width: 90%;
-  float: left;
+.headliner {
   background-color: #363b3E; }
-  .headline-slide .text-overlay {
+  .headliner .text-overlay {
     bottom: 20%;
     left: 5%; }
-  .headline-slide p {
+  .headliner p {
     color: #FFFFFF;
     font-family: "Heroic Condensed Book";
     font-size: 1em;
     text-transform: uppercase; }
-  .headline-slide .separator {
+  .headliner .separator {
     background-color: #FFFFFF; }
-  .headline-slide .color {
+  .headliner .color {
     color: #743b96 !important; }
-  .headline-slide .button {
+  .headliner .button {
     color: white;
     border-color: white;
     margin-top: 2em;
     display: inline-block; }
-  .headline-slide h2 {
+  .headliner h2 {
     font-size: 4em;
     color: white;
     font-family: "Heroic Condensed Bold";
@@ -1517,7 +1538,7 @@ http://flickity.metafizzy.co
     max-width: 60%;
     min-width: 5em;
     display: block; }
-  .headline-slide img {
+  .headliner img {
     width: 100%;
     height: auto; }
 
@@ -1789,11 +1810,19 @@ http://flickity.metafizzy.co
   background: url("../img/twitter.png") no-repeat 50% center/100% auto;
   background-size: 100%; }
 
+/* Related articles
+-----------------------------------*/
 .related {
   width: 100%;
-  background-color: #f2f6f9; }
+  background-color: #f2f6f9;
+  margin: 1em 0; }
 
-/* Articles
+.related h4 {
+  color: #4b4f52;
+  font-family: "Heroic Condensed Medium";
+  font-size: 2em; }
+
+/* Comments
 -----------------------------------*/
 .comments {
   padding: 0 5% 1em; }
