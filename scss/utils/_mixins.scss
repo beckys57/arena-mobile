@@ -184,6 +184,11 @@ $gutter: 30px;//($grid-width/100); //If changed, need to change in packery-optio
   height: 4em;
 }
 
+@mixin play-circle-bigger{
+  width: 4em;
+  height: 4em;
+}
+
 @mixin play-circle-smaller{
   height: 3em;
   width: 3em;

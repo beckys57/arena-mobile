@@ -68,4 +68,7 @@ input.color-fill[type='button'], .button.color-fill, .button.right {
   input.color-fill[type='button']:hover, .button.color-fill:hover, .button.right:hover {
     background-color: #c22510; }
 
+.article-details span {
+  color: #ec3219; }
+
 /*# sourceMappingURL=theme-red.css.map */

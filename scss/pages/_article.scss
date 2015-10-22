@@ -1,0 +1,84 @@
+/* Articles
+-----------------------------------*/
+.article{
+  padding: 1rem 5%;
+}
+
+.article-details{
+  font-family: $heading-lt;
+  font-size: 1.4em;
+  color: $blue-grey-lt;
+  & > * {
+    display:inline-block;
+  }
+}
+
+.article-details span{
+  margin-right: $thin;
+}
+
+.article h1{
+  font-family: $heading-md;
+}
+
+.article .intro{
+  font-size: $medium;
+  font-style: italic;
+  padding: $thin 0;
+}
+
+.article p{
+  font-size: $sm-medium;
+  margin-bottom: $fairly-thick;
+}
+
+.article img{
+  width: 100%;
+  height: auto;
+}
+.article .video{
+  position: relative;
+  margin-bottom: $fairly-thick;
+}
+
+
+.article .video .play-circle{
+  position: absolute;
+  top: 0;
+  background-size: 35%;
+  width: 100%;
+  height: 100%;
+  cursor:pointer;
+}
+
+.article .video:hover{
+  @include play-circle-hover;
+  @include pause-circle-hover;
+  .play-circle{
+    background-size: 35%;
+  }
+}
+
+.quote{
+  position: relative;
+  width: 100%;
+  float:left;
+  font-size: 1.1em;
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+.quote span{
+  font-family: $heading-rg;
+  color: $clay-blue;
+  font-size: 1.4em;
+}
+
+.article .quote i{
+  display: block;
+  margin: 0 auto 0.5em;
+  height: 3em;
+  width: 3em;
+  background: url("../img/twitter.png") no-repeat 50% center / 100% auto;
+  background-size: 100%;
+}
