@@ -19,7 +19,11 @@ input.color-fill[type='button'], .button.color-fill, .button.right{
   }
 }
 
-
+//Articles
 .article-details span{
+	color: $main-color;
+}
+
+.comments span.user{
 	color: $main-color;
 }

@@ -87,3 +87,49 @@
   width: 100%;
   background-color: $cloud;
 }
+
+/* Articles
+-----------------------------------*/
+.comments{
+  padding: 0 5% 1em;
+}
+
+.comments h3{
+  color: $blue-grey-lt;
+  font-family: $heading-lt;
+  text-align: center;
+  text-transform: none;
+}
+
+.comments img {
+  @include circular;
+  width: 40%;
+  margin: 0.5em 0 0.5em 30%;
+  height: auto;
+}
+
+.comments span{
+  color: $blue-grey-lt;
+  font-family: $main-font-semi-bold;
+}
+
+.comments textarea{
+  height: 12em;
+  margin: 0.5em 0;
+}
+
+.comment{
+  overflow: auto;
+  clear:both;
+  padding-top: $fairly-thick;
+  margin-top: $thin;
+  border-top: $separator;
+}
+
+.comment .details {
+  clear:both;
+  width: 100%;
+  margin-bottom: 1em;
+  font-size: 1.1em;
+  text-align: center;
+}

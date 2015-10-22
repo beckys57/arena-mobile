@@ -71,4 +71,7 @@ input.color-fill[type='button'], .button.color-fill, .button.right {
 .article-details span {
   color: #85c44a; }
 
+.comments span.user {
+  color: #85c44a; }
+
 /*# sourceMappingURL=theme-green.css.map */

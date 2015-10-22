@@ -715,9 +715,423 @@ a.active .topbar-icon.topbar-close {
   .sitemap a, input[type='submit'] {
     font-size: 0.9em; } }
 
+/*INPUT TYPES*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none; }
+
+textarea {
+  border: solid 1px #cfdce2;
+  border-radius: 2px;
+  width: 100%;
+  padding: 1.5em 5%;
+  font-family: inherit;
+  font-size: 1em;
+  resize: none; }
+
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  font-family: "Proxima Nova Rg Regular", Helvetica, Arial, sans-serif;
+  color: #4b4f52; }
+
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  font-family: "Proxima Nova Rg Regular", Helvetica, Arial, sans-serif;
+  color: #4b4f52;
+  opacity: 1; }
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  font-family: "Proxima Nova Rg Regular", Helvetica, Arial, sans-serif;
+  color: #4b4f52;
+  opacity: 1; }
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  font-family: "Proxima Nova Rg Regular", Helvetica, Arial, sans-serif;
+  color: #4b4f52; }
+
+input {
+  font-family: inherit;
+  font-size: inherit; }
+
+input[type='text'], input[type='url'], input[type='password'], input[type='email'], input[type='number'] {
+  border: solid 1px #cfdce2;
+  border-radius: 2px;
+  width: 100%;
+  padding: 1.2em;
+  font-size: 1em; }
+
+input[type='text'].bigger {
+  padding: 1.2em 25px; }
+
+input[type=submit] {
+  font-family: "Proxima Nova Semi Bold", Helvetica, Arial, sans-serif;
+  cursor: pointer; }
+
+input[type=number] {
+  border: solid 1px #cfdce2;
+  border-radius: 2px; }
+
+input[type=file] {
+  display: none;
+  /*border:0;
+  z-index: 0;
+  font-size: 18px;
+  opacity: 1;
+  margin: 0;
+  padding: 10px 0;
+  left:45px;
+  font-family: $main-font;
+  color:$grey-md;
+  text-align: right;*/ }
+
+/*Form styling*/
+form p {
+  font-size: 1.2em; }
+
+.form-section-split {
+  width: 100%;
+  float: left;
+  padding: 3em; }
+
+.form-section-split > * {
+  padding: 1em; }
+
+.form-section {
+  width: 100%;
+  float: left;
+  padding: 4em; }
+
+.form-line {
+  width: 100%;
+  float: left;
+  padding: 0 4em; }
+
+.form-line > span {
+  width: 100%;
+  float: left;
+  height: 1px;
+  border-bottom: 1px solid rgba(184, 197, 206, 0.2); }
+
+@media (max-width: 992px) {
+  .form-section {
+    padding-left: 3em;
+    padding-right: 3em; }
+  .form-section-split {
+    padding-left: 2em;
+    padding-right: 2em; }
+  .form-line {
+    padding: 0 3em; } }
+
+.textbox-icon {
+  padding-right: 4em !important; }
+
+.textbox-icon.twitter {
+  background: url("../img/twitter-sm-blue.png") no-repeat 92%; }
+
+.textbox-icon.instagram {
+  background: url("../img/instagram-sm-blue.png") no-repeat 92%; }
+
+/*CHECKBOXES*/
+input[type="checkbox"] {
+  font-size: inherit;
+  display: none; }
+  input[type="checkbox"] + label span {
+    background: none; }
+  input[type="checkbox"]:checked + label span {
+    background: transparent url("../img/check.svg") no-repeat;
+    background-size: 60%;
+    background-position: 50% center; }
+
+.checkbox span {
+  float: left;
+  margin-right: 15px;
+  margin-top: -3px; }
+
+.form-section .checkbox label, .form-section-split .checkbox label {
+  min-width: 13em; }
+
+.checkbox.square label {
+  float: left; }
+
+.checkbox li {
+  float: left;
+  min-width: 33.33333%;
+  padding: 1em 0 1em 1em; }
+
+.square-box {
+  width: 2em;
+  height: 2em;
+  border: 1px solid #b2b2b2; }
+  .square-box i {
+    padding-left: 10px;
+    padding-top: 10px; }
+
+/*Radio buttons*/
+input[type=radio]:not(old) {
+  width: 27px;
+  height: 27px;
+  margin: 0;
+  padding: 0;
+  opacity: 1;
+  position: relative;
+  z-index: 2; }
+
+input[type=radio].masked:not(old) {
+  width: 27px;
+  height: 27px;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  z-index: 2; }
+
+input[type=radio].masked:not(old):checked + label span {
+  background-color: #b2b2b2; }
+
+input[type=radio].masked:not(old):checked {
+  opacity: 0; }
+
+input[type=radio]:not(old):checked {
+  opacity: 1; }
+
+input[type=radio].house:not(old) {
+  display: none; }
+
+input[type=radio].house:not(old) + label {
+  float: right;
+  padding-left: 5%; }
+
+input[type=radio].house:not(old) + label span {
+  float: left;
+  position: relative;
+  height: 1.5em;
+  width: 1.5em;
+  margin-right: 1em; }
+
+input[type=radio].house:not(old):checked + label span:after {
+  content: '';
+  position: absolute;
+  height: 74%;
+  width: 74%;
+  top: 12.5%;
+  left: 12.5%;
+  border-radius: 50px; }
+
+.image-select {
+  display: none; }
+
+.image-select + label span {
+  position: absolute;
+  top: 270px;
+  left: 45%; }
+
+.body-image {
+  float: left;
+  min-width: 25%;
+  max-width: 100px; }
+
+.body-image div {
+  float: left;
+  position: relative; }
+
+.body-image .image-select + label {
+  border: 2px solid #b8c5ce;
+  cursor: pointer;
+  overflow: hidden;
+  padding-bottom: 0; }
+
+.body-image .image-select:checked + label {
+  box-shadow: 0px 0px 10px 1px #cfdce2; }
+
+.image-select.sex + label {
+  border: solid 1px #cfdce2;
+  border-radius: 2px;
+  background-color: transparent;
+  padding: 1em 0;
+  cursor: pointer; }
+
+.image-select.sex:checked + label .male {
+  background: url("../img/male-active.svg") no-repeat 50% center; }
+
+.image-select.sex:checked + label .female {
+  background: url("../img/female-active.svg") no-repeat 50% center; }
+
+.male {
+  background: url("../img/male.svg") no-repeat 50% center;
+  height: 60px; }
+
+.female {
+  background: url("../img/female.svg") no-repeat 50% center;
+  height: 60px; }
+
+/*Progress Bar-----------------------*/
+.visuallyhidden {
+  display: none; }
+
+.wizard {
+  width: 100%;
+  list-style: none;
+  list-style-image: none;
+  float: left;
+  margin-left: 1em;
+  margin-top: 0.5em;
+  background: transparent url("../img/wizard-line.svg") repeat scroll 0% 0%; }
+
+.wizard li {
+  position: relative;
+  float: left;
+  width: 14.28571%; }
+
+.wizard label {
+  width: 100%;
+  padding-left: 0 0 0 50px; }
+
+.wizard .step-name {
+  position: absolute;
+  top: 35px;
+  left: -15px;
+  font-family: "Proxima Nova Semi Bold", Helvetica, Arial, sans-serif;
+  color: #79848a;
+  cursor: pointer; }
+
+.wizard .step-circle {
+  position: absolute;
+  top: 0px;
+  left: -25px;
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  background: url("../img/wizard-step.svg") no-repeat 50% 0; }
+  .wizard .step-circle:hover {
+    background: url("../img/wizard-step-hover.svg") no-repeat 50% 0; }
+
+input[type=radio].wizard:not(old):checked + label .step-circle {
+  background: url("../img/wizard-active.svg") no-repeat 50% 0;
+  width: 50px;
+  height: 50px; }
+  input[type=radio].wizard:not(old):checked + label .step-circle:after {
+    left: 26px;
+    /*Stops the line from overlapping the wizard circle*/ }
+
+/*Hide the standard radio button*/
+input[type=radio].wizard:not(old) {
+  opacity: 0; }
+
 /*
-@import 'layout/sidebar';
-@import 'layout/forms';
+.wizard .step-circle:after {
+    content: "";
+    display: block;
+    height: 30px;
+    width: 100px;
+    left: 15px;
+    position: relative;
+    z-index: 1;
+}*/
+.wizard li:last-of-type, li:last-of-type .step-circle:after {
+  width: 0 !important;
+  height: 0; }
+
+.checked-step {
+  color: #b2b2b2;
+  position: absolute;
+  left: 3px;
+  font-size: 10px !important;
+  top: 3px; }
+
+/*Upload*/
+.upload {
+  width: 100%;
+  float: left;
+  display: table-cell;
+  padding: 3em;
+  border: 2px dashed #b8c5ce;
+  border-radius: 5px;
+  overflow-x: hidden;
+  color: #b8c5ce; }
+
+.upload-text {
+  text-align: center;
+  font-size: 1.3em;
+  font-family: "Proxima Nova Semi Bold", Helvetica, Arial, sans-serif; }
+
+/* STYLING FOR FORMS */
+form {
+  color: #79848a; }
+
+div.profile-form {
+  width: 75%;
+  float: right; }
+
+.form-header {
+  margin: 3em 4em 0 4em; }
+
+.form-section > label, .form-section div > label, .form-section-split > label, .form-section-split div > label {
+  font-family: "Proxima Nova Semi Bold", Helvetica, Arial, sans-serif;
+  font-size: 1.1em;
+  padding-bottom: 10px; }
+
+legend.indent {
+  position: absolute;
+  top: 0.5em;
+  left: 2em;
+  background-color: white;
+  padding: 0 5px;
+  font-family: "Proxima Nova Rg Regular", Helvetica, Arial, sans-serif;
+  font-size: 0.9em; }
+
+.password-bar {
+  width: 100%;
+  float: left;
+  padding: 1em 0; }
+
+.password-bar > div {
+  width: 24%;
+  float: left;
+  margin: 0.5%;
+  height: 4px;
+  background-color: #edf2f5; }
+
+.strength {
+  display: inline-block;
+  padding-left: 1em;
+  font-family: "Proxima Nova Semi Bold", Helvetica, Arial, sans-serif; }
+
+.invincible .strength {
+  color: green; }
+
+.invincible .one, .invincible .two, .invincible .three, .invincible .four {
+  background-color: #85c44a;
+  border: 0.5px solid #6ca536; }
+
+.strong .strength {
+  color: #85c44a; }
+
+.strong .one, .strong .two, .strong .three {
+  background-color: #85c44a;
+  border: 0.5px solid #6ca536; }
+
+.medium .strength {
+  color: #ef893b; }
+
+.medium .one, .medium .two {
+  background-color: #85c44a;
+  border: 0.5px solid #6ca536; }
+
+.weak .strength {
+  color: #ec3219; }
+
+.weak .one {
+  background-color: #85c44a;
+  border: 0.5px solid #6ca536; }
+
+/*
 
 @import 'components/carousel';
 @import 'components/cover';
@@ -787,18 +1201,17 @@ input[type=button].color-fill, .button.color-fill {
   content: '';
   display: block;
   clear: both;
-  float: right;
-  padding: 4em 3em; }
+  width: 100%; }
 
 .button-pair .button {
-  float: right;
   display: inline-block;
-  width: 10em;
-  margin-left: 2em;
-  padding: 1em 0; }
+  width: 48%;
+  margin: 0.5em 0;
+  padding: 1em 0;
+  font-size: 1.2em; }
 
 .button.left {
-  float: none;
+  margin-right: 2%;
   background-color: White;
   color: #79848a;
   border-color: #79848a; }
@@ -1379,6 +1792,48 @@ http://flickity.metafizzy.co
 .related {
   width: 100%;
   background-color: #f2f6f9; }
+
+/* Articles
+-----------------------------------*/
+.comments {
+  padding: 0 5% 1em; }
+
+.comments h3 {
+  color: #9cA9b1;
+  font-family: "Heroic Condensed Book";
+  text-align: center;
+  text-transform: none; }
+
+.comments img {
+  float: left;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  width: 40%;
+  margin: 0.5em 0 0.5em 30%;
+  height: auto; }
+
+.comments span {
+  color: #9cA9b1;
+  font-family: "Proxima Nova Semi Bold", Helvetica, Arial, sans-serif; }
+
+.comments textarea {
+  height: 12em;
+  margin: 0.5em 0; }
+
+.comment {
+  overflow: auto;
+  clear: both;
+  padding-top: 2em;
+  margin-top: 1em;
+  border-top: 1px solid rgba(184, 197, 206, 0.2); }
+
+.comment .details {
+  clear: both;
+  width: 100%;
+  margin-bottom: 1em;
+  font-size: 1.1em;
+  text-align: center; }
 
 .quote-wrap:before, .open-quote:before {
   content: '';

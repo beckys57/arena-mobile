@@ -75,22 +75,21 @@ input[type=button].color-fill, .button.color-fill{
 // PREVIOUS / NEXT STEP buttons
 .button-pair{
   @include clearfix;
-  float:right;
-  padding: $extra-thick $thick;
+  width: 100%;
 }
 
 .button-pair .button{
-  float: right;
   display: inline-block;
-  width: 10em;
-  margin-left: 2em;
+  width: 48%;
+  margin: 0.5em 0;
   padding: 1em 0;
+  font-size: 1.2em;
 }
 
 
 //left button (next uses cyan)
 .button.left{
-  float: none;
+  margin-right: 2%;
   background-color: White;
   color: $blue-grey;
   border-color: $blue-grey;

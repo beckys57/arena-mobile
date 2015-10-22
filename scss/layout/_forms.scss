@@ -1,0 +1,514 @@
+/*INPUT TYPES*/
+//No border on focus
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+//Textareas
+textarea{
+  @include input-border;
+  width: 100%;
+  padding: 1.5em 5%;
+  font-family: inherit;
+  font-size: 1em;
+  resize: none;
+}
+
+  //Textarea placeholders
+::-webkit-input-placeholder { /* WebKit browsers */
+  font-family: $main-font;
+  color: $slate;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  font-family: $main-font;
+  color: $slate;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  font-family: $main-font;
+  color: $slate;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+  font-family: $main-font;
+  color: $slate;
+}
+
+input{
+  font-family: inherit;
+  font-size: inherit;
+}
+
+input[type='text'], input[type='url'], input[type='password'], input[type='email'], input[type='number']{
+  @include input-border;
+  width: 100%;
+  padding: 1.2em;
+  font-size: 1em;
+}
+
+input[type='text'].bigger{
+  padding: 1.2em 25px;
+}
+
+input[type=submit] {
+  font-family: $main-font-semi-bold;
+  cursor: pointer;
+}
+
+input[type=number] {
+  @include input-border;
+}
+
+input[type=file]{
+  display: none;
+  /*border:0;
+  z-index: 0;
+  font-size: 18px;
+  opacity: 1;
+  margin: 0;
+  padding: 10px 0;
+  left:45px;
+  font-family: $main-font;
+  color:$grey-md;
+  text-align: right;*/
+}
+
+/*Form styling*/
+form p {
+  font-size: $medium;
+}
+
+// Registration form
+
+//For forms with 2+ columns, each column padded individually
+.form-section-split{
+  @include full-width;
+  padding: $thick;
+}
+
+.form-section-split > * {
+  padding: $thin;
+}
+
+.form-section{
+  @include full-width;
+  padding: $extra-thick;
+}
+
+.form-line{
+  @include full-width;
+  padding: 0 $extra-thick;
+}
+
+.form-line > span{
+  @include full-width;
+  height:1px;
+  border-bottom: $separator;
+}
+
+@media (max-width: $mq-l){
+  .form-section{
+    padding-left: $thick;
+    padding-right: $thick;
+  } 
+  .form-section-split{
+    padding-left: $fairly-thick;
+    padding-right: $fairly-thick;
+  } 
+  .form-line{
+    padding: 0 $thick;
+  }
+}
+
+.textbox-icon {
+  padding-right: $extra-thick !important;
+}
+
+.textbox-icon.twitter{
+  background: url("../img/twitter-sm-blue.png") no-repeat 92%;
+}
+
+.textbox-icon.instagram{
+  background: url("../img/instagram-sm-blue.png") no-repeat 92%;
+}
+
+
+/*CHECKBOXES*/
+input[type="checkbox"]{
+  font-size: inherit;
+  display: none;
+    & + label span {
+    background: none;
+  }
+  &:checked + label span {
+    background: transparent url("../img/check.svg") no-repeat;
+    background-size: 60%;
+    background-position: 50% center;
+  }
+}
+
+.checkbox span {
+  float:left;
+  margin-right:15px;
+  margin-top: -3px;
+}
+
+.form-section, .form-section-split{
+  .checkbox label{
+    min-width: 13em;
+  }
+}
+
+.checkbox.square label{
+  float: left;
+}
+
+.checkbox li {
+  float: left;
+  min-width: $third;
+  padding: $thin 0 $thin $thin;
+}
+
+
+.square-box{
+  width: 2em;
+  height: 2em;
+  border: 1px solid $grey-md;
+  & i{
+    padding-left:10px;
+    padding-top:10px;
+  }
+}
+/*Radio buttons*/
+input[type=radio]:not(old){
+  width   : 27px;
+  height:27px;
+  margin  : 0;
+  padding : 0;
+  opacity : 1;
+  position: relative;
+  z-index: 2;
+}
+input[type=radio].masked:not(old){
+  width   : 27px;
+  height:27px;
+  margin  : 0;
+  padding : 0;
+  opacity : 0;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  z-index: 2;
+}
+
+input[type=radio].masked:not(old):checked + label span {
+  background-color: $grey-md;
+}
+
+input[type=radio].masked:not(old):checked{
+  opacity: 0;
+}
+input[type=radio]:not(old):checked{
+  opacity: 1;
+}
+
+//House radio button
+input[type=radio].house:not(old){
+  display:none;
+}
+
+input[type=radio].house:not(old) + label{
+  float:right;
+  padding-left: 5%;
+}
+
+
+input[type=radio].house:not(old) + label span{
+  float:left;
+  position: relative;
+  height: 1.5em;
+  width: 1.5em;
+  margin-right: 1em;
+}
+
+input[type=radio].house:not(old):checked + label span:after {
+  content: '';
+  position: absolute;
+  height: 74%;
+  width: 74%;
+  top: 12.5%;
+  left: 12.5%;
+  border-radius: 50px;
+}
+
+
+
+//Image select: Using an image as a radio button selector
+.image-select{
+  display: none;
+}
+
+.image-select + label span {
+  position: absolute;
+  top: 270px;
+  left: 45%;
+}
+
+.body-image{
+  float:left;
+  min-width: $quarter;
+  max-width: 100px;
+}
+
+.body-image div {
+  float:left;
+  position:relative;
+}
+
+.body-image .image-select + label {
+  border: 2px solid $clay-blue;
+  cursor: pointer;
+  overflow:hidden;
+  padding-bottom: 0;
+}
+
+//Selected image highlight
+.body-image .image-select:checked + label {
+  box-shadow: 0px 0px 10px 1px $grey-lt;
+}
+
+//Sex selector
+.image-select.sex + label {
+  @include input-border;
+  background-color: transparent; 
+  padding: $thin 0;
+  cursor:pointer;
+}
+
+.image-select.sex:checked + label {
+    .male{
+      background: url('../img/male-active.svg') no-repeat 50% center;
+    }
+    .female{
+      background: url('../img/female-active.svg') no-repeat 50% center;
+    }
+}
+
+.male{
+  background: url('../img/male.svg') no-repeat 50% center;
+  height:60px;
+}
+
+.female{
+  background: url('../img/female.svg') no-repeat 50% center;
+  height:60px;
+}
+
+
+/*Progress Bar-----------------------*/
+.visuallyhidden {
+    display: none;
+}
+
+.wizard {
+  width:100%;
+  list-style: none;
+  list-style-image: none;
+  float: left;
+  margin-left: $thin; //Offsets effect of wide clickable step-circle
+  margin-top: $extra-thin;
+  background: transparent url("../img/wizard-line.svg") repeat scroll 0% 0%;
+}
+
+.wizard li {
+  position: relative;
+  float:left;
+  width: wizard-width(8);
+}
+
+//Age and selector
+.wizard label {
+  width: 100%;
+  padding-left: 0 0 0 50px;
+}
+
+//Age span
+.wizard .step-name {
+  position: absolute;
+  top: 35px;
+  left: -15px; //offset to make fit to backround line
+  font-family: $main-font-semi-bold;
+  color: $blue-grey;
+  cursor:pointer;
+}
+
+//Unchecked step
+.wizard .step-circle {
+  position: absolute;
+  top: 0px;
+  left: -25px; //offset to fit to backround line (half of background width)
+  z-index: 2;
+  width: 50px;
+  height:50px;
+  cursor: pointer;
+  background: url('../img/wizard-step.svg') no-repeat 50% 0;
+  &:hover{
+  background: url('../img/wizard-step-hover.svg') no-repeat 50% 0;
+  }
+}
+
+//Selected step
+input[type=radio].wizard:not(old):checked + label .step-circle {
+  background: url('../img/wizard-active.svg') no-repeat 50% 0;
+  width   : 50px;
+  height  :50px;
+  &:after{
+    left:26px; /*Stops the line from overlapping the wizard circle*/
+  }
+}
+
+/*Hide the standard radio button*/
+input[type=radio].wizard:not(old){
+  opacity: 0;
+}
+/*
+.wizard .step-circle:after {
+    content: "";
+    display: block;
+    height: 30px;
+    width: 100px;
+    left: 15px;
+    position: relative;
+    z-index: 1;
+}*/
+
+//Stops the width overflowing on last element
+.wizard li:last-of-type, li:last-of-type .step-circle:after {
+    width:0 !important;
+    height:0;
+}
+
+
+.checked-step{
+  color: $grey-md;
+  position: absolute;
+  left: 3px;
+  font-size: 10px !important;
+  top: 3px;
+}
+
+/*Upload*/
+.upload{
+  @include full-width;
+  display: table-cell;
+  padding: $thick;
+  border: 2px dashed $clay-blue;
+  border-radius: 5px;
+  overflow-x: hidden;
+  color: $clay-blue;
+}
+
+.upload-text{
+  text-align: center;
+  font-size: $medium-lg;
+  font-family: $main-font-semi-bold;
+}
+
+
+/* STYLING FOR FORMS */
+
+form{
+  color: $blue-grey;
+}
+
+div.profile-form{
+  width: $three-quarters;
+  float: right;
+}
+
+.form-header{
+  margin: $thick $extra-thick 0 $extra-thick;
+}
+
+.form-section, .form-section-split {
+  & > label, & div > label {
+    font-family: $main-font-semi-bold;
+    font-size: $sm-medium;
+    padding-bottom: 10px;
+  }
+}
+
+legend.indent{
+  position: absolute;
+  top: 0.5em;
+  left: 2em;
+  background-color: white;
+  padding: 0 5px;
+  font-family: $main-font;
+  font-size: 0.9em;
+}
+
+//PASSWORD STRENGTH
+
+.password-bar{
+  @include full-width;
+  padding: $thin 0;
+}
+
+.password-bar > div{
+  width: 24%;
+  float: left;
+  margin: 0.5%;
+  height: 4px;
+  background-color: $ghost-blue;
+}
+
+.strength{
+  display: inline-block;
+  padding-left: $thin;
+  font-family: $main-font-semi-bold;
+}
+
+.invincible{
+  & .strength {
+    color: green;
+  }
+  & .one, .two, .three, .four{
+    background-color: $green;
+    border: 0.5px solid darken($green, 10%);
+  }
+}
+
+.strong{
+  & .strength {
+    color: $green;
+  }
+  & .one, .two, .three{
+    background-color: $green;
+    border: 0.5px solid darken($green, 10%);
+  }
+}
+
+.medium{
+  & .strength {
+    color: $orange;
+  }
+  & .one, .two{
+    background-color: $green;
+    border: 0.5px solid darken($green, 10%);
+  }
+}
+
+.weak{
+  & .strength {
+    color: $red;
+  }
+  & .one{
+    background-color: $green;
+    border: 0.5px solid darken($green, 10%);
+  }
+}
+
