@@ -1,0 +1,58 @@
+/* Tried & Tested
+-----------------------------------*/
+.tried-n-tested{
+	background-color: $cloud;
+  & > div{
+		padding: 0 0 40px 0;
+  } //i don't know
+}
+
+.tested-item{
+  position: relative;
+  width: 100%;
+  font-size:1.2em;
+  & img{
+    width: 100%;
+    height: auto;
+  }
+}
+
+.test-rating{
+	font-family: $heading-bold;
+	right: 5%;
+	font-size: 7em;
+	bottom: -0.65em;
+	position: absolute;
+}
+
+@media (min-width: $mq-xl){
+	.tested-items h4{
+		max-width: 6em;
+	}
+}
+
+@media (max-width: $mq-xl){
+	.test-rating{
+		font-size: 6em;
+		bottom: -0.75em;
+	}
+	.tested-items h4{
+		max-width: 5em;
+	}
+}
+
+@media (max-width: $mq-l){
+	.test-rating{
+		font-size: 4.5em;
+		bottom: -0.65em;
+	}
+	.grid .small, .grid .medium-wide, .grid .medium-tall{
+		& .test-rating{
+			font-size: 3.5em;
+    	right: 0;
+		}
+	}
+	.grid .large .test-rating{
+		right: 0;
+	}
+}

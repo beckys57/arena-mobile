@@ -17,7 +17,7 @@ http://flickity.metafizzy.co
   }
 }
 
-.gallery-cell, .grid-item{
+.gallery-cell, .grid-item, .tested-item{
   width: 90%;
   margin-right: 5px;
   //left: -5% !important;
@@ -148,8 +148,12 @@ http://flickity.metafizzy.co
 
 /* ---- page dots ---- */
 
-.gallery .flickity-page-dots {
+.gallery .flickity-page-dots, .no-dots .flickity-page-dots {
   display: none;
+}
+
+.no-dots.grid{
+  margin-bottom: 0;
 }
 
 .grid .flickity-page-dots {

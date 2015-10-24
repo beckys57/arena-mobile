@@ -68,7 +68,6 @@ letter from editor: 360 x 550 but not important as long as taller than wide
   clear: both; }
 
 /* Columns */
-/* GRID SIZING */
 /* ALIGNMENT */
 /* BORDERS */
 /* COLORS */
@@ -317,7 +316,8 @@ body, html {
   -moz-box-sizing: border-box; }
 
 .wrapper {
-  background-color: white; }
+  background-color: white;
+  overflow: hidden; }
 
 .category-bar {
   position: relative;
@@ -363,6 +363,11 @@ body, html {
 
 .news .section-header, .videos .section-header, .nutritional-highlights .section-header {
   padding: 1.5em 0 0; }
+
+/* Circular elements
+-----------------------------------*/
+.dark {
+  background-color: #363b3E; }
 
 /* Circular elements
 -----------------------------------*/
@@ -551,7 +556,7 @@ a.active .topbar-icon.topbar-close {
 -----------------------------------*/
 .grid {
   width: 100%;
-  padding: 0 2.5%; }
+  padding: 0 2.5% 1em; }
 
 .grid-item {
   position: relative;
@@ -1158,13 +1163,13 @@ input[type=button], .button {
   margin: 2em 0;
   width: auto;
   padding: 0.7em 2em;
-  border: 1px solid;
+  border: 2px solid;
   border-radius: 50px;
   border-color: inherit;
   background-color: transparent;
   color: inherit;
   font-family: "Proxima Nova Semi Bold", Helvetica, Arial, sans-serif;
-  font-size: 1em;
+  font-size: 1.2em;
   cursor: pointer; }
 
 input[type=button].color-fill, .button.color-fill {
@@ -1370,10 +1375,10 @@ http://flickity.metafizzy.co
   .carousel.gallery-text .gallery-cell {
     margin-bottom: 2em; }
 
-.gallery-cell, .grid-item {
+.gallery-cell, .grid-item, .tested-item {
   width: 90%;
   margin-right: 5px; }
-  .gallery-cell img, .grid-item img {
+  .gallery-cell img, .grid-item img, .tested-item img {
     width: 100%; }
 
 .grid {
@@ -1474,8 +1479,11 @@ http://flickity.metafizzy.co
     font-size: 26px; }
 
 /* ---- page dots ---- */
-.gallery .flickity-page-dots {
+.gallery .flickity-page-dots, .no-dots .flickity-page-dots {
   display: none; }
+
+.no-dots.grid {
+  margin-bottom: 0; }
 
 .grid .flickity-page-dots {
   bottom: -2em; }
@@ -1732,7 +1740,6 @@ http://flickity.metafizzy.co
 @import 'pages/article';
 @import 'pages/contact';
 @import 'pages/directory';
-@import 'pages/training';
 */
 /* Articles
 -----------------------------------*/
@@ -1823,7 +1830,7 @@ http://flickity.metafizzy.co
   font-size: 2em; }
 
 /* Comments
------------------------------------*/
+---------------------------------- */
 .comments {
   padding: 0 5% 1em; }
 
@@ -1966,6 +1973,49 @@ http://flickity.metafizzy.co
     width: 65%; }
   .score {
     font-size: 3em; } }
+
+/* Tried & Tested
+-----------------------------------*/
+.tried-n-tested {
+  background-color: #f2f6f9; }
+  .tried-n-tested > div {
+    padding: 0 0 40px 0; }
+
+.tested-item {
+  position: relative;
+  width: 100%;
+  font-size: 1.2em; }
+  .tested-item img {
+    width: 100%;
+    height: auto; }
+
+.test-rating {
+  font-family: "Heroic Condensed Bold";
+  right: 5%;
+  font-size: 7em;
+  bottom: -0.65em;
+  position: absolute; }
+
+@media (min-width: 1200px) {
+  .tested-items h4 {
+    max-width: 6em; } }
+
+@media (max-width: 1200px) {
+  .test-rating {
+    font-size: 6em;
+    bottom: -0.75em; }
+  .tested-items h4 {
+    max-width: 5em; } }
+
+@media (max-width: 992px) {
+  .test-rating {
+    font-size: 4.5em;
+    bottom: -0.65em; }
+  .grid .small .test-rating, .grid .medium-wide .test-rating, .grid .medium-tall .test-rating {
+    font-size: 3.5em;
+    right: 0; }
+  .grid .large .test-rating {
+    right: 0; } }
 
 /*
 @import 'themes/admin';
