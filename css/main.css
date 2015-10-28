@@ -1756,7 +1756,6 @@ http://flickity.metafizzy.co
 @import 'components/search';
 @import 'components/slider';
 
-@import 'pages/directory';
 */
 /* Articles
 -----------------------------------*/
@@ -1987,7 +1986,8 @@ http://flickity.metafizzy.co
     padding: 0.5em 1.25em; }
 
 .about-us .share-options {
-  margin-bottom: 2em;
+  width: 95%;
+  margin: 0 0 2em 2.5%;
   border-top: 2px solid #f2f6f9;
   border-bottom: 2px solid #f2f6f9; }
   .about-us .share-options > div {
@@ -1998,6 +1998,85 @@ http://flickity.metafizzy.co
     width: 30%;
     margin: 1em 1.5%;
     height: 2.5em; }
+
+/* Trainer profile
+-----------------------------------*/
+.profile {
+  padding: 2em 7%;
+  text-align: center;
+  color: #79848a; }
+  .profile p {
+    color: inherit; }
+  .profile h2 {
+    margin-left: 0.5em;
+    font-family: "Heroic Condensed Book";
+    color: white;
+    display: inline-block;
+    line-height: 3; }
+  .profile h3 {
+    font-size: 2.5em;
+    line-height: 2; }
+  .profile h4 {
+    color: #9cA9b1;
+    height: 6rem;
+    padding: 10%; }
+  .profile .avatar {
+    height: auto;
+    width: 40%;
+    border-radius: 50%; }
+  .profile .details {
+    padding: 2em 10%;
+    color: white;
+    font-family: "Heroic Condensed Book";
+    position: relative; }
+  .profile .name {
+    font-size: 2.2em; }
+  .profile .button {
+    padding: 0.75em 3em; }
+
+.social-squares {
+  border-top: 1px solid #4b4f52; }
+  .social-squares > div {
+    width: 50%;
+    float: left;
+    height: 6em;
+    border-right: 1px solid #4b4f52;
+    border-bottom: 1px solid #4b4f52; }
+
+.social-squares .facebook {
+  background: #363b3E url("../img/facebook-grey.png") no-repeat scroll 50% center/auto 60%; }
+  .social-squares .facebook:hover {
+    background: #363b3E url("../img/facebook.png") no-repeat scroll 50% center/auto 60%; }
+
+.social-squares .twitter {
+  background: #363b3E url("../img/twitter-grey.png") no-repeat scroll 50% center/auto 60%; }
+  .social-squares .twitter:hover {
+    background: #363b3E url("../img/twitter.png") no-repeat scroll 50% center/auto 60%; }
+
+.social-squares .youtube {
+  background: #363b3E url("../img/youtube-grey.png") no-repeat scroll 50% center/auto 60%; }
+  .social-squares .youtube:hover {
+    background: #363b3E url("../img/youtube.png") no-repeat scroll 50% center/auto 60%; }
+
+.social-squares .snapchat {
+  background: #363b3E url("../img/snapchat-grey.png") no-repeat scroll 50% center/auto 60%; }
+  .social-squares .snapchat:hover {
+    background: #363b3E url("../img/snapchat.png") no-repeat scroll 50% center/auto 60%; }
+
+.social-squares .instagram {
+  background: #363b3E url("../img/instagram-grey.png") no-repeat scroll 50% center/auto 60%; }
+  .social-squares .instagram:hover {
+    background: #363b3E url("../img/instagram.png") no-repeat scroll 50% center/auto 60%; }
+
+.social-squares .google {
+  background: #363b3E url("../img/google-grey.png") no-repeat scroll 50% center/auto 60%; }
+  .social-squares .google:hover {
+    background: #363b3E url("../img/google.png") no-repeat scroll 50% center/auto 60%; }
+
+.social-squares .pinterest {
+  background: #363b3E url("../img/pinterest-grey.png") no-repeat scroll 50% center/auto 60%; }
+  .social-squares .pinterest:hover {
+    background: #363b3E url("../img/pinterest.png") no-repeat scroll 50% center/auto 60%; }
 
 .quote-wrap:before, .open-quote:before {
   content: '';
@@ -2154,6 +2233,8 @@ http://flickity.metafizzy.co
   .grid .large .test-rating {
     right: 0; } }
 
+/* Interview
+-----------------------------------*/
 .interview.teaser {
   padding: 4em 5%; }
   .interview.teaser h2 {
@@ -2169,6 +2250,8 @@ http://flickity.metafizzy.co
     width: 50%;
     height: auto; }
 
+/* Challenge
+-----------------------------------*/
 .challenge {
   text-align: center;
   padding: 0 2em 1em; }

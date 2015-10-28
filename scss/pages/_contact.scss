@@ -122,7 +122,8 @@
 }
 
 .about-us .share-options{
-  margin-bottom: $fairly-thick;
+  width: 95%;
+  margin: 0 0 $fairly-thick 2.5%;
   border-top: 2px solid $cloud;
   border-bottom: 2px solid $cloud;
   & > div{
