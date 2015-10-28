@@ -1756,8 +1756,6 @@ http://flickity.metafizzy.co
 @import 'components/search';
 @import 'components/slider';
 
-@import 'pages/article';
-@import 'pages/contact';
 @import 'pages/directory';
 */
 /* Articles
@@ -1889,6 +1887,117 @@ http://flickity.metafizzy.co
   margin-bottom: 1em;
   font-size: 1.1em;
   text-align: center; }
+
+/* About us
+-----------------------------------*/
+.header-image {
+  position: relative; }
+  .header-image img {
+    width: 100%;
+    height: auto;
+    position: relative; }
+  .header-image h1 {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    margin: auto;
+    color: white;
+    font-family: "Heroic Condensed Bold";
+    text-align: center;
+    font-size: 5em;
+    text-transform: uppercase; }
+
+.about-us > img {
+  width: 100%;
+  height: auto; }
+
+.about-us p {
+  line-height: 1.5;
+  margin-bottom: 1em; }
+
+.about-us .text {
+  clear: both;
+  padding: 2em;
+  width: 90%;
+  margin: auto;
+  background: White; }
+
+.about-us .overlap {
+  position: relative;
+  top: -4em; }
+
+.overlap {
+  display: block;
+  position: absolute;
+  top: 100px;
+  z-index: 900; }
+
+.founder {
+  background-color: #edf2f5 !important; }
+  .founder .extra-tall {
+    left: 0; }
+
+.co-founder {
+  background-color: #f2f6f9 !important; }
+  .co-founder .extra-tall {
+    right: 0; }
+  .co-founder .preview {
+    float: left; }
+
+.founder.details {
+  padding: 2em 4% 2em 40%; }
+  .founder.details img {
+    height: 110%;
+    right: 65%; }
+
+.co-founder.details {
+  padding: 2em 40% 2em 4%; }
+  .co-founder.details img {
+    height: 80%;
+    left: 65%; }
+
+.founder.details, .co-founder.details {
+  position: relative;
+  margin-top: 0 !important; }
+  .founder.details img, .co-founder.details img {
+    position: absolute;
+    bottom: 0;
+    width: auto; }
+  .founder.details h2, .co-founder.details h2 {
+    width: 100%;
+    font-size: 5em;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-family: "Heroic Condensed Bold";
+    line-height: 0.85; }
+  .founder.details span, .co-founder.details span {
+    color: #9cA9b1;
+    font-family: "Heroic Condensed Book";
+    font-size: 2.5em; }
+  .founder.details .extra-tall, .co-founder.details .extra-tall {
+    width: 45%; }
+  .founder.details .preview, .co-founder.details .preview {
+    width: 55%;
+    padding: 3em 5%;
+    margin-right: 0; }
+  .founder.details .button, .founder.details input[type="button"], .co-founder.details .button, .co-founder.details input[type="button"] {
+    margin: 0;
+    display: inline-block;
+    color: #9cA9b1;
+    padding: 0.5em 1.25em; }
+
+.about-us .share-options {
+  margin-bottom: 2em;
+  border-top: 2px solid #f2f6f9;
+  border-bottom: 2px solid #f2f6f9; }
+  .about-us .share-options > div {
+    float: none;
+    width: 90%;
+    margin: auto; }
+  .about-us .share-options .button {
+    width: 30%;
+    margin: 1em 1.5%;
+    height: 2.5em; }
 
 .quote-wrap:before, .open-quote:before {
   content: '';

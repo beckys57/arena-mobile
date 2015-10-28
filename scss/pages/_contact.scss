@@ -1,0 +1,138 @@
+
+/* About us
+-----------------------------------*/
+.header-image{
+  position: relative;
+  & img{
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  & h1{
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    margin: auto;
+    color: white;
+    font-family: $heading-bold;
+    text-align: center;
+    font-size: 5em;
+    text-transform: uppercase;
+  }
+}
+
+.about-us{ 
+  & > img{
+    width: 100%;
+    height: auto;
+  }
+  & p{
+    line-height: 1.5;
+    margin-bottom: 1em;
+  }
+}
+
+.about-us .text {
+  clear: both;
+  padding: 2em;
+  width: 90%;
+  margin: auto;
+  background: White;
+}
+
+.about-us .overlap {
+    position: relative;
+    top: -4em;
+}
+.overlap {
+    display: block;
+    position: absolute;
+    top: 100px;
+    z-index: 900;
+}
+
+.founder{
+  background-color: $ghost-blue !important;
+  .extra-tall{
+    left: 0;
+  }
+}
+
+.co-founder{
+  background-color: $cloud !important;
+  .extra-tall{
+    right: 0;
+  }
+  .preview{
+    float:left;
+  }
+}
+
+.founder.details{
+  padding: $fairly-thick 4% $fairly-thick 40%;
+  & img{
+    height: 110%;
+    right: 65%;
+  }
+}
+
+.co-founder.details{
+  padding: $fairly-thick 40% $fairly-thick 4%;
+  & img{
+    height: 80%;
+    left: 65%;
+  }
+}
+
+.founder.details, .co-founder.details{
+  position: relative;
+  margin-top: 0 !important;
+  img{
+    position: absolute;
+    bottom: 0;
+    width: auto;
+  }
+  h2{
+    width: 100%;
+    font-size: 5em;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-family: $heading-bold;
+    line-height: 0.85;
+  }
+  span{
+    color: $blue-grey-lt;
+    font-family: $heading-lt;
+    font-size: 2.5em;
+  }
+  .extra-tall{
+    width: 45%;
+  }
+  .preview{
+    width: 55%;
+    padding: $thick 5%;
+    margin-right: 0;
+  }
+  .button, input[type="button"]{
+    margin: 0;
+    display: inline-block;
+    color: $blue-grey-lt;
+    padding: 0.5em 1.25em;
+  }
+}
+
+.about-us .share-options{
+  margin-bottom: $fairly-thick;
+  border-top: 2px solid $cloud;
+  border-bottom: 2px solid $cloud;
+  & > div{
+    float: none;
+    width: 90%;
+    margin: auto;
+  }
+  & .button{
+    width: 30%;
+    margin: 1em 1.5%;
+    height: 2.5em;
+  }
+}
