@@ -41,6 +41,12 @@
 -----------------------------------*/
 .dark{
   background-color: $slate-dk;
+  & h2{
+    color: $blue-grey;
+  }
+  & .button{
+    color: $blue-grey;
+  }
 }
 
 

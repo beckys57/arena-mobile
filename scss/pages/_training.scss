@@ -2,9 +2,9 @@
 -----------------------------------*/
 .tried-n-tested{
 	background-color: $cloud;
-  & > div{
-		padding: 0 0 40px 0;
-  } //i don't know
+	&.grid > div{
+		height: 560px;
+	}
 }
 
 .tested-item{
@@ -17,11 +17,17 @@
   }
 }
 
+.rating-space{
+	position: relative;
+	height: 150px;
+	display: block;
+}
+
 .test-rating{
 	font-family: $heading-bold;
 	right: 5%;
 	font-size: 7em;
-	bottom: -0.65em;
+  top: -0.75em;
 	position: absolute;
 }
 
@@ -55,4 +61,22 @@
 	.grid .large .test-rating{
 		right: 0;
 	}
+}
+
+.interview.teaser{
+	padding: $extra-thick 5%;
+	& h2{
+    width: 80%;
+    margin: 0 auto;
+    font-size: 6em;
+    line-height: 0.95;
+  }
+  & img{
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    right: -20%;
+    width: 50%;
+    height: auto;
+  }
 }

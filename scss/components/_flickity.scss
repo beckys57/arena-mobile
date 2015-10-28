@@ -17,6 +17,13 @@ http://flickity.metafizzy.co
   }
 }
 
+.circle-list{
+  & > .js-flickity{
+    padding-bottom: 1em;
+    margin-bottom: 2em;
+  }
+}
+
 .gallery-cell, .grid-item, .tested-item{
   width: 90%;
   margin-right: 5px;
@@ -27,7 +34,7 @@ http://flickity.metafizzy.co
 }
 
 .grid{
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 .headliner-cell{
@@ -45,6 +52,10 @@ http://flickity.metafizzy.co
   overflow: hidden;
   position: relative;
   height: 100%;
+}
+
+.tried-n-tested .flickity-viewport{
+  margin-bottom: -9em;
 }
 
 .flickity-slider {
@@ -156,14 +167,10 @@ http://flickity.metafizzy.co
   margin-bottom: 0;
 }
 
-.grid .flickity-page-dots {
-  bottom: -2em;
-}
-
 .flickity-page-dots {
   position: absolute;
   width: 100%;
-  bottom: 1em;
+  bottom: -1em;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -183,6 +190,10 @@ http://flickity.metafizzy.co
   filter: alpha(opacity=25); /* IE8 */
   opacity: 0.25;
   cursor: pointer;
+}
+
+.dark .dot, .videos .dot{
+  background: $clay-blue;
 }
 
 

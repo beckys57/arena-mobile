@@ -78,7 +78,7 @@
 }
 
 
-.reviews{
+.circle-list{
   position: relative;
   padding: 0 2.5%;
   border-bottom: 1px solid $grey-lter;
@@ -86,22 +86,19 @@
     display: block;
     margin: 1em auto;
   }
-  & .category-title, h3{
-    //display: inline-block;
-    //float: left;
-  }
 }
 
 .result{
+  width: 94%;
   padding: 1em 1.25em; 
   border: 1px solid $grey-lter;
   overflow: auto;
+  margin-right: 5px;
 }
 
 .review-header{
   width: 100%;
   position: relative;
-  overflow: auto;
   display: inline-block;
   margin: 1em 0;
 }
@@ -114,6 +111,10 @@
   font-family: $heading-bold;
   color: $blue-grey-lt;
   line-height: 1;
+}
+
+.text{
+  display: block;
 }
 
 @media (max-width: $mq-m){

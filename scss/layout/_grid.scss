@@ -33,6 +33,10 @@ $category-color: $red, $green, $purple, $cyan, $orange, $yellow, $slate; //In or
 }
 
 /* Gradient */
+.cover{
+  position: relative;
+}
+
 .cover > div, .split .cover > a{
   width:100%;
   height:100%;
