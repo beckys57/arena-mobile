@@ -42,8 +42,11 @@
 	}
 }
 
-
+/* Social squares
+-----------------------------------*/
 .social-squares{
+	height: 12em;
+	margin-bottom: 1em;
 	border-top: 1px solid $slate;
 	& > div{
 		@include half;
@@ -60,4 +63,19 @@
       background: $slate-dk url("../img/#{$platform}.png") no-repeat scroll 50% center / auto 60%;
 	}
   }
+}
+
+/* Before & after
+-----------------------------------*/
+.transformation{
+	& span{
+		position: absolute;
+		top: -0.7em;
+		right: 5%;
+		font-size: 4em;
+		font-family: $heading-md;
+	}
+	&.before{
+		color: $blue-grey-lt;
+	}
 }

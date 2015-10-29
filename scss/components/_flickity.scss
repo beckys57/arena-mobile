@@ -3,7 +3,7 @@ http://flickity.metafizzy.co
 ---------------------------------------------- */
 .carousel{
   margin-bottom: 1em;
-  margin-right: -5%;
+  //margin-right: -5%;
 }
 
 .carousel.gallery{
@@ -24,7 +24,14 @@ http://flickity.metafizzy.co
   }
 }
 
-.gallery-cell, .grid-item, .tested-item{
+.before-after{
+  & .flickity-page-dots{
+    margin: 0.5em 0;
+    padding-bottom: 2em;
+  }
+}
+
+.gallery-cell, .grid-item, .tested-item, .transformation{
   width: 90%;
   margin-right: 5px;
   //left: -5% !important;

@@ -208,7 +208,8 @@ h1 {
   font-size: 4em;
   text-transform: capitalize;
   font-family: "Heroic Condensed Regular";
-  color: #4b4f52; }
+  color: #4b4f52;
+  line-height: 1.25; }
 
 h2 {
   font-size: 2.8em;
@@ -409,6 +410,9 @@ body, html {
 
 .circle-list .category-title {
   margin-top: -0.25em; }
+
+.cloud {
+  background-color: #f2f6f9; }
 
 .topbar {
   height: 6rem;
@@ -1376,8 +1380,7 @@ input[type=button].color-fill, .button.color-fill {
 http://flickity.metafizzy.co
 ---------------------------------------------- */
 .carousel {
-  margin-bottom: 1em;
-  margin-right: -5%; }
+  margin-bottom: 1em; }
 
 .carousel.gallery {
   margin-bottom: 2em; }
@@ -1391,10 +1394,14 @@ http://flickity.metafizzy.co
   padding-bottom: 1em;
   margin-bottom: 2em; }
 
-.gallery-cell, .grid-item, .tested-item {
+.before-after .flickity-page-dots {
+  margin: 0.5em 0;
+  padding-bottom: 2em; }
+
+.gallery-cell, .grid-item, .tested-item, .transformation {
   width: 90%;
   margin-right: 5px; }
-  .gallery-cell img, .grid-item img, .tested-item img {
+  .gallery-cell img, .grid-item img, .tested-item img, .transformation img {
     width: 100%; }
 
 .grid {
@@ -2034,7 +2041,11 @@ http://flickity.metafizzy.co
   .profile .button {
     padding: 0.75em 3em; }
 
+/* Social squares
+-----------------------------------*/
 .social-squares {
+  height: 12em;
+  margin-bottom: 1em;
   border-top: 1px solid #4b4f52; }
   .social-squares > div {
     width: 50%;
@@ -2077,6 +2088,18 @@ http://flickity.metafizzy.co
   background: #363b3E url("../img/pinterest-grey.png") no-repeat scroll 50% center/auto 60%; }
   .social-squares .pinterest:hover {
     background: #363b3E url("../img/pinterest.png") no-repeat scroll 50% center/auto 60%; }
+
+/* Before & after
+-----------------------------------*/
+.transformation span {
+  position: absolute;
+  top: -0.7em;
+  right: 5%;
+  font-size: 4em;
+  font-family: "Heroic Condensed Medium"; }
+
+.transformation.before {
+  color: #9cA9b1; }
 
 .quote-wrap:before, .open-quote:before {
   content: '';
@@ -2202,7 +2225,7 @@ http://flickity.metafizzy.co
 
 .rating-space {
   position: relative;
-  height: 150px;
+  height: 3em;
   display: block; }
 
 .test-rating {
