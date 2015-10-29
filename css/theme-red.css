@@ -83,4 +83,18 @@ input.color-fill[type='button'], .button.color-fill, .button.right {
 .transformation.after {
   color: #ec3219; }
 
+.result-header .distance {
+  color: #ec3219; }
+
+.quantity {
+  color: #ec3219; }
+
+/*-----------FORMS--------------
+------------------------------*/
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+  color: #ec3219; }
+
+.slider-value {
+  color: #ec3219; }
+
 /*# sourceMappingURL=theme-red.css.map */

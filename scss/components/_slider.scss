@@ -1,0 +1,105 @@
+.value {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  margin: 0 0 0 -20px;
+  width: 40px;
+  text-align: center;
+  display: block;
+}
+
+.ui-widget-content {
+    background: $grey-lter;
+}
+
+.ui-slider-horizontal {
+    height: 2px;
+ 
+}
+.ui-slider {
+    position: relative;
+    text-align: left;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    border: 0;
+    background: url("../img/wizard-active.svg") no-repeat scroll 50% 0%;
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+    top: -15px;
+    margin-left: -0.6em;
+}
+.ui-slider .ui-slider-handle {
+    position: absolute;
+    z-index: 2;
+    width: 25px;
+    height: 30px;
+    cursor: default;
+}
+/*
+.price-range-both.value {
+  width: 100px;
+  margin: 0 0 0 -50px;
+  top: 26px;
+}
+
+.price-range-both {
+  display: none; 
+}*/
+#slider{
+  font-family: $main-font-semi-bold;
+}
+
+.v-slider:before{
+  content: url('../img/wizard-step.svg');
+  position: relative;
+  top:-14px;
+  left:-15px;
+  float: left;
+}
+
+.v-slider:after{
+  content: url('../img/wizard-step.svg');
+  position: relative;
+  top:-14px;
+  right:-15px;
+  float: right;
+}
+
+.v-slider {
+    margin: $thick 0 $fairly-thick 0;
+}
+
+.v-slider > .ui-slider-handle {
+    text-decoration: none;
+    text-align: center;
+}
+
+.slider-value {
+  position: relative;
+  top: 30px;
+  font-family: $main-font-semi-bold;
+  font-size: inherit;
+}
+
+.v-slider label {
+  font-family: $main-font !important;
+  position: absolute;
+  margin-top: -45px;
+  left: -0.2em;
+}
+
+.min{
+  float:left;
+  margin-left: -0.2em;
+}
+
+.max{
+  float:right;
+  margin-right: -0.2em;
+}
+
+.slider-wrap{
+  padding-bottom: 3em;
+}

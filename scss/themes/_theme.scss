@@ -45,3 +45,25 @@ input.color-fill[type='button'], .button.color-fill, .button.right{
 .transformation.after{
 	color: $main-color;
 }
+
+.result-header .distance{
+  color: $main-color;
+}
+
+.quantity{
+  color: $main-color;
+}
+
+
+/*-----------FORMS--------------
+------------------------------*/
+
+//Wizard select bar
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    color: $main-color;
+}
+
+//Slider
+.slider-value {
+  color: $main-color;
+}

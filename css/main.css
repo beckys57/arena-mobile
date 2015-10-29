@@ -325,15 +325,34 @@ body, html {
   background-color: white;
   overflow: hidden; }
 
-.category-bar {
+.category-bar, .category-bar ul li {
   position: relative;
   height: 6rem;
-  padding: 0 5%;
   background-color: #363b3E;
   color: #9cA9b1;
   font-family: "Proxima Nova Rg Regular", Helvetica, Arial, sans-serif;
   font-size: 1.1em;
-  line-height: 6rem; }
+  line-height: 6rem;
+  overflow: hidden;
+  z-index: 1; }
+  .category-bar span, .category-bar ul li span {
+    padding: 0 5%; }
+
+.category-bar.active, .category-bar ul li.active {
+  overflow: visible; }
+  .category-bar.active .toggle-arrow, .category-bar ul li.active .toggle-arrow {
+    background: url("../img/close-hover.svg") no-repeat 50%;
+    background-size: 30%; }
+  .category-bar.active ul, .category-bar ul li.active ul {
+    display: block; }
+
+.category-bar ul, .category-bar ul li ul {
+  display: none;
+  position: relative;
+  top: -6rem;
+  width: 100%; }
+  .category-bar ul li {
+    padding: 0.1em 5%; }
 
 .toggle-arrow {
   position: absolute;
@@ -1315,6 +1334,8 @@ input[type=button].color-fill, .button.color-fill {
 
 .wrapper-dropdown-5.bigger {
   width: auto;
+  font-size: 1.1em;
+  margin: -0.2em auto;
   background: url("../img/arrowthin.svg") no-repeat 92%/auto 1.2em;
   padding: 1em 12% 1em 1.2em; }
 
@@ -1512,14 +1533,14 @@ http://flickity.metafizzy.co
   margin-bottom: 0; }
 
 .flickity-page-dots {
-  position: absolute;
+  position: relative;
   width: 100%;
   bottom: -1em;
   padding: 0;
   margin: 0;
   list-style: none;
   text-align: center;
-  line-height: 1; }
+  line-height: 2; }
 
 .flickity-rtl .flickity-page-dots {
   direction: rtl; }
@@ -1587,6 +1608,97 @@ http://flickity.metafizzy.co
   padding: 0 2.5%; }
   .next.button:hover {
     background: transparent url(../img/next-button-hover.svg) no-repeat 50%; }
+
+.value {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  margin: 0 0 0 -20px;
+  width: 40px;
+  text-align: center;
+  display: block; }
+
+.ui-widget-content {
+  background: #e2e2e2; }
+
+.ui-slider-horizontal {
+  height: 2px; }
+
+.ui-slider {
+  position: relative;
+  text-align: left; }
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+  border: 0;
+  background: url("../img/wizard-active.svg") no-repeat scroll 50% 0%; }
+
+.ui-slider-horizontal .ui-slider-handle {
+  top: -15px;
+  margin-left: -0.6em; }
+
+.ui-slider .ui-slider-handle {
+  position: absolute;
+  z-index: 2;
+  width: 25px;
+  height: 30px;
+  cursor: default; }
+
+/*
+.price-range-both.value {
+  width: 100px;
+  margin: 0 0 0 -50px;
+  top: 26px;
+}
+
+.price-range-both {
+  display: none; 
+}*/
+#slider {
+  font-family: "Proxima Nova Semi Bold", Helvetica, Arial, sans-serif; }
+
+.v-slider:before {
+  content: url("../img/wizard-step.svg");
+  position: relative;
+  top: -14px;
+  left: -15px;
+  float: left; }
+
+.v-slider:after {
+  content: url("../img/wizard-step.svg");
+  position: relative;
+  top: -14px;
+  right: -15px;
+  float: right; }
+
+.v-slider {
+  margin: 3em 0 2em 0; }
+
+.v-slider > .ui-slider-handle {
+  text-decoration: none;
+  text-align: center; }
+
+.slider-value {
+  position: relative;
+  top: 30px;
+  font-family: "Proxima Nova Semi Bold", Helvetica, Arial, sans-serif;
+  font-size: inherit; }
+
+.v-slider label {
+  font-family: "Proxima Nova Rg Regular", Helvetica, Arial, sans-serif !important;
+  position: absolute;
+  margin-top: -45px;
+  left: -0.2em; }
+
+.min {
+  float: left;
+  margin-left: -0.2em; }
+
+.max {
+  float: right;
+  margin-right: -0.2em; }
+
+.slider-wrap {
+  padding-bottom: 3em; }
 
 /* Social Media Icons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -1761,7 +1873,6 @@ http://flickity.metafizzy.co
 @import 'components/floaters';
 @import 'components/modals';
 @import 'components/search';
-@import 'components/slider';
 
 */
 /* Articles
@@ -2047,7 +2158,7 @@ http://flickity.metafizzy.co
   height: 12em;
   margin-bottom: 1em;
   border-top: 1px solid #4b4f52; }
-  .social-squares > div {
+  .social-squares > a {
     width: 50%;
     float: left;
     height: 6em;
@@ -2100,6 +2211,92 @@ http://flickity.metafizzy.co
 
 .transformation.before {
   color: #9cA9b1; }
+
+/* Directory search
+-----------------------------------*/
+.search-block {
+  background-color: #edf2f5; }
+  .search-block h2 {
+    color: #4d5558; }
+  .search-block form {
+    padding: 0 10%; }
+
+/* Search Results
+-----------------------------------*/
+.directory-results h3 {
+  color: #79848a;
+  font-family: "Heroic Condensed Regular";
+  font-size: 2.5em; }
+
+.directory-results .result {
+  padding: 0; }
+  .directory-results .result > img {
+    width: 100%;
+    height: auto; }
+  .directory-results .result .text {
+    padding: 0 5% 2em; }
+
+.quantity {
+  display: inline-block;
+  font-family: "Heroic Condensed Bold"; }
+
+.result-header {
+  margin-bottom: 0.5em;
+  font-size: 2em;
+  font-family: "Heroic Condensed Medium";
+  text-transform: uppercase;
+  line-height: 2; }
+  .result-header .name {
+    float: left;
+    width: 75%;
+    color: #4d5558; }
+  .result-header .distance {
+    float: right;
+    width: 25%;
+    text-align: right; }
+
+/* Floating info box on map
+-----------------------------------*/
+.map {
+  position: relative; }
+  .map img {
+    width: 100%;
+    height: 15em; }
+
+.map .floater {
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  width: 80%;
+  background: White url("../img/map-pin.png") no-repeat;
+  background-position: 25px center;
+  box-shadow: 1px 1px 1px 1px #9cA9b1; }
+
+.floater:after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 20%;
+  border-width: 10px 10px 0px 10px;
+  border-style: solid;
+  border-color: white transparent;
+  display: block;
+  width: 0px; }
+
+.map .floater > div {
+  padding: 1em 25px 1em 90px; }
+
+.floater {
+  color: #9cA9b1; }
+  .floater .street {
+    font-family: "Proxima Nova Semi Bold", Helvetica, Arial, sans-serif;
+    font-size: 1.06em; }
+  .floater .city {
+    font-family: "Proxima Nova Light", Helvetica, Arial, sans-serif;
+    font-size: 1.06em; }
+  .floater .contact-details {
+    padding-top: 0.5em;
+    font-size: 0.9em; }
 
 .quote-wrap:before, .open-quote:before {
   content: '';

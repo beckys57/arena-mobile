@@ -1,12 +1,38 @@
 .category-bar{
 	position: relative;
 	height: 6rem;
-	padding: 0 5%;
 	background-color: $slate-dk;
 	color: $blue-grey-lt;
 	font-family: $main-font;
 	font-size: 1.1em;
 	line-height: 6rem;
+	overflow: hidden;
+	z-index: 1;
+	& span{
+		padding: 0 5%;
+	}
+}
+
+.category-bar.active{
+	overflow: visible;
+	& .toggle-arrow{
+		background: url('../img/close-hover.svg') no-repeat 50%;
+		background-size: 30%;
+	}
+	& ul{
+		display: block;
+	}
+}
+
+.category-bar ul{
+	display: none;
+	position: relative;
+	top: -6rem;
+	width: 100%;
+	& li{
+		@extend .category-bar;
+		padding: 0.1em 5%;
+	}
 }
 
 .toggle-arrow{

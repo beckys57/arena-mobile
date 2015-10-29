@@ -175,14 +175,14 @@ http://flickity.metafizzy.co
 }
 
 .flickity-page-dots {
-  position: absolute;
+  position: relative;
   width: 100%;
   bottom: -1em;
   padding: 0;
   margin: 0;
   list-style: none;
   text-align: center;
-  line-height: 1;
+  line-height: 2;
 }
 
 .flickity-rtl .flickity-page-dots { direction: rtl; }
