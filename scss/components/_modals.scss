@@ -1,0 +1,156 @@
+.modalDialog.scores .banner{
+  background: url("../img/fball.jpg") no-repeat;
+  background-size: 100% auto;
+  background-position: 0 0;
+}
+
+
+/* Modal container
+-----------------------------------*/
+.modalDialog {
+  position: fixed;
+  height:auto;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom:0;
+  z-index: 900999;
+  opacity:1;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height:100%;
+  z-index: 90099;
+}
+
+/* Modal box
+-----------------------------------*/
+.modalDialog > div {
+  position: relative;
+  overflow: auto;
+  width: 92%;
+  margin: 4% auto;
+  background: White;
+}
+
+.close {
+  background: transparent url(../img/close-white.svg) no-repeat;
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  width: 1em;
+  height: 1em;
+  background-size: 100%;
+  z-index: 2;
+}
+
+.modalDialog .banner{
+  position: relative;
+  background: white; //put image in here
+  text-align: center;
+  h1{
+    font-family: $heading-bold;
+    color: white;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-top: 0.1em;
+  }
+  p{
+    padding: $thin 0;
+    color: white;
+  }
+}
+
+.banner > div{
+  background: rgba(blue, 0.5);
+  padding: $thick 15%;
+}
+
+//Arena Me logo for banner
+.banner .logo{
+  width: 100%;
+  height: 120px;
+  background: transparent url("../img/arena-me.png") no-repeat scroll 50% center;
+  background-size: auto 60%;
+}
+
+.modalDialog{
+  .content{
+    width: 100%;
+    overflow: auto;
+    padding: $fairly-thick 5%;
+    text-align: center;
+    color: $blue-grey;
+    font-size: $article-text;
+  }
+  input[type='button']{
+    width: 100%;
+    margin: $thin 0 $thick;
+    padding: $thin;
+  }
+  h2{
+    color: $blue-grey-lt;
+    font-size: 2.2em;
+    font-family: $heading-lt;
+    text-transform: uppercase;
+  }
+}
+
+
+@media (min-width: $mq-s){
+  .modalDialog h1{
+    font-size: 3em;
+  }
+  td{
+    font-size: 1.7em;
+  }
+}
+
+@media (max-width: $mq-s){
+  .modalDialog h1{
+    font-size: 2em;
+  }
+  td{
+    font-size: 1.5em;
+  }
+}
+
+/* Results table
+-----------------------------------*/
+table {
+  width: 100%;
+  border-spacing: 0px;
+  border-collapse: collapse;
+  text-align: left;
+  color:$grey-md;
+  margin: $thin 0 $fairly-thick 0;
+}
+
+th {
+  padding: $extra-thin 0;
+  border-top: 1px solid $cloud;
+  font-size: 0.9em;
+  font-family: $main-font-semi-bold;
+  color: $blue-grey-lt;
+}
+
+td {
+  padding: 0.4em 0;
+  border-top: 2px solid $cloud;
+  border-bottom: 2px solid $cloud;
+  font-family: $heading-rg;
+  color: $slate;
+  text-align: center;
+}
+
+td:first-child{
+  text-align: left;
+}
+
+td:last-child{
+  text-align: right;
+}
