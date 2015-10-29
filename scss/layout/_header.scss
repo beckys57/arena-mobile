@@ -3,11 +3,11 @@
   background-color: white;
   border-bottom: 1px solid $cloud;
   overflow: hidden;
-  padding: ($bar / 4);
 }
 
 .topbar .icons{
   float:right;
+  padding: ($bar / 4);
 }
 
 .topbar-icon{
@@ -15,7 +15,7 @@
   margin-left: 0.25rem;
 }
 
-$topbar-icons: sports, nutrition, fashion, training, entertainment, interactive, directory, prime, login, search, share, options, topbar-close;
+$topbar-icons: login, search, share, options, topbar-options;
 @each $category in $topbar-icons{
   .topbar-icon.#{$category} {
     background: url("../img/#{$category}.png") no-repeat;
@@ -23,10 +23,34 @@ $topbar-icons: sports, nutrition, fashion, training, entertainment, interactive,
     height: ($topbar-icon-size); 
     background-size:100%;
   }
+}
+
+$category-icons: sports, nutrition, fashion, training, entertainment, interactive, directory, prime;
+@each $category in $category-icons{
+  .topbar-icon.#{$category} {
+    display: block;
+    margin: auto;
+    background: url("../img/#{$category}.png") no-repeat;
+    width: $category-icon-size;
+    height: ($category-icon-size); 
+    background-size:100%;
+  }
   a.active .topbar-icon.#{$category} {
     background: url("../img/#{$category}-white.png") no-repeat;
     background-size:100%;
   }
+  a.active{
+    background-color: $training !important;
+    color: white;
+    font-family: $heading-md;
+  }
+}
+
+.topbar.active .topbar-icon.topbar-options{
+  background: url("../img/topbar-close.png") no-repeat;
+  width: $topbar-icon-size;
+  height: ($topbar-icon-size); 
+  background-size:100%;
 }
 
 .topbar-logo{
@@ -35,4 +59,43 @@ $topbar-icons: sports, nutrition, fashion, training, entertainment, interactive,
   width: ($topbar-icon-size + 0.5rem);
   background-size:100%;
   float: left;
+  margin: ($bar / 4);
+}
+
+
+.topbar.active{
+  position: relative;
+  overflow: visible;
+  & .toggle-arrow{
+    background: url('../img/close-hover.svg') no-repeat 50%;
+    background-size: 30%;
+  }
+  & .category-options{
+    display: block;
+  }
+}
+
+.category-options{
+  display: none;
+  position: relative;
+  top: 0;
+  background-color: transparent;
+  width: 100%;
+  z-index: 1;
+  line-height: 1.8;
+  text-align: center;
+  font-family: $heading-bold;
+  font-size: 1.5em;
+  color: $blue-grey;
+  text-transform: uppercase;
+}
+
+.category-options a{
+  float: left;
+  width: 50%;
+  padding: 1em 0 0.5em;
+  background-color: #ffffff;
+  border-bottom: 1px solid $cloud;
+  border-left: 1px solid $cloud;
+  border-right: 1px solid $cloud;
 }

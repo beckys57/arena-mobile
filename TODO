@@ -9,7 +9,11 @@ Image sizes:
 - header on article
 - top image on index
 
+sort next/prev on headline slideshow on index.html
+sort category-options - breaks what's behind it. test.
 
 tell tom:
 size-v looks bit better on desktop about us
 category-bar active shown on about-us page
+index has the category dropdown. but a bit funny for the slider behind it. make topbar active to see it
+category-options needs colours correct for active anchor class.

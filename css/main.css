@@ -443,104 +443,20 @@ body, html {
   height: 6rem;
   background-color: white;
   border-bottom: 1px solid #f2f6f9;
-  overflow: hidden;
-  padding: 1.5rem; }
+  overflow: hidden; }
 
 .topbar .icons {
-  float: right; }
+  float: right;
+  padding: 1.5rem; }
 
 .topbar-icon {
   display: inline-block;
   margin-left: 0.25rem; }
 
-.topbar-icon.sports {
-  background: url("../img/sports.png") no-repeat;
-  width: 3rem;
-  height: 3rem;
-  background-size: 100%; }
-
-a.active .topbar-icon.sports {
-  background: url("../img/sports-white.png") no-repeat;
-  background-size: 100%; }
-
-.topbar-icon.nutrition {
-  background: url("../img/nutrition.png") no-repeat;
-  width: 3rem;
-  height: 3rem;
-  background-size: 100%; }
-
-a.active .topbar-icon.nutrition {
-  background: url("../img/nutrition-white.png") no-repeat;
-  background-size: 100%; }
-
-.topbar-icon.fashion {
-  background: url("../img/fashion.png") no-repeat;
-  width: 3rem;
-  height: 3rem;
-  background-size: 100%; }
-
-a.active .topbar-icon.fashion {
-  background: url("../img/fashion-white.png") no-repeat;
-  background-size: 100%; }
-
-.topbar-icon.training {
-  background: url("../img/training.png") no-repeat;
-  width: 3rem;
-  height: 3rem;
-  background-size: 100%; }
-
-a.active .topbar-icon.training {
-  background: url("../img/training-white.png") no-repeat;
-  background-size: 100%; }
-
-.topbar-icon.entertainment {
-  background: url("../img/entertainment.png") no-repeat;
-  width: 3rem;
-  height: 3rem;
-  background-size: 100%; }
-
-a.active .topbar-icon.entertainment {
-  background: url("../img/entertainment-white.png") no-repeat;
-  background-size: 100%; }
-
-.topbar-icon.interactive {
-  background: url("../img/interactive.png") no-repeat;
-  width: 3rem;
-  height: 3rem;
-  background-size: 100%; }
-
-a.active .topbar-icon.interactive {
-  background: url("../img/interactive-white.png") no-repeat;
-  background-size: 100%; }
-
-.topbar-icon.directory {
-  background: url("../img/directory.png") no-repeat;
-  width: 3rem;
-  height: 3rem;
-  background-size: 100%; }
-
-a.active .topbar-icon.directory {
-  background: url("../img/directory-white.png") no-repeat;
-  background-size: 100%; }
-
-.topbar-icon.prime {
-  background: url("../img/prime.png") no-repeat;
-  width: 3rem;
-  height: 3rem;
-  background-size: 100%; }
-
-a.active .topbar-icon.prime {
-  background: url("../img/prime-white.png") no-repeat;
-  background-size: 100%; }
-
 .topbar-icon.login {
   background: url("../img/login.png") no-repeat;
   width: 3rem;
   height: 3rem;
-  background-size: 100%; }
-
-a.active .topbar-icon.login {
-  background: url("../img/login-white.png") no-repeat;
   background-size: 100%; }
 
 .topbar-icon.search {
@@ -549,18 +465,10 @@ a.active .topbar-icon.login {
   height: 3rem;
   background-size: 100%; }
 
-a.active .topbar-icon.search {
-  background: url("../img/search-white.png") no-repeat;
-  background-size: 100%; }
-
 .topbar-icon.share {
   background: url("../img/share.png") no-repeat;
   width: 3rem;
   height: 3rem;
-  background-size: 100%; }
-
-a.active .topbar-icon.share {
-  background: url("../img/share-white.png") no-repeat;
   background-size: 100%; }
 
 .topbar-icon.options {
@@ -569,18 +477,152 @@ a.active .topbar-icon.share {
   height: 3rem;
   background-size: 100%; }
 
-a.active .topbar-icon.options {
-  background: url("../img/options-white.png") no-repeat;
-  background-size: 100%; }
-
-.topbar-icon.topbar-close {
-  background: url("../img/topbar-close.png") no-repeat;
+.topbar-icon.topbar-options {
+  background: url("../img/topbar-options.png") no-repeat;
   width: 3rem;
   height: 3rem;
   background-size: 100%; }
 
-a.active .topbar-icon.topbar-close {
-  background: url("../img/topbar-close-white.png") no-repeat;
+.topbar-icon.sports {
+  display: block;
+  margin: auto;
+  background: url("../img/sports.png") no-repeat;
+  width: 6rem;
+  height: 6rem;
+  background-size: 100%; }
+
+a.active .topbar-icon.sports {
+  background: url("../img/sports-white.png") no-repeat;
+  background-size: 100%; }
+
+a.active {
+  background-color: #21bbef !important;
+  color: white;
+  font-family: "Heroic Condensed Medium"; }
+
+.topbar-icon.nutrition {
+  display: block;
+  margin: auto;
+  background: url("../img/nutrition.png") no-repeat;
+  width: 6rem;
+  height: 6rem;
+  background-size: 100%; }
+
+a.active .topbar-icon.nutrition {
+  background: url("../img/nutrition-white.png") no-repeat;
+  background-size: 100%; }
+
+a.active {
+  background-color: #21bbef !important;
+  color: white;
+  font-family: "Heroic Condensed Medium"; }
+
+.topbar-icon.fashion {
+  display: block;
+  margin: auto;
+  background: url("../img/fashion.png") no-repeat;
+  width: 6rem;
+  height: 6rem;
+  background-size: 100%; }
+
+a.active .topbar-icon.fashion {
+  background: url("../img/fashion-white.png") no-repeat;
+  background-size: 100%; }
+
+a.active {
+  background-color: #21bbef !important;
+  color: white;
+  font-family: "Heroic Condensed Medium"; }
+
+.topbar-icon.training {
+  display: block;
+  margin: auto;
+  background: url("../img/training.png") no-repeat;
+  width: 6rem;
+  height: 6rem;
+  background-size: 100%; }
+
+a.active .topbar-icon.training {
+  background: url("../img/training-white.png") no-repeat;
+  background-size: 100%; }
+
+a.active {
+  background-color: #21bbef !important;
+  color: white;
+  font-family: "Heroic Condensed Medium"; }
+
+.topbar-icon.entertainment {
+  display: block;
+  margin: auto;
+  background: url("../img/entertainment.png") no-repeat;
+  width: 6rem;
+  height: 6rem;
+  background-size: 100%; }
+
+a.active .topbar-icon.entertainment {
+  background: url("../img/entertainment-white.png") no-repeat;
+  background-size: 100%; }
+
+a.active {
+  background-color: #21bbef !important;
+  color: white;
+  font-family: "Heroic Condensed Medium"; }
+
+.topbar-icon.interactive {
+  display: block;
+  margin: auto;
+  background: url("../img/interactive.png") no-repeat;
+  width: 6rem;
+  height: 6rem;
+  background-size: 100%; }
+
+a.active .topbar-icon.interactive {
+  background: url("../img/interactive-white.png") no-repeat;
+  background-size: 100%; }
+
+a.active {
+  background-color: #21bbef !important;
+  color: white;
+  font-family: "Heroic Condensed Medium"; }
+
+.topbar-icon.directory {
+  display: block;
+  margin: auto;
+  background: url("../img/directory.png") no-repeat;
+  width: 6rem;
+  height: 6rem;
+  background-size: 100%; }
+
+a.active .topbar-icon.directory {
+  background: url("../img/directory-white.png") no-repeat;
+  background-size: 100%; }
+
+a.active {
+  background-color: #21bbef !important;
+  color: white;
+  font-family: "Heroic Condensed Medium"; }
+
+.topbar-icon.prime {
+  display: block;
+  margin: auto;
+  background: url("../img/prime.png") no-repeat;
+  width: 6rem;
+  height: 6rem;
+  background-size: 100%; }
+
+a.active .topbar-icon.prime {
+  background: url("../img/prime-white.png") no-repeat;
+  background-size: 100%; }
+
+a.active {
+  background-color: #21bbef !important;
+  color: white;
+  font-family: "Heroic Condensed Medium"; }
+
+.topbar.active .topbar-icon.topbar-options {
+  background: url("../img/topbar-close.png") no-repeat;
+  width: 3rem;
+  height: 3rem;
   background-size: 100%; }
 
 .topbar-logo {
@@ -588,7 +630,40 @@ a.active .topbar-icon.topbar-close {
   height: 3rem;
   width: 3.5rem;
   background-size: 100%;
-  float: left; }
+  float: left;
+  margin: 1.5rem; }
+
+.topbar.active {
+  position: relative;
+  overflow: visible; }
+  .topbar.active .toggle-arrow {
+    background: url("../img/close-hover.svg") no-repeat 50%;
+    background-size: 30%; }
+  .topbar.active .category-options {
+    display: block; }
+
+.category-options {
+  display: none;
+  position: relative;
+  top: 0;
+  background-color: transparent;
+  width: 100%;
+  z-index: 1;
+  line-height: 1.8;
+  text-align: center;
+  font-family: "Heroic Condensed Bold";
+  font-size: 1.5em;
+  color: #79848a;
+  text-transform: uppercase; }
+
+.category-options a {
+  float: left;
+  width: 50%;
+  padding: 1em 0 0.5em;
+  background-color: #ffffff;
+  border-bottom: 1px solid #f2f6f9;
+  border-left: 1px solid #f2f6f9;
+  border-right: 1px solid #f2f6f9; }
 
 /* Side scrolling grids
 -----------------------------------*/
