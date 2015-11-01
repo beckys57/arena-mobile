@@ -96,8 +96,7 @@ input.color-fill[type='button'], .button.color-fill, .button.right {
   color: #21bbef; }
 
 .shady > div {
-  background-color: rgba(15, 158, 206, 0.5);
-  z-index: 200; }
+  background-color: rgba(15, 158, 206, 0.5); }
 
 /*-----------FORMS--------------
 ------------------------------*/

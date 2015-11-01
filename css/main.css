@@ -342,6 +342,7 @@ img {
   position: relative;
   height: 6rem;
   background-color: #363b3E;
+  border-bottom: 1px solid #4d5558;
   color: #9cA9b1;
   font-family: "Proxima Nova Rg Regular", Helvetica, Arial, sans-serif;
   font-size: 1.1em;
@@ -357,7 +358,10 @@ img {
     background: url("../img/close-hover.svg") no-repeat 50%;
     background-size: 30%; }
   .category-bar.active ul, .category-bar ul li.active ul {
-    display: block; }
+    display: block;
+    border-bottom: 1px solid #4d5558; }
+  .category-bar.active li, .category-bar ul li.active li {
+    border: none; }
 
 .category-bar ul, .category-bar ul li ul {
   display: none;
@@ -634,6 +638,12 @@ a.active .category-icon.prime {
     background: url("../img/close-hover.svg") no-repeat 50%;
     background-size: 30%; }
 
+.topbar-options.topbar-icon.active {
+  background: url("../img/topbar-close.png") no-repeat;
+  width: 3rem;
+  height: 3rem;
+  background-size: 100%; }
+
 .topbar-options.active ~ .category-options {
   display: block; }
 
@@ -687,13 +697,13 @@ a.active .category-icon.prime {
     background-size: auto 50%;
     background-position: 50% center;
     height: 4rem;
-    width: 4rem; }
+    width: 12%; }
   .search-bar .close {
     background: transparent url("../img/close-hover.svg") no-repeat;
     background-size: auto 40%;
     background-position: 50% center;
     height: 4rem;
-    width: 4rem; }
+    width: 12%; }
 
 .topbar .share.active ~ .share-bar {
   display: block; }
@@ -2366,8 +2376,7 @@ td:last-child {
 .profile {
   padding: 2em 7%;
   text-align: center;
-  color: #79848a;
-  border-top: 1px solid #4d5558; }
+  color: #79848a; }
   .profile p {
     color: inherit; }
   .profile h2 {

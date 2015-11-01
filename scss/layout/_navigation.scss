@@ -2,6 +2,7 @@
 	position: relative;
 	height: 6rem;
 	background-color: $slate-dk;
+	border-bottom: 1px solid $slate-lt;
 	color: $blue-grey-lt;
 	font-family: $main-font;
 	font-size: 1.1em;
@@ -21,6 +22,10 @@
 	}
 	& ul{
 		display: block;
+		border-bottom: 1px solid $slate-lt;
+	}
+	& li{
+		border: none;
 	}
 }
 

@@ -77,6 +77,13 @@ $category-icons: sports, nutrition, fashion, training, entertainment, interactiv
   }
 }
 
+.topbar-options.topbar-icon.active{
+  background: url("../img/topbar-close.png") no-repeat;
+  width: $topbar-icon-size;
+  height: ($topbar-icon-size); 
+  background-size:100%;
+}
+
 .topbar-options.active ~ .category-options{
   display: block;
 }
@@ -134,14 +141,14 @@ $category-icons: sports, nutrition, fashion, training, entertainment, interactiv
     background-size: auto 50%;
     background-position: 50% center;
     height: $bar - 2rem;
-    width: $bar - 2rem;
+    width: 12%;
   }
   & .close{
     background: transparent url("../img/close-hover.svg") no-repeat;
     background-size: auto 40%;
     background-position: 50% center;
     height: $bar - 2rem;
-    width: $bar - 2rem;
+    width: 12%;
   }
 }
 
