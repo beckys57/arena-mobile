@@ -439,6 +439,30 @@ body, html {
 .cloud {
   background-color: #f2f6f9; }
 
+/* Cookie warning
+-----------------------------------*/
+.cookies {
+  position: absolute;
+  top: 75%;
+  padding: 5% 2em;
+  background-color: #21bbef;
+  text-align: center;
+  color: white;
+  z-index: 1; }
+  .cookies h3 {
+    color: white;
+    line-height: 1; }
+  .cookies .button {
+    color: white;
+    margin: 0.5em 0; }
+  .cookies p {
+    color: white;
+    margin: 1.5em 0;
+    line-height: 1.5; }
+    .cookies p a {
+      display: inline-block;
+      font-weight: bold; }
+
 .topbar {
   height: 6rem;
   background-color: white;
@@ -668,6 +692,29 @@ a.active .category-icon.prime {
     background-position: 50% center;
     height: 4rem;
     width: 4rem; }
+
+.topbar .share.active ~ .share-bar {
+  display: block; }
+
+.share-bar {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 6rem;
+  width: 100%;
+  z-index: 1;
+  height: 6rem;
+  padding: 1.5rem 3%;
+  background: White; }
+
+.share-bar .social-icons-sm a {
+  margin: auto;
+  display: block;
+  height: 3rem; }
+
+.share-bar .social-icons-sm > div {
+  width: 16.66667%;
+  display: inline-block; }
 
 /* Side scrolling grids
 -----------------------------------*/
@@ -1938,10 +1985,10 @@ td:last-child {
 
 .social-icons-sm .facebook {
   background: url("../img/facebook-grey.png") no-repeat;
-  background-size: 100%; }
+  background-size: auto 100%; }
   .social-icons-sm .facebook:hover {
     background: url("../img/facebook.png") no-repeat;
-    background-size: 100%; }
+    background-size: auto 100%; }
 
 .social-follow .facebook {
   background: url("../img/facebook.png") no-repeat;
@@ -1949,10 +1996,10 @@ td:last-child {
 
 .social-icons-sm .twitter {
   background: url("../img/twitter-grey.png") no-repeat;
-  background-size: 100%; }
+  background-size: auto 100%; }
   .social-icons-sm .twitter:hover {
     background: url("../img/twitter.png") no-repeat;
-    background-size: 100%; }
+    background-size: auto 100%; }
 
 .social-follow .twitter {
   background: url("../img/twitter.png") no-repeat;
@@ -1960,10 +2007,10 @@ td:last-child {
 
 .social-icons-sm .youtube {
   background: url("../img/youtube-grey.png") no-repeat;
-  background-size: 100%; }
+  background-size: auto 100%; }
   .social-icons-sm .youtube:hover {
     background: url("../img/youtube.png") no-repeat;
-    background-size: 100%; }
+    background-size: auto 100%; }
 
 .social-follow .youtube {
   background: url("../img/youtube.png") no-repeat;
@@ -1971,10 +2018,10 @@ td:last-child {
 
 .social-icons-sm .snapchat {
   background: url("../img/snapchat-grey.png") no-repeat;
-  background-size: 100%; }
+  background-size: auto 100%; }
   .social-icons-sm .snapchat:hover {
     background: url("../img/snapchat.png") no-repeat;
-    background-size: 100%; }
+    background-size: auto 100%; }
 
 .social-follow .snapchat {
   background: url("../img/snapchat.png") no-repeat;
@@ -1982,10 +2029,10 @@ td:last-child {
 
 .social-icons-sm .instagram {
   background: url("../img/instagram-grey.png") no-repeat;
-  background-size: 100%; }
+  background-size: auto 100%; }
   .social-icons-sm .instagram:hover {
     background: url("../img/instagram.png") no-repeat;
-    background-size: 100%; }
+    background-size: auto 100%; }
 
 .social-follow .instagram {
   background: url("../img/instagram.png") no-repeat;
@@ -1993,10 +2040,10 @@ td:last-child {
 
 .social-icons-sm .google {
   background: url("../img/google-grey.png") no-repeat;
-  background-size: 100%; }
+  background-size: auto 100%; }
   .social-icons-sm .google:hover {
     background: url("../img/google.png") no-repeat;
-    background-size: 100%; }
+    background-size: auto 100%; }
 
 .social-follow .google {
   background: url("../img/google.png") no-repeat;
@@ -2004,10 +2051,10 @@ td:last-child {
 
 .social-icons-sm .pinterest {
   background: url("../img/pinterest-grey.png") no-repeat;
-  background-size: 100%; }
+  background-size: auto 100%; }
   .social-icons-sm .pinterest:hover {
     background: url("../img/pinterest.png") no-repeat;
-    background-size: 100%; }
+    background-size: auto 100%; }
 
 .social-follow .pinterest {
   background: url("../img/pinterest.png") no-repeat;

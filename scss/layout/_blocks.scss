@@ -93,3 +93,32 @@
 .cloud{
   background-color: $cloud;
 }
+
+/* Cookie warning
+-----------------------------------*/
+.cookies{
+  position: absolute;
+  top: 75%;
+  padding: 5% 2em;
+  background-color: $training;
+  text-align: center;
+  color: white;
+  z-index: 1;
+  & h3{
+    color: white;
+    line-height: 1;
+  }
+  & .button{
+    color: white;
+    margin: 0.5em 0;
+  }
+  & p{
+    color: white;
+    margin: 1.5em 0;
+    line-height: 1.5;
+    & a{
+      display: inline-block;
+      font-weight: bold;
+    }
+  }
+}

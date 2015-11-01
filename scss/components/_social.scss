@@ -26,10 +26,10 @@ $social-media: (facebook, twitter, youtube, snapchat, instagram, google, pintere
 @each $platform in $social-media{
   .social-icons-sm .#{$platform} {
     background: url("../img/#{$platform}-grey.png") no-repeat;
-    background-size: 100%;
+    background-size: auto 100%;
     &:hover{
       background: url("../img/#{$platform}.png") no-repeat;
-      background-size: 100%;
+      background-size: auto 100%;
     }
   }
   .social-follow .#{$platform} {

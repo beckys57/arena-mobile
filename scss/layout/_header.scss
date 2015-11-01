@@ -144,3 +144,32 @@ $category-icons: sports, nutrition, fashion, training, entertainment, interactiv
     width: $bar - 2rem;
   }
 }
+
+//Dropdown bar with share icons
+.topbar .share.active ~ .share-bar{
+  display: block;
+}
+
+.share-bar{
+  display: none;
+  position: absolute;
+  left: 0;
+  top: $bar;
+  width: 100%;
+  z-index: 1;
+  height: $bar;
+  padding: ($bar/4) 3%;
+  background: White;
+}
+
+.share-bar .social-icons-sm a{
+  margin: auto;
+  display: block;
+  height: ($bar / 2);
+  ;
+}
+
+.share-bar .social-icons-sm > div{
+  width: $sixth;
+  display: inline-block;
+}
