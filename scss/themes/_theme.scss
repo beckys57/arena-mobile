@@ -2,6 +2,10 @@
 	color: $main-color;
 }
 
+button.color{
+  border-color: $main-color;
+}
+
 //Theme specific colours
 $main-color-translucent: rgba($main-color, 0.1);
 $main-color-lt: lighten($main-color, 20%);
@@ -52,6 +56,16 @@ input.color-fill[type='button'], .button.color-fill, .button.right{
 
 .quantity{
   color: $main-color;
+}
+
+//User profile
+.profile .edit{
+  color: $main-color;
+}
+
+.shady > div{
+  background-color: rgba($link-hover, 0.5);
+  z-index: 200;
 }
 
 

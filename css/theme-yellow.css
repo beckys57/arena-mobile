@@ -62,6 +62,9 @@ letter from editor: 360 x 550 but not important as long as taller than wide
 .color {
   color: #facc0A; }
 
+button.color {
+  border-color: #facc0A; }
+
 input.color-fill[type='button'], .button.color-fill, .button.right {
   border: 1px solid #facc0A;
   background-color: #facc0A; }
@@ -88,6 +91,13 @@ input.color-fill[type='button'], .button.color-fill, .button.right {
 
 .quantity {
   color: #facc0A; }
+
+.profile .edit {
+  color: #facc0A; }
+
+.shady > div {
+  background-color: rgba(205, 166, 4, 0.5);
+  z-index: 200; }
 
 /*-----------FORMS--------------
 ------------------------------*/

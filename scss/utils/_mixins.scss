@@ -120,7 +120,6 @@
 /* Shapes */
 
 @mixin circular($diameter: 100px){
-  float:left;
   border-radius:50%;
   width: $diameter;
   height: $diameter;

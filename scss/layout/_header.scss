@@ -15,7 +15,7 @@
   margin-left: 0.25rem;
 }
 
-$topbar-icons: login, search, share, options, topbar-options;
+$topbar-icons: login, search, share, topbar-options;
 @each $category in $topbar-icons{
   .topbar-icon.#{$category} {
     background: url("../img/#{$category}.png") no-repeat;

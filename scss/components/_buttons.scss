@@ -18,7 +18,7 @@
 
 //Curvy Button
 
-input[type=button],.button{
+input[type=button],.button, button{
   display: inline-block;
   margin: 2em 0;
   width: auto;
@@ -33,7 +33,7 @@ input[type=button],.button{
   cursor: pointer;
 }
 
-input[type=button].color-fill, .button.color-fill{
+input[type=button].color-fill, .button.color-fill, button.color-fill{
   color: white;
   border: 0;
   &:hover{

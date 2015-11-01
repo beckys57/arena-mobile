@@ -84,18 +84,9 @@ form p {
 // Registration form
 
 //For forms with 2+ columns, each column padded individually
-.form-section-split{
-  @include full-width;
-  padding: $thick;
-}
-
-.form-section-split > * {
-  padding: $thin;
-}
 
 .form-section{
-  @include full-width;
-  padding: $extra-thick;
+  padding: $thick;
 }
 
 .form-line{
@@ -107,20 +98,6 @@ form p {
   @include full-width;
   height:1px;
   border-bottom: $separator;
-}
-
-@media (max-width: $mq-l){
-  .form-section{
-    padding-left: $thick;
-    padding-right: $thick;
-  } 
-  .form-section-split{
-    padding-left: $fairly-thick;
-    padding-right: $fairly-thick;
-  } 
-  .form-line{
-    padding: 0 $thick;
-  }
 }
 
 .textbox-icon {
