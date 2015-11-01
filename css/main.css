@@ -483,7 +483,7 @@ body, html {
   height: 3rem;
   background-size: 100%; }
 
-.topbar-icon.sports {
+.category-icon.sports {
   display: block;
   margin: auto;
   background: url("../img/sports.png") no-repeat;
@@ -491,16 +491,11 @@ body, html {
   height: 6rem;
   background-size: 100%; }
 
-a.active .topbar-icon.sports {
+a.active .category-icon.sports {
   background: url("../img/sports-white.png") no-repeat;
   background-size: 100%; }
 
-a.active {
-  background-color: #21bbef !important;
-  color: white;
-  font-family: "Heroic Condensed Medium"; }
-
-.topbar-icon.nutrition {
+.category-icon.nutrition {
   display: block;
   margin: auto;
   background: url("../img/nutrition.png") no-repeat;
@@ -508,16 +503,11 @@ a.active {
   height: 6rem;
   background-size: 100%; }
 
-a.active .topbar-icon.nutrition {
+a.active .category-icon.nutrition {
   background: url("../img/nutrition-white.png") no-repeat;
   background-size: 100%; }
 
-a.active {
-  background-color: #21bbef !important;
-  color: white;
-  font-family: "Heroic Condensed Medium"; }
-
-.topbar-icon.fashion {
+.category-icon.fashion {
   display: block;
   margin: auto;
   background: url("../img/fashion.png") no-repeat;
@@ -525,16 +515,11 @@ a.active {
   height: 6rem;
   background-size: 100%; }
 
-a.active .topbar-icon.fashion {
+a.active .category-icon.fashion {
   background: url("../img/fashion-white.png") no-repeat;
   background-size: 100%; }
 
-a.active {
-  background-color: #21bbef !important;
-  color: white;
-  font-family: "Heroic Condensed Medium"; }
-
-.topbar-icon.training {
+.category-icon.training {
   display: block;
   margin: auto;
   background: url("../img/training.png") no-repeat;
@@ -542,16 +527,11 @@ a.active {
   height: 6rem;
   background-size: 100%; }
 
-a.active .topbar-icon.training {
+a.active .category-icon.training {
   background: url("../img/training-white.png") no-repeat;
   background-size: 100%; }
 
-a.active {
-  background-color: #21bbef !important;
-  color: white;
-  font-family: "Heroic Condensed Medium"; }
-
-.topbar-icon.entertainment {
+.category-icon.entertainment {
   display: block;
   margin: auto;
   background: url("../img/entertainment.png") no-repeat;
@@ -559,16 +539,11 @@ a.active {
   height: 6rem;
   background-size: 100%; }
 
-a.active .topbar-icon.entertainment {
+a.active .category-icon.entertainment {
   background: url("../img/entertainment-white.png") no-repeat;
   background-size: 100%; }
 
-a.active {
-  background-color: #21bbef !important;
-  color: white;
-  font-family: "Heroic Condensed Medium"; }
-
-.topbar-icon.interactive {
+.category-icon.interactive {
   display: block;
   margin: auto;
   background: url("../img/interactive.png") no-repeat;
@@ -576,16 +551,11 @@ a.active {
   height: 6rem;
   background-size: 100%; }
 
-a.active .topbar-icon.interactive {
+a.active .category-icon.interactive {
   background: url("../img/interactive-white.png") no-repeat;
   background-size: 100%; }
 
-a.active {
-  background-color: #21bbef !important;
-  color: white;
-  font-family: "Heroic Condensed Medium"; }
-
-.topbar-icon.directory {
+.category-icon.directory {
   display: block;
   margin: auto;
   background: url("../img/directory.png") no-repeat;
@@ -593,16 +563,11 @@ a.active {
   height: 6rem;
   background-size: 100%; }
 
-a.active .topbar-icon.directory {
+a.active .category-icon.directory {
   background: url("../img/directory-white.png") no-repeat;
   background-size: 100%; }
 
-a.active {
-  background-color: #21bbef !important;
-  color: white;
-  font-family: "Heroic Condensed Medium"; }
-
-.topbar-icon.prime {
+.category-icon.prime {
   display: block;
   margin: auto;
   background: url("../img/prime.png") no-repeat;
@@ -610,14 +575,17 @@ a.active {
   height: 6rem;
   background-size: 100%; }
 
-a.active .topbar-icon.prime {
+a.active .category-icon.prime {
   background: url("../img/prime-white.png") no-repeat;
   background-size: 100%; }
 
-a.active {
+.category-options a.active {
   background-color: #21bbef !important;
   color: white;
   font-family: "Heroic Condensed Medium"; }
+
+.topbar .search.active ~ .search-bar {
+  display: block; }
 
 .topbar.active .topbar-icon.topbar-options {
   background: url("../img/topbar-close.png") no-repeat;
@@ -639,13 +607,15 @@ a.active {
   .topbar.active .toggle-arrow {
     background: url("../img/close-hover.svg") no-repeat 50%;
     background-size: 30%; }
-  .topbar.active .category-options {
-    display: block; }
+
+.topbar-options.active ~ .category-options {
+  display: block; }
 
 .category-options {
   display: none;
-  position: relative;
-  top: 0;
+  position: absolute;
+  top: 6rem;
+  left: 0;
   background-color: transparent;
   width: 100%;
   z-index: 1;
@@ -664,6 +634,40 @@ a.active {
   border-bottom: 1px solid #f2f6f9;
   border-left: 1px solid #f2f6f9;
   border-right: 1px solid #f2f6f9; }
+
+.search-bar {
+  display: none;
+  position: absolute;
+  top: 6rem;
+  left: 0;
+  height: 6rem;
+  width: 100%;
+  padding: 1rem 0;
+  background-color: white;
+  z-index: 1; }
+  .search-bar input[type="text"] {
+    width: 70%;
+    height: 4rem;
+    margin-left: 15%;
+    font-size: 1.6em;
+    font-family: "Proxima Nova Light", Helvetica, Arial, sans-serif;
+    border: none;
+    padding: 0; }
+  .search-bar .search-button {
+    position: absolute;
+    top: 1rem;
+    left: 6px;
+    background: transparent url("../img/search-icon-grey.svg") no-repeat;
+    background-size: auto 50%;
+    background-position: 50% center;
+    height: 4rem;
+    width: 4rem; }
+  .search-bar .close {
+    background: transparent url("../img/close-hover.svg") no-repeat;
+    background-size: auto 40%;
+    background-position: 50% center;
+    height: 4rem;
+    width: 4rem; }
 
 /* Side scrolling grids
 -----------------------------------*/
@@ -854,25 +858,25 @@ textarea {
 
 ::-webkit-input-placeholder {
   /* WebKit browsers */
-  font-family: "Proxima Nova Rg Regular", Helvetica, Arial, sans-serif;
-  color: #4b4f52; }
+  font-family: "Proxima Nova Light", Helvetica, Arial, sans-serif;
+  color: #9cA9b1; }
 
 :-moz-placeholder {
   /* Mozilla Firefox 4 to 18 */
-  font-family: "Proxima Nova Rg Regular", Helvetica, Arial, sans-serif;
-  color: #4b4f52;
+  font-family: "Proxima Nova Light", Helvetica, Arial, sans-serif;
+  color: #9cA9b1;
   opacity: 1; }
 
 ::-moz-placeholder {
   /* Mozilla Firefox 19+ */
-  font-family: "Proxima Nova Rg Regular", Helvetica, Arial, sans-serif;
-  color: #4b4f52;
+  font-family: "Proxima Nova Light", Helvetica, Arial, sans-serif;
+  color: #9cA9b1;
   opacity: 1; }
 
 :-ms-input-placeholder {
   /* Internet Explorer 10+ */
-  font-family: "Proxima Nova Rg Regular", Helvetica, Arial, sans-serif;
-  color: #4b4f52; }
+  font-family: "Proxima Nova Light", Helvetica, Arial, sans-serif;
+  color: #9cA9b1; }
 
 input {
   font-family: inherit;

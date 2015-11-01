@@ -27,7 +27,7 @@ $topbar-icons: login, search, share, options, topbar-options;
 
 $category-icons: sports, nutrition, fashion, training, entertainment, interactive, directory, prime;
 @each $category in $category-icons{
-  .topbar-icon.#{$category} {
+  .category-icon.#{$category} {
     display: block;
     margin: auto;
     background: url("../img/#{$category}.png") no-repeat;
@@ -35,15 +35,20 @@ $category-icons: sports, nutrition, fashion, training, entertainment, interactiv
     height: ($category-icon-size); 
     background-size:100%;
   }
-  a.active .topbar-icon.#{$category} {
+  a.active .category-icon.#{$category} {
     background: url("../img/#{$category}-white.png") no-repeat;
     background-size:100%;
   }
-  a.active{
-    background-color: $training !important;
-    color: white;
-    font-family: $heading-md;
-  }
+}
+
+.category-options a.active{
+  background-color: $training !important;
+  color: white;
+  font-family: $heading-md;
+}
+
+.topbar .search.active ~ .search-bar{
+  display: block;
 }
 
 .topbar.active .topbar-icon.topbar-options{
@@ -70,15 +75,17 @@ $category-icons: sports, nutrition, fashion, training, entertainment, interactiv
     background: url('../img/close-hover.svg') no-repeat 50%;
     background-size: 30%;
   }
-  & .category-options{
-    display: block;
-  }
+}
+
+.topbar-options.active ~ .category-options{
+  display: block;
 }
 
 .category-options{
   display: none;
-  position: relative;
-  top: 0;
+  position: absolute;
+  top: $bar;
+  left: 0;
   background-color: transparent;
   width: 100%;
   z-index: 1;
@@ -98,4 +105,42 @@ $category-icons: sports, nutrition, fashion, training, entertainment, interactiv
   border-bottom: 1px solid $cloud;
   border-left: 1px solid $cloud;
   border-right: 1px solid $cloud;
+}
+
+.search-bar{
+  display: none;
+  position: absolute;
+  top: $bar;
+  left: 0;
+  height: $bar;
+  width: 100%;
+  padding: 1rem 0;
+  background-color: white;
+  z-index: 1;
+  & input[type="text"]{
+    width: 70%;
+    height: $bar - 2rem;
+    margin-left: 15%;
+    font-size: 1.6em;
+    font-family: $main-font-lt;
+    border: none;
+    padding: 0;
+  }
+  & .search-button{
+    position: absolute;
+    top: 1rem;
+    left: 6px;
+    background: transparent url("../img/search-icon-grey.svg") no-repeat;
+    background-size: auto 50%;
+    background-position: 50% center;
+    height: $bar - 2rem;
+    width: $bar - 2rem;
+  }
+  & .close{
+    background: transparent url("../img/close-hover.svg") no-repeat;
+    background-size: auto 40%;
+    background-position: 50% center;
+    height: $bar - 2rem;
+    width: $bar - 2rem;
+  }
 }

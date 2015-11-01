@@ -19,22 +19,22 @@ textarea{
 
   //Textarea placeholders
 ::-webkit-input-placeholder { /* WebKit browsers */
-  font-family: $main-font;
-  color: $slate;
+  font-family: $main-font-lt;
+  color: $blue-grey-lt;
 }
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-  font-family: $main-font;
-  color: $slate;
+  font-family: $main-font-lt;
+  color: $blue-grey-lt;
    opacity:  1;
 }
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
-  font-family: $main-font;
-  color: $slate;
+  font-family: $main-font-lt;
+  color: $blue-grey-lt;
    opacity:  1;
 }
 :-ms-input-placeholder { /* Internet Explorer 10+ */
-  font-family: $main-font;
-  color: $slate;
+  font-family: $main-font-lt;
+  color: $blue-grey-lt;
 }
 
 input{
