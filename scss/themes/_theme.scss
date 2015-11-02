@@ -70,6 +70,9 @@ input.color-fill[type='button'], .button.color-fill, .button.right{
 
 /*-----------FORMS--------------
 ------------------------------*/
+.form-header{
+  color: $main-color;
+}
 
 //Wizard select bar
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
@@ -80,3 +83,19 @@ input.color-fill[type='button'], .button.color-fill, .button.right{
 .slider-value {
   color: $main-color;
 }
+
+//Selected image highlight
+.body-image .image-select:checked + label {
+  border: 0.2em solid $main-color;
+}
+
+.image-select.sex:checked + label {
+    border-color: $main-color-lt;
+}
+
+.directory-search form .image-select.sex:checked + label {
+  background-color: $main-color;
+  opacity: 1;
+  border-color: $main-color;
+}
+

@@ -100,10 +100,24 @@ input.color-fill[type='button'], .button.color-fill, .button.right {
 
 /*-----------FORMS--------------
 ------------------------------*/
+.form-header {
+  color: #21bbef; }
+
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
   color: #21bbef; }
 
 .slider-value {
   color: #21bbef; }
+
+.body-image .image-select:checked + label {
+  border: 0.2em solid #21bbef; }
+
+.image-select.sex:checked + label {
+  border-color: #80d8f6; }
+
+.directory-search form .image-select.sex:checked + label {
+  background-color: #21bbef;
+  opacity: 1;
+  border-color: #21bbef; }
 
 /*# sourceMappingURL=theme-cyan.css.map */

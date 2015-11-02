@@ -123,3 +123,24 @@
     }
   }
 }
+
+/* Video with centered play button
+-----------------------------------*/
+.video-center{
+  position: relative;
+  margin-top: -1em; //To account for top padding, necessary for play-circle to be centered.
+  padding: 1em 2.5%;
+  & > div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  & .play-circle{
+    @include play-circle-hover;
+    display: block;
+    margin: auto;
+    height: 100%;
+  }
+}

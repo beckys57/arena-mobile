@@ -1,0 +1,204 @@
+<!--18-->
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="stylesheet" href="css/main.css"/>
+	<link rel="stylesheet" href="css/theme-cyan.css"/>
+
+
+	<script type="text/javascript" src="js/flickity.pkgd.min.js"></script>
+	<script type="text/javascript" src="js/flickity-options.js"></script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="dropdown.js"></script>
+	<script type="text/javascript" src="js/password-strength.js"></script>
+	<noscript><link rel="stylesheet" type="text/css" href="noJS.css" /></noscript>
+
+
+	<title></title>
+</head>
+<body>
+<div class="wrapper registration">	
+	<!--Header-->
+	<nav class="topbar">
+		<div class="topbar-logo"></div>
+		<div class="icons">		
+			<a class="login topbar-icon"></a>
+			<a class="search topbar-icon"></a>
+			<a class="share topbar-icon"></a>
+			<a class="topbar-options topbar-icon"></a>
+		</div>
+	</nav>
+	<div class="category-bar">
+		<span>Choose category</span>
+		<a class="toggle-arrow"></a>
+		<ul>
+			<li>About Us
+				<a class="toggle-arrow"></a>
+			</li>
+			<li>Contact</li>
+			<li>Letter from the editor</li>
+		</ul>
+	</div>
+	<div class="dark">
+		<div class="section-header">
+			<h2>Register</h2>
+		</div>
+		<div class="video-center">
+			<img src="img/size-v.png"> <!--or size-b-->
+			<div>
+				<div class="play-circle bigger"></div>
+			</div>
+		</div>
+	</div>
+	<div class="section-header">
+		<h3 class="form-header">User Info</h3>
+	</div>
+	<form>
+		<div class="form-section">
+			<input type="text" placeholder="First Name"></input>
+			<input type="text" placeholder="Surname"></input>
+			<input type="text" placeholder="User Name"></input>
+			<input type="text" placeholder="Email Address"></input>
+		</div>
+		<div class="form-section">
+			<input type="password" placeholder="Password" name="pass" id="pass"></input>
+			<input type="password" placeholder="Password Again"></input>
+			<div id="passstrength">
+				Safety of your password:
+				<span class="strength"></span>
+  			<div class="password-bar">
+					<div class="one"></div>
+					<div class="two"></div>
+					<div class="three"></div>
+					<div class="four"></div>
+				</div>
+			</div>
+
+	  </div>
+		<div class="form-section">
+				<input type="text" class="textbox-icon twitter" placeholder="Twitter"></input>
+				<input type="text" class="textbox-icon instagram" placeholder="Instagram"></input>
+		</div>
+		<div class="form-section">
+ 			<div class="active wrapper-dropdown-5 bigger" tabindex="1">Activity
+				<ul class="dropdown">
+					<li><a href="#">One</a></li>
+					<li><a href="#">Two</a></li>
+					<li><a href="#">Three</a></li>
+				</ul>
+			</div>
+
+ 			<div class="wrapper-dropdown-5 bigger" tabindex="1">Activity
+				<ul class="dropdown">
+					<li><a href="#">One</a></li>
+					<li><a href="#">Two</a></li>
+					<li><a href="#">Three</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="form-section age-sex">
+			<div class="age-selector">
+				<label>Age</label>
+				<ol class="wizard clearfix">
+					<li>
+					    <input type="radio" id="age" name="age" value="18-24" class="wizard">
+					    <label for="age">
+							<span class="step-name">18-24</span>
+						    <span class="step-circle"></span>
+						</label>
+					    
+					</li>
+					<li>
+					    <input type="radio" id="age2" name="age" value="24-26" class="wizard">
+					    <label for="age2">
+					   		<span class="step-name">24-26</span>
+					    	<div class="step-circle"></div>
+					    </label>
+					</li>
+					<li>
+					    <input type="radio" id="age3" name="age" value="26-28" class="wizard">
+					    <label for="age3">
+						    <span class="step-name">26-28</span>
+						    <span class="step-circle"></span>
+					    </label>
+					</li>
+					<li>
+					    <input type="radio" id="age4" name="age" value="28-30" class="wizard">
+					    <label for="age4">
+						    <span class="step-name">28-30</span>
+						    <span class="step-circle"></span>
+					    </label>
+					</li>
+					<li>
+					    <input type="radio" id="age5" name="age" value="30-34" class="wizard">
+					    <label for="age5">
+					    	<span class="step-name">30-34</span>
+					    	<span class="step-circle"></span>
+			    		</label>
+					</li>
+					<li>
+					    <input type="radio" id="age6" name="age" value="34-40" class="wizard">
+					    <label for="age6">
+						    <span class="step-name">34-40</span>
+						    <span class="step-circle"></span>
+					    </label>
+					</li>
+					<li>
+					    <input type="radio" id="age7" name="age" value="40-60" class="wizard">
+					    <label for="age7">
+						    <span class="step-name">40-60</span>
+						    <span class="step-circle"></span>
+					    </label>
+					</li>
+					<li class="last">
+					    <input type="radio" id="age8" name="age" value="60+" class="wizard">
+					    <label for="age8">
+						    <span class="step-name">60+</span>
+						    <span class="step-circle"></span>
+					    </label>
+					</li>
+				</ol>
+			</div>
+			<div class="sex-selector">
+				<input type="radio" name="sex" id="male" class="image-select sex">				
+				<label for="male">
+					<div class="male"></div>
+				</label>
+			</div>
+			<div class="sex-selector">
+				<input type="radio" name="sex" id="female" class="image-select sex">				
+				<label for="female">
+					<div class="female"></div>
+				</label>
+			</div>
+		</div>
+		<div class="form-section">
+			<div class="wrapper-dropdown-5 bigger" tabindex="1">Choose Your Arena100me Colour Scheme
+				<ul class="dropdown">
+					<li><a href="#">One</a></li>
+					<li><a href="#">Two</a></li>
+					<li><a href="#">Three</a></li>
+				</ul>
+			</div>
+		</div>
+    <div class="form-section">
+      <div class="upload">
+        <div class="upload-text">
+	        <span>Drag & Drop your<br>Avatar Here</span>
+	        <span class="italic pad-top-bottom-md">or</span>
+        </div>
+        <div class="upload-wrap">
+					<input type="file" name="pic" id="avatar" accept="image/*" required/>
+					<label for="avatar" class="upload button">Click here for upload</label>
+				</div>
+      </div>
+    </div>
+	</form>
+</div>
+
+
+</body>
+</html>

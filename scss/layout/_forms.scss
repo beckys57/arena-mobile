@@ -37,6 +37,28 @@ textarea{
   color: $blue-grey-lt;
 }
 
+.registration{
+  ::-webkit-input-placeholder { /* WebKit browsers */
+    font-family: $main-font;
+    color: $blue-grey;
+  }
+  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    font-family: $main-font;
+    color: $blue-grey;
+     opacity:  1;
+  }
+  ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    font-family: $main-font;
+    color: $blue-grey;
+     opacity:  1;
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10+ */
+    font-family: $main-font;
+    color: $blue-grey;
+  }
+}
+
+
 input{
   font-family: inherit;
   font-size: inherit;
@@ -46,7 +68,7 @@ input[type='text'], input[type='url'], input[type='password'], input[type='email
   @include input-border;
   width: 100%;
   padding: 1.2em;
-  font-size: 1em;
+  font-size: 1.1em;
 }
 
 input[type='text'].bigger{
@@ -86,18 +108,14 @@ form p {
 //For forms with 2+ columns, each column padded individually
 
 .form-section{
-  padding: $thick;
-}
-
-.form-line{
-  @include full-width;
-  padding: 0 $extra-thick;
-}
-
-.form-line > span{
-  @include full-width;
-  height:1px;
+  padding: $thin 5%;
   border-bottom: $separator;
+  & > *{
+    margin-bottom: 0.5em;
+  }
+  & > *:last-child{
+    margin-bottom: 0;
+  }
 }
 
 .textbox-icon {
@@ -106,10 +124,12 @@ form p {
 
 .textbox-icon.twitter{
   background: url("../img/twitter-sm-blue.png") no-repeat 92%;
+  background-size: 7%;
 }
 
 .textbox-icon.instagram{
   background: url("../img/instagram-sm-blue.png") no-repeat 92%;
+  background-size: 7%;
 }
 
 
@@ -257,7 +277,23 @@ input[type=radio].house:not(old):checked + label span:after {
   box-shadow: 0px 0px 10px 1px $grey-lt;
 }
 
+//Age and sex box
+.age-sex{
+  background-color: $ghost-blue;
+  overflow: auto;
+}
+
+.age-selector{
+  height: 6em;
+}
+
 //Sex selector
+.sex-selector{
+  width: 46%;
+ // margin: 0 1%;
+  float: left;
+}
+
 .image-select.sex + label {
   @include input-border;
   background-color: transparent; 
@@ -291,13 +327,14 @@ input[type=radio].house:not(old):checked + label span:after {
 }
 
 .wizard {
-  width:100%;
+  width: 94%;
   list-style: none;
   list-style-image: none;
   float: left;
-  margin-left: $thin; //Offsets effect of wide clickable step-circle
+  margin-left: 3%;
   margin-top: $extra-thin;
   background: transparent url("../img/wizard-line.svg") repeat scroll 0% 0%;
+  font-size: 0.7em;
 }
 
 .wizard li {
@@ -429,6 +466,10 @@ legend.indent{
 }
 
 //PASSWORD STRENGTH
+#passstrength{
+  overflow: auto;
+  margin-top: 0.5em;
+}
 
 .password-bar{
   @include full-width;

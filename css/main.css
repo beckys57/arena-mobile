@@ -475,6 +475,27 @@ img {
       display: inline-block;
       font-weight: bold; }
 
+/* Video with centered play button
+-----------------------------------*/
+.video-center {
+  position: relative;
+  margin-top: -1em;
+  padding: 1em 2.5%; }
+  .video-center > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  .video-center .play-circle {
+    display: block;
+    margin: auto;
+    height: 100%; }
+    .video-center .play-circle .play-circle {
+      background: url("../img/play-circle-hover.svg") no-repeat 50% 50%/100%; }
+    .video-center .play-circle .pause-circle {
+      background: url("../img/pause-circle-hover.svg") no-repeat 50% 50%/100%; }
+
 .topbar {
   height: 6rem;
   background-color: white;
@@ -937,6 +958,28 @@ textarea {
   font-family: "Proxima Nova Light", Helvetica, Arial, sans-serif;
   color: #9cA9b1; }
 
+.registration ::-webkit-input-placeholder {
+  /* WebKit browsers */
+  font-family: "Proxima Nova Rg Regular", Helvetica, Arial, sans-serif;
+  color: #79848a; }
+
+.registration :-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  font-family: "Proxima Nova Rg Regular", Helvetica, Arial, sans-serif;
+  color: #79848a;
+  opacity: 1; }
+
+.registration ::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  font-family: "Proxima Nova Rg Regular", Helvetica, Arial, sans-serif;
+  color: #79848a;
+  opacity: 1; }
+
+.registration :-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  font-family: "Proxima Nova Rg Regular", Helvetica, Arial, sans-serif;
+  color: #79848a; }
+
 input {
   font-family: inherit;
   font-size: inherit; }
@@ -946,7 +989,7 @@ input[type='text'], input[type='url'], input[type='password'], input[type='email
   border-radius: 2px;
   width: 100%;
   padding: 1.2em;
-  font-size: 1em; }
+  font-size: 1.1em; }
 
 input[type='text'].bigger {
   padding: 1.2em 25px; }
@@ -977,27 +1020,23 @@ form p {
   font-size: 1.2em; }
 
 .form-section {
-  padding: 3em; }
-
-.form-line {
-  width: 100%;
-  float: left;
-  padding: 0 4em; }
-
-.form-line > span {
-  width: 100%;
-  float: left;
-  height: 1px;
-  border-bottom: 1px solid rgba(184, 197, 206, 0.2); }
+  padding: 1em 5%;
+  border-bottom: 1px solid rgba(184, 197, 206, 0.5); }
+  .form-section > * {
+    margin-bottom: 0.5em; }
+  .form-section > *:last-child {
+    margin-bottom: 0; }
 
 .textbox-icon {
   padding-right: 4em !important; }
 
 .textbox-icon.twitter {
-  background: url("../img/twitter-sm-blue.png") no-repeat 92%; }
+  background: url("../img/twitter-sm-blue.png") no-repeat 92%;
+  background-size: 7%; }
 
 .textbox-icon.instagram {
-  background: url("../img/instagram-sm-blue.png") no-repeat 92%; }
+  background: url("../img/instagram-sm-blue.png") no-repeat 92%;
+  background-size: 7%; }
 
 /*CHECKBOXES*/
 input[type="checkbox"] {
@@ -1113,6 +1152,17 @@ input[type=radio].house:not(old):checked + label span:after {
 .body-image .image-select:checked + label {
   box-shadow: 0px 0px 10px 1px #cfdce2; }
 
+.age-sex {
+  background-color: #edf2f5;
+  overflow: auto; }
+
+.age-selector {
+  height: 6em; }
+
+.sex-selector {
+  width: 46%;
+  float: left; }
+
 .image-select.sex + label {
   border: solid 1px #cfdce2;
   border-radius: 2px;
@@ -1139,13 +1189,14 @@ input[type=radio].house:not(old):checked + label span:after {
   display: none; }
 
 .wizard {
-  width: 100%;
+  width: 94%;
   list-style: none;
   list-style-image: none;
   float: left;
-  margin-left: 1em;
+  margin-left: 3%;
   margin-top: 0.5em;
-  background: transparent url("../img/wizard-line.svg") repeat scroll 0% 0%; }
+  background: transparent url("../img/wizard-line.svg") repeat scroll 0% 0%;
+  font-size: 0.7em; }
 
 .wizard li {
   position: relative;
@@ -1249,6 +1300,10 @@ legend.indent {
   padding: 0 5px;
   font-family: "Proxima Nova Rg Regular", Helvetica, Arial, sans-serif;
   font-size: 0.9em; }
+
+#passstrength {
+  overflow: auto;
+  margin-top: 0.5em; }
 
 .password-bar {
   width: 100%;
@@ -1458,7 +1513,7 @@ input[type=button].color-fill, .button.color-fill, button.color-fill {
 
 .wrapper-dropdown-5.bigger {
   width: auto;
-  font-size: 1.2em;
+  font-size: 1.1em;
   margin: -0.2em auto;
   background: url("../img/arrowthin.svg") no-repeat 92%/auto 1.2em;
   padding: 1em 12% 1em 1.2em;
@@ -1490,7 +1545,7 @@ input[type=button].color-fill, .button.color-fill, button.color-fill {
 .wrapper-dropdown-5 .dropdown li a {
   display: block;
   text-decoration: none;
-  color: #363b3E;
+  color: #79848a;
   padding: 1em;
   transition: all 0.3s ease-out;
   border-bottom: 1px solid #e2e2e2; }
@@ -2250,7 +2305,7 @@ td:last-child {
   clear: both;
   padding-top: 2em;
   margin-top: 1em;
-  border-top: 1px solid rgba(184, 197, 206, 0.2); }
+  border-top: 1px solid rgba(184, 197, 206, 0.5); }
 
 .comment .details {
   clear: both;
@@ -2742,6 +2797,13 @@ td:last-child {
     width: 65%; }
   .score {
     font-size: 3em; } }
+
+.registration h3 {
+  font-family: "Heroic Condensed Regular";
+  font-size: 2em; }
+
+.registration .wrapper-dropdown-5.bigger {
+  margin: 0 0 0.5em 0; }
 
 /* Tried & Tested
 -----------------------------------*/
