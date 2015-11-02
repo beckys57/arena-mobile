@@ -980,6 +980,11 @@ textarea {
   font-family: "Proxima Nova Rg Regular", Helvetica, Arial, sans-serif;
   color: #79848a; }
 
+@media (max-width: 480px) {
+  .shrinking.wrapper-dropdown-5.bigger {
+    font-size: 0.85em;
+    padding: 1.4em 12% 1.4em 1.2em; } }
+
 input {
   font-family: inherit;
   font-size: inherit; }
@@ -1020,6 +1025,7 @@ form p {
   font-size: 1.2em; }
 
 .form-section {
+  overflow: auto;
   padding: 1em 5%;
   border-bottom: 1px solid rgba(184, 197, 206, 0.5); }
   .form-section > * {
@@ -1152,22 +1158,25 @@ input[type=radio].house:not(old):checked + label span:after {
 .body-image .image-select:checked + label {
   box-shadow: 0px 0px 10px 1px #cfdce2; }
 
-.age-sex {
+.ghost {
   background-color: #edf2f5;
-  overflow: auto; }
+  overflow: auto;
+  border-bottom: none; }
 
 .age-selector {
   height: 6em; }
 
 .sex-selector {
   width: 46%;
+  margin: 0 1%;
   float: left; }
 
 .image-select.sex + label {
   border: solid 1px #cfdce2;
   border-radius: 2px;
+  display: block;
   background-color: transparent;
-  padding: 1em 0;
+  padding: 0.5em 0;
   cursor: pointer; }
 
 .image-select.sex:checked + label .male {
@@ -1189,7 +1198,7 @@ input[type=radio].house:not(old):checked + label span:after {
   display: none; }
 
 .wizard {
-  width: 94%;
+  width: 93%;
   list-style: none;
   list-style-image: none;
   float: left;
@@ -1283,9 +1292,6 @@ form {
 div.profile-form {
   width: 75%;
   float: right; }
-
-.form-header {
-  margin: 3em 4em 0 4em; }
 
 .form-section > label, .form-section div > label, .form-section-split > label, .form-section-split div > label {
   font-family: "Proxima Nova Semi Bold", Helvetica, Arial, sans-serif;
@@ -2804,6 +2810,9 @@ td:last-child {
 
 .registration .wrapper-dropdown-5.bigger {
   margin: 0 0 0.5em 0; }
+
+form {
+  text-align: center; }
 
 /* Tried & Tested
 -----------------------------------*/

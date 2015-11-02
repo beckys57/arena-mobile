@@ -58,6 +58,12 @@ textarea{
   }
 }
 
+@media (max-width: $mq-s){
+  .shrinking.wrapper-dropdown-5.bigger{
+    font-size: 0.85em;
+    padding: 1.4em 12% 1.4em 1.2em;
+  }
+}
 
 input{
   font-family: inherit;
@@ -108,6 +114,7 @@ form p {
 //For forms with 2+ columns, each column padded individually
 
 .form-section{
+  overflow: auto;
   padding: $thin 5%;
   border-bottom: $separator;
   & > *{
@@ -278,9 +285,10 @@ input[type=radio].house:not(old):checked + label span:after {
 }
 
 //Age and sex box
-.age-sex{
+.ghost{
   background-color: $ghost-blue;
   overflow: auto;
+  border-bottom: none;
 }
 
 .age-selector{
@@ -290,14 +298,15 @@ input[type=radio].house:not(old):checked + label span:after {
 //Sex selector
 .sex-selector{
   width: 46%;
- // margin: 0 1%;
+  margin: 0 1%;
   float: left;
 }
 
 .image-select.sex + label {
   @include input-border;
+  display: block;
   background-color: transparent; 
-  padding: $thin 0;
+  padding: $extra-thin 0;
   cursor:pointer;
 }
 
@@ -327,7 +336,7 @@ input[type=radio].house:not(old):checked + label span:after {
 }
 
 .wizard {
-  width: 94%;
+  width: 93%;
   list-style: none;
   list-style-image: none;
   float: left;
@@ -441,10 +450,6 @@ form{
 div.profile-form{
   width: $three-quarters;
   float: right;
-}
-
-.form-header{
-  margin: $thick $extra-thick 0 $extra-thick;
 }
 
 .form-section, .form-section-split {
