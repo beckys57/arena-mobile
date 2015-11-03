@@ -1140,15 +1140,6 @@ input[type=radio].house:not(old):checked + label span:after {
   top: 270px;
   left: 45%; }
 
-.body-image {
-  float: left;
-  min-width: 25%;
-  max-width: 100px; }
-
-.body-image div {
-  float: left;
-  position: relative; }
-
 .body-image .image-select + label {
   border: 2px solid #b8c5ce;
   cursor: pointer;
@@ -1295,8 +1286,10 @@ div.profile-form {
 
 .form-section > label, .form-section div > label, .form-section-split > label, .form-section-split div > label {
   font-family: "Proxima Nova Semi Bold", Helvetica, Arial, sans-serif;
-  font-size: 1.1em;
-  padding-bottom: 10px; }
+  font-size: 1.1em; }
+
+.form-section label {
+  margin-bottom: 0 !important; }
 
 legend.indent {
   position: absolute;
@@ -1571,7 +1564,7 @@ input[type=button].color-fill, .button.color-fill, button.color-fill {
 
 /* Active state */
 .wrapper-dropdown-5.active {
-  border-radius: 5px 15px 0 0;
+  border-radius: 5px 5px 0 0;
   box-shadow: none;
   border-bottom: none;
   z-index: 1;
@@ -2026,7 +2019,11 @@ td:last-child {
   font-family: "Proxima Nova Semi Bold", Helvetica, Arial, sans-serif; }
 
 .slider-wrap {
-  padding-bottom: 3em; }
+  padding-top: 1em;
+  padding-bottom: 2em; }
+
+.form-section .slider-wrap label {
+  padding-top: 0; }
 
 /* Social Media Icons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -2825,9 +2822,20 @@ td:last-child {
 form {
   text-align: center; }
 
-form label {
+.form-section label {
   width: 100%;
-  text-align: center; }
+  display: block;
+  text-align: center;
+  padding: 1em 0; }
+
+.body-image {
+  width: 75%;
+  border: 1px solid #e2e2e2;
+  overflow: auto;
+  margin-right: 5px; }
+  .body-image img {
+    width: 100%;
+    height: auto; }
 
 /* Tried & Tested
 -----------------------------------*/

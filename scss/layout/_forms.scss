@@ -261,17 +261,6 @@ input[type=radio].house:not(old):checked + label span:after {
   left: 45%;
 }
 
-.body-image{
-  float:left;
-  min-width: $quarter;
-  max-width: 100px;
-}
-
-.body-image div {
-  float:left;
-  position:relative;
-}
-
 .body-image .image-select + label {
   border: 2px solid $clay-blue;
   cursor: pointer;
@@ -456,8 +445,11 @@ div.profile-form{
   & > label, & div > label {
     font-family: $main-font-semi-bold;
     font-size: $sm-medium;
-    padding-bottom: 10px;
   }
+}
+
+.form-section label{
+  margin-bottom: 0 !important;
 }
 
 legend.indent{

@@ -12,8 +12,20 @@ form{
 	text-align: center;
 }
 
-form label{
+.form-section label{
 	width: 100%;
+	display: block;
 	text-align: center;
+	padding: 1em 0;
 }
 
+.body-image{
+	width: 75%;
+	border: 1px solid $grey-lter;
+	overflow: auto;
+	margin-right: 5px;
+	& img{
+		width: 100%;
+		height: auto;
+	}
+}
