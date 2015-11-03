@@ -675,7 +675,7 @@ a.active .category-icon.prime {
   left: 0;
   background-color: transparent;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
   line-height: 1.8;
   text-align: center;
   font-family: "Heroic Condensed Bold";
@@ -1055,13 +1055,17 @@ input[type="checkbox"] {
     background-size: 60%;
     background-position: 50% center; }
 
+.checkbox {
+  overflow: auto; }
+
 .checkbox span {
   float: left;
-  margin-right: 15px;
-  margin-top: -3px; }
+  margin-right: 1.2em;
+  margin-top: -1px; }
 
 .form-section .checkbox label, .form-section-split .checkbox label {
-  min-width: 13em; }
+  min-width: 3em;
+  text-align: left; }
 
 .checkbox.square label {
   float: left; }
@@ -1285,7 +1289,7 @@ div.profile-form {
   float: right; }
 
 .form-section > label, .form-section div > label, .form-section-split > label, .form-section-split div > label {
-  font-family: "Proxima Nova Semi Bold", Helvetica, Arial, sans-serif;
+  font-family: "Proxima Nova Rg Regular", Helvetica, Arial, sans-serif;
   font-size: 1.1em; }
 
 .form-section label {

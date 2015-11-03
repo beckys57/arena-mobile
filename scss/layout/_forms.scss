@@ -154,15 +154,20 @@ input[type="checkbox"]{
   }
 }
 
+.checkbox{
+  overflow: auto;
+}
+
 .checkbox span {
   float:left;
-  margin-right:15px;
-  margin-top: -3px;
+  margin-right: 1.2em;
+  margin-top: -1px;
 }
 
 .form-section, .form-section-split{
   .checkbox label{
-    min-width: 13em;
+    min-width: 3em;
+    text-align: left;
   }
 }
 
@@ -443,7 +448,7 @@ div.profile-form{
 
 .form-section, .form-section-split {
   & > label, & div > label {
-    font-family: $main-font-semi-bold;
+    font-family: $main-font;
     font-size: $sm-medium;
   }
 }

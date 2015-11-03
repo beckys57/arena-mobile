@@ -1,4 +1,4 @@
-<!--19-->
+<!--21-->
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,7 +7,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<link rel="stylesheet" href="css/main.css"/>
 	<link rel="stylesheet" href="css/theme-cyan.css"/>
-
 
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="dropdown.js"></script>
@@ -107,67 +106,159 @@
 		</ul>
 	</div>
 	<div class="section-header">
-		<h3 class="form-header">Work Info</h3>
+		<h3 class="form-header">Nutritional Data</h3>
 	</div>
 	<form>
 		<div class="form-section">
- 			<div class="active wrapper-dropdown-5 bigger" tabindex="1">Select a Career
-				<ul class="dropdown">
-					<li><a href="#">One</a></li>
-					<li><a href="#">Two</a></li>
-					<li><a href="#">Three</a></li>
-				</ul>
-			</div>
-		</div>
-		<div class="form-section ghost">
+			<label>Food Allergies</label>
+			<ul class="checkbox">
+				<li>
+					<input type="checkbox" name="allergies" id="allergy1">				
+					<label for="allergy1">
+						Nuts
+						<span class="radio-button"></span>
+					</label>
+				</li>	
+				<li>
+					<input type="checkbox" name="allergies" id="allergy2">				
+					<label for="allergy2">
+						Dairy
+						<span class="radio-button"></span>
+					</label>
+				</li>	
+				<li>
+					<input type="checkbox" name="allergies" id="allergy3">				
+					<label for="allergy3">
+						Gluten
+						<span class="radio-button"></span>
+					</label>
+				</li>	
+				<li>
+					<input type="checkbox" name="allergies" id="allergy4">				
+					<label for="allergy4">
+						Shellfish
+						<span class="radio-button"></span>
+					</label>
+				</li>	
+				<li>
+					<input type="checkbox" name="allergies" id="allergy5">				
+					<label for="allergy5">
+						Eggs
+						<span class="radio-button"></span>
+					</label>
+				</li>	
+				<li>
+					<input type="checkbox" name="allergies" id="allergy5">				
+					<label for="allergy5">
+						Other
+						<span class="radio-button"></span>
+					</label>
+				</li>	
+			</ul>
 			<div class="slider-wrap">
 				<div class="v-slider" data-field="first" data-min="1" data-max="20" data-start="1">
-					<label>Days worked per week</label>
+					<label>Daily Calorie Intake</label>
+				</div>
+				<input type="hidden" id="days_worked"></input>
+				<span class="min">1</span>
+				<span class="max">7</span>
+			</div>
+		</div>
+		<div class="form-section">
+			<div class="slider-wrap">
+				<div class="v-slider" data-field="first" data-min="1" data-max="20" data-start="1">
+					<label>Avg Weekly Alcohol Intake</label>
 				</div>
 				<input type="hidden" id="days_worked"></input>
 				<span class="min">1</span>
 				<span class="max">7</span>
 			</div>
 			<div class="slider-wrap">
-				<div class="v-slider" data-field="second" data-min="5" data-max="100" data-start="35" data-step="2">
-					<label>Hours/Day</label>
+				<div class="v-slider" data-field="first" data-min="1" data-max="20" data-start="1">
+					<label>Max Units In One Day</label>
 				</div>
-				<input type="hidden" id="hours_worked"></input>
+				<input type="hidden" id="days_worked"></input>
 				<span class="min">1</span>
 				<span class="max">7</span>
 			</div>
-			<div class="slider-wrap">
-				<div class="v-slider" data-field="second" data-min="5" data-max="100" data-start="35" data-step="2">
-					<label>Hours Seated/Day</label>
-				</div>
-				<input type="hidden" id="hours_seated"></input>
-				<span class="min">1</span>
-				<span class="max">7</span>
+		</div>	
+		<div class="form-section">
+			<label>Weekly Individual Shopping Budget</label>
+				<div class="active wrapper-dropdown-5 bigger" tabindex="1">10-15
+				<ul class="dropdown">
+					<li><a href="#">One</a></li>
+					<li><a href="#">Two</a></li>
+					<li><a href="#">Three</a></li>
+				</ul>
 			</div>
-			<div class="slider-wrap">
-				<div class="v-slider" data-field="second" data-min="5" data-max="100" data-start="35" data-step="2">
-					<label>Hours Active At Work</label>
-				</div>
-				<input type="hidden" id="hours_active_work"></input>
-				<span class="min">1</span>
-				<span class="max">7</span>
+			<label>Most Frequent Method Of Cooking</label>
+				<div class="active wrapper-dropdown-5 bigger" tabindex="1">Fry
+				<ul class="dropdown">
+					<li><a href="#">One</a></li>
+					<li><a href="#">Two</a></li>
+					<li><a href="#">Three</a></li>
+				</ul>
 			</div>
-			<div class="slider-wrap">
-				<div class="v-slider" data-field="second" data-min="0" data-max="24" data-start="35" data-step="2">
-					<label>Average Daily Sleep (Working)</label>
-				</div>
-				<input type="hidden" id="sleep_working"></input>
-				<span class="min">0</span>
-				<span class="max">24</span>
+			<label>Preferred Physical Activity</label>
+ 			<div class="active wrapper-dropdown-5 bigger" tabindex="1">First Preferred
+				<ul class="dropdown">
+					<li><a href="#">One</a></li>
+					<li><a href="#">Two</a></li>
+					<li><a href="#">Three</a></li>
+				</ul>
 			</div>
-			<div class="slider-wrap">
-				<div class="v-slider" data-field="second" data-min="0" data-max="24" data-start="35" data-step="2">
-					<label>Average Daily Sleep (Not Working)</label>
-				</div>
-				<input type="hidden" id="sleep_not_working"></input>
-				<span class="min">0</span>
-				<span class="max">24</span>
+ 			<div class="active wrapper-dropdown-5 bigger" tabindex="1">Second Preferred
+				<ul class="dropdown">
+					<li><a href="#">One</a></li>
+					<li><a href="#">Two</a></li>
+					<li><a href="#">Three</a></li>
+				</ul>
 			</div>
+			<div class="active wrapper-dropdown-5 bigger" tabindex="1">Third Preferred
+				<ul class="dropdown">
+					<li><a href="#">One</a></li>
+					<li><a href="#">Two</a></li>
+					<li><a href="#">Three</a></li>
+				</ul>
+			</div>
+			<label>Supplements</label>
+			<ul class="checkbox">
+				<li>
+					<input type="checkbox" name="supplements" id="supp1">				
+					<label for="supp1">
+						Isotonic
+						<span class="radio-button"></span>
+					</label>
+				</li>	
+				<li>
+					<input type="checkbox" name="supplements" id="supp2">				
+					<label for="supp2">
+						Protein
+						<span class="radio-button"></span>
+					</label>
+				</li>	
+				<li>
+					<input type="checkbox" name="supplements" id="supp3">				
+					<label for="supp3">
+						Weight gain
+						<span class="radio-button"></span>
+					</label>
+				</li>	
+				<li>
+					<input type="checkbox" name="supplements" id="supp4">				
+					<label for="supp4">
+						Slimming aids
+						<span class="radio-button"></span>
+					</label>
+				</li>	
+				<li>
+					<input type="checkbox" name="supplements" id="supp5">				
+					<label for="supp5">
+						Vitamins
+						<span class="radio-button"></span>
+					</label>
+				</li>	
+			</ul>
 		</div>
   	<div class="button-pair">
 			<a class="left button">Previous Step</a>
