@@ -1444,7 +1444,7 @@ input[type=button].color-fill, .button.color-fill, button.color-fill {
 
 @media (max-width: 480px) {
   .button-pair .button {
-    font-size: 1em; } }
+    font-size: 0.95em; } }
 
 .button.left {
   margin-right: 2%;
