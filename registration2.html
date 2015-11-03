@@ -9,11 +9,12 @@
 	<link rel="stylesheet" href="css/theme-cyan.css"/>
 
 
-	<script type="text/javascript" src="js/flickity.pkgd.min.js"></script>
-	<script type="text/javascript" src="js/flickity-options.js"></script>
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="dropdown.js"></script>
-	<script type="text/javascript" src="js/password-strength.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/slider.js"></script>
+
+
 	<noscript><link rel="stylesheet" type="text/css" href="noJS.css" /></noscript>
 
 
@@ -56,16 +57,59 @@
 			</div>
 		</div>
 		<div class="form-section ghost">
-			<div class="age-selector">
-				<label>Days worked per week</label>
+			<div class="slider-wrap">
+				<div class="v-slider" data-field="first" data-min="1" data-max="20" data-start="1">
+					<label>Days worked per week</label>
+				</div>
+				<input type="hidden" id="days_worked"></input>
+				<span class="min">1</span>
+				<span class="max">7</span>
+			</div>
+			<div class="slider-wrap">
+				<div class="v-slider" data-field="second" data-min="5" data-max="100" data-start="35" data-step="2">
+					<label>Hours/Day</label>
+				</div>
+				<input type="hidden" id="hours_worked"></input>
+				<span class="min">1</span>
+				<span class="max">7</span>
+			</div>
+			<div class="slider-wrap">
+				<div class="v-slider" data-field="second" data-min="5" data-max="100" data-start="35" data-step="2">
+					<label>Hours Seated/Day</label>
+				</div>
+				<input type="hidden" id="hours_seated"></input>
+				<span class="min">1</span>
+				<span class="max">7</span>
+			</div>
+			<div class="slider-wrap">
+				<div class="v-slider" data-field="second" data-min="5" data-max="100" data-start="35" data-step="2">
+					<label>Hours Active At Work</label>
+				</div>
+				<input type="hidden" id="hours_active_work"></input>
+				<span class="min">1</span>
+				<span class="max">7</span>
+			</div>
+			<div class="slider-wrap">
+				<div class="v-slider" data-field="second" data-min="0" data-max="24" data-start="35" data-step="2">
+					<label>Average Daily Sleep (Working)</label>
+				</div>
+				<input type="hidden" id="sleep_working"></input>
+				<span class="min">0</span>
+				<span class="max">24</span>
+			</div>
+			<div class="slider-wrap">
+				<div class="v-slider" data-field="second" data-min="0" data-max="24" data-start="35" data-step="2">
+					<label>Average Daily Sleep (Not Working)</label>
+				</div>
+				<input type="hidden" id="sleep_not_working"></input>
+				<span class="min">0</span>
+				<span class="max">24</span>
 			</div>
 		</div>
-		<div class="form-section">
-			
-    	<div>
-				<a class="button color-fill">Previous Step</a>
-				<a class="button color-fill">Next Step</a>
-    	</div>
+  	<div class="button-pair">
+			<a class="left button">Previous Step</a>
+			<a class="right button">Next Step</a>
+  	</div>
     </div>
 	</form>
 	<div class="sitemap">

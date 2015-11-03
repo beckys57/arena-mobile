@@ -76,6 +76,7 @@ input[type=button].color-fill, .button.color-fill, button.color-fill{
 .button-pair{
   @include clearfix;
   width: 100%;
+  padding: 1em 5%;
 }
 
 .button-pair .button{
@@ -86,6 +87,11 @@ input[type=button].color-fill, .button.color-fill, button.color-fill{
   font-size: 1.2em;
 }
 
+@media (max-width: $mq-s){
+  .button-pair .button{
+    font-size: 1em;
+  }
+}
 
 //left button (next uses cyan)
 .button.left{
@@ -94,6 +100,7 @@ input[type=button].color-fill, .button.color-fill, button.color-fill{
   color: $blue-grey;
   border-color: $blue-grey;
 }
+
 
 //Upload Button
 

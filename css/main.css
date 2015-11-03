@@ -1426,7 +1426,8 @@ input[type=button].color-fill, .button.color-fill, button.color-fill {
   content: '';
   display: block;
   clear: both;
-  width: 100%; }
+  width: 100%;
+  padding: 1em 5%; }
 
 .button-pair .button {
   display: inline-block;
@@ -1434,6 +1435,10 @@ input[type=button].color-fill, .button.color-fill, button.color-fill {
   margin: 0.5em 0;
   padding: 1em 0;
   font-size: 1.2em; }
+
+@media (max-width: 480px) {
+  .button-pair .button {
+    font-size: 1em; } }
 
 .button.left {
   margin-right: 2%;
@@ -1978,6 +1983,7 @@ td:last-child {
   position: relative;
   top: -14px;
   left: -15px;
+  height: 0;
   float: left; }
 
 .v-slider:after {
@@ -1985,10 +1991,11 @@ td:last-child {
   position: relative;
   top: -14px;
   right: -15px;
+  height: 0;
   float: right; }
 
 .v-slider {
-  margin: 3em 0 2em 0; }
+  margin: 3em 0 1.5em 0; }
 
 .v-slider > .ui-slider-handle {
   text-decoration: none;
@@ -1996,23 +2003,27 @@ td:last-child {
 
 .slider-value {
   position: relative;
-  top: 30px;
+  top: 27px;
   font-family: "Proxima Nova Semi Bold", Helvetica, Arial, sans-serif;
-  font-size: inherit; }
+  font-size: 0.85em; }
 
 .v-slider label {
-  font-family: "Proxima Nova Rg Regular", Helvetica, Arial, sans-serif !important;
+  font-family: "Proxima Nova Rg Regular", Helvetica, Arial, sans-serif;
   position: absolute;
-  margin-top: -45px;
+  margin-top: -48px;
   left: -0.2em; }
 
 .min {
   float: left;
-  margin-left: -0.2em; }
+  margin-left: -0.2em;
+  font-size: 0.9em;
+  font-family: "Proxima Nova Semi Bold", Helvetica, Arial, sans-serif; }
 
 .max {
   float: right;
-  margin-right: -0.2em; }
+  margin-right: -0.2em;
+  font-size: 0.9em;
+  font-family: "Proxima Nova Semi Bold", Helvetica, Arial, sans-serif; }
 
 .slider-wrap {
   padding-bottom: 3em; }
@@ -2812,6 +2823,10 @@ td:last-child {
   margin: 0 0 0.5em 0; }
 
 form {
+  text-align: center; }
+
+form label {
+  width: 100%;
   text-align: center; }
 
 /* Tried & Tested

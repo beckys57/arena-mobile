@@ -56,6 +56,7 @@
   position: relative;
   top:-14px;
   left:-15px;
+  height: 0;
   float: left;
 }
 
@@ -64,11 +65,12 @@
   position: relative;
   top:-14px;
   right:-15px;
+  height: 0;
   float: right;
 }
 
 .v-slider {
-    margin: $thick 0 $fairly-thick 0;
+    margin: $thick 0 1.5em 0;
 }
 
 .v-slider > .ui-slider-handle {
@@ -78,26 +80,30 @@
 
 .slider-value {
   position: relative;
-  top: 30px;
+  top: 27px;
   font-family: $main-font-semi-bold;
-  font-size: inherit;
+  font-size: 0.85em;
 }
 
 .v-slider label {
-  font-family: $main-font !important;
+  font-family: $main-font;
   position: absolute;
-  margin-top: -45px;
+  margin-top: -48px;
   left: -0.2em;
 }
 
 .min{
   float:left;
   margin-left: -0.2em;
+  font-size: 0.9em;
+  font-family: $main-font-semi-bold;
 }
 
 .max{
   float:right;
   margin-right: -0.2em;
+  font-size: 0.9em;
+  font-family: $main-font-semi-bold;
 }
 
 .slider-wrap{
