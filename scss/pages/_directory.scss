@@ -32,22 +32,28 @@
 		margin-bottom: -2em;
 	}
 	.form-section label{
-		padding: 1em 0 0.5em; 
+		padding: 1em 0 0em; 
 	}
 	.checkbox{
 		margin-left: 5%;
 		overflow: auto;
 	}
 	.form-section .checkboxes-label{
-		padding: 0;  //If in own form-section
+		padding: 0 0 0.5em;  //If in own form-section
 	}
 	.checkbox label{
 		padding: 0 0 0 1.5em;
 		min-height: 0;
 	}
 	.sex-select{
-		float: right;
-		margin-top: -2em;
+		width: 100%;
+		overflow: auto;
+		margin-bottom: 1em;
+		& > div{
+			float: left;
+			width: 46%;
+			margin: 0 1%;
+		}
 	}
 	.image-select.sex + label{
 		margin: 0.5em 0;
@@ -70,6 +76,9 @@
 	.male, .female{
 		height: 3em;
 		background-size: auto 80%;
+	}
+	.wizard-wrap{
+		height: 7em;
 	}
 	.wizard{
 		width: 96%;

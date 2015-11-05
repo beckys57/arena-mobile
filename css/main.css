@@ -2507,22 +2507,27 @@ td:last-child {
   margin-bottom: -2em; }
 
 .directory-search form .form-section label {
-  padding: 1em 0 0.5em; }
+  padding: 1em 0 0em; }
 
 .directory-search form .checkbox {
   margin-left: 5%;
   overflow: auto; }
 
 .directory-search form .form-section .checkboxes-label {
-  padding: 0; }
+  padding: 0 0 0.5em; }
 
 .directory-search form .checkbox label {
   padding: 0 0 0 1.5em;
   min-height: 0; }
 
 .directory-search form .sex-select {
-  float: right;
-  margin-top: -2em; }
+  width: 100%;
+  overflow: auto;
+  margin-bottom: 1em; }
+  .directory-search form .sex-select > div {
+    float: left;
+    width: 46%;
+    margin: 0 1%; }
 
 .directory-search form .image-select.sex + label {
   margin: 0.5em 0;
@@ -2542,6 +2547,9 @@ td:last-child {
 .directory-search form .male, .directory-search form .female {
   height: 3em;
   background-size: auto 80%; }
+
+.directory-search form .wizard-wrap {
+  height: 7em; }
 
 .directory-search form .wizard {
   width: 96%;
