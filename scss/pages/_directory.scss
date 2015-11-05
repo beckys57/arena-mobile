@@ -1,3 +1,89 @@
+/* Directory Search
+-----------------------------------*/
+.directory-search{
+	background-color: $slate-lt;
+	color: $blue-grey;
+	h2{
+		font-family: $heading-rg;
+		color: $clay-blue;
+		font-size: 1.9em;
+		text-transform: none;
+	}
+}
+
+
+.directory-search form{
+	& .wrapper-dropdown-5, input[type="text"], {
+		background-color: rgba(#FFFFFF, 0.05);
+		color: $clay-blue;
+		border-color: $blue-grey;
+		margin: 0.75em auto;
+	}
+	label{
+		color: $blue-grey-lt;
+	}
+	& input[type="submit"]{
+		float: right;
+		margin: 2.5em 4em 3em;
+		color: $clay-blue;
+		border-color: $blue-grey;
+		width: 10em;
+	}
+	& .section-header{
+		margin-bottom: -2em;
+	}
+	.form-section label{
+		padding: 1em 0 0.5em; 
+	}
+	.checkbox{
+		margin-left: 5%;
+		overflow: auto;
+	}
+	.form-section .checkboxes-label{
+		padding: 0;  //If in own form-section
+	}
+	.checkbox label{
+		padding: 0 0 0 1.5em;
+		min-height: 0;
+	}
+	.sex-select{
+		float: right;
+		margin-top: -2em;
+	}
+	.image-select.sex + label{
+		margin: 0.5em 0;
+		padding: 0;
+		height: 3.2em;
+	}
+	.image-select.sex:checked + label {
+		border-color: $blue-grey;
+		& .male{
+			background: url('../img/male-white.svg') no-repeat 50% center;
+		}
+		& .female{
+			background: url('../img/female-white.svg') no-repeat 50% center;
+		}
+		& .male, .female{
+			height: 3em;
+			background-size: auto 80%;
+		}
+	}
+	.male, .female{
+		height: 3em;
+		background-size: auto 80%;
+	}
+	.wizard{
+		width: 96%;
+		background: transparent url("../img/wizard-line-dk.svg") repeat scroll 0% 0%;
+		& .step-circle{
+			background: url('../img/wizard-step-dk.svg') no-repeat 50% 0;
+		}
+		& .step-name{
+			color: $blue-grey-lt;
+		}
+	}
+}
+
 /* Trainer profile
 -----------------------------------*/
 .profile{
@@ -108,8 +194,20 @@
 }
 
 .directory-results .result{
+	& .text{
+		padding: 0 5% 2em;
+	}
+	& .circle{
+		margin-top: 1em;
+	}
+	& .text{
+		padding: 0 2em;
+	}
+}
+
+.directory-results.wide{
 	padding: 0;
-	& > img{
+	& img{
 		width: 100%;
 		height: auto;
 	}
@@ -159,6 +257,16 @@
 	background: White url('../img/map-pin.png') no-repeat;
 	background-position: 25px center;
 	box-shadow: 1px 1px 1px 1px $blue-grey-lt;
+}
+
+@media (max-width: $mq-l){
+	.map .floater{
+		font-size: 0.8em;
+		background-position: 18px center !important;
+		& > div{
+			padding: 1em 25px 1em 75px !important;
+		}
+	}
 }
 
 //TRIANGLE

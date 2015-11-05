@@ -1,4 +1,4 @@
-<!--8-->
+<!--24-->
 <!DOCTYPE html>
 <html>
 <head>
@@ -97,42 +97,106 @@
 		</div>
 	</nav>
 	
-	<div class="search-block">
+	<div class="directory-search">
 		<div class="section-header">
-			<h2>Search for a place to train</h2>
+			<h2>Search for Personal Trainers</h2>
 		</div>
 		<form>	
-			<div>	
-				<div class="wrapper-dropdown-5 bigger" tabindex="1">Activity
-					<ul class="dropdown">
-						<li><a href="#">One</a></li>
-						<li><a href="#">Two</a></li>
-						<li><a href="#">Three</a></li>
-					</ul>
-				</div>
-				​<div  class="wrapper-dropdown-5 bigger" tabindex="1">Location
-					<ul class="dropdown">
-						<li><a href="#">One</a></li>
-						<li><a href="#">Two</a></li>
-						<li><a href="#">Three</a></li>
-					</ul>
-				</div>
-				​<div  class="wrapper-dropdown-5 bigger" tabindex="1">Cost (Per Session)
-					<ul class="dropdown">
-						<li><a href="#">One</a></li>
-						<li><a href="#">Two</a></li>
-						<li><a href="#">Three</a></li>
-					</ul>
-				</div>
-				<div class="slider-wrap">
-				    <div class="v-slider" data-field="first" data-min="1" data-max="20" data-start="5">
-						<label></label>
+				<div class="form-section">
+					<div>
+						<label>Location</label>
+						<input type="text" placeholder="City/borough">
 					</div>
-					<input type="hidden" id="weight"></input>
-					<span class="min">?</span>
-					<span class="max">?</span>
 				</div>
-			</div>	
+				<div class="form-section">
+					<div>
+						<label class="checkboxes-label">Availability</label>
+						<ul class="checkbox">
+							<li>
+								<input type="checkbox" name="Availability" id="AM">				
+								<label for="AM">
+									AM
+									<span class="radio-button"></span>
+								</label>
+							</li>	
+							<li>
+								<input type="checkbox" name="Availability" id="PM">				
+								<label for="PM">
+									PM
+									<span class="radio-button"></span>
+								</label>
+							</li>	
+						</ul>
+					</div>
+				</div>
+				<div class="form-section">
+					<div>
+						<label class="checkboxes-label">Sex</label>
+						<ul class="checkbox">
+							<li>
+								<input type="checkbox" name="sex" id="male">				
+								<label for="male">
+									Male
+									<span class="radio-button"></span>
+								</label>
+							</li>	
+							<li>
+								<input type="checkbox" name="sex" id="female">				
+								<label for="female">
+									Female
+									<span class="radio-button"></span>
+								</label>
+							</li>	
+						</ul>
+					</div>
+				</div>
+				<div class="form-section">
+					<div>
+			   			<div class="wrapper-dropdown-5 bigger" tabindex="1">Hourly Fee
+							<ul class="dropdown">
+								<li><a href="#">One</a></li>
+								<li><a href="#">Two</a></li>
+								<li><a href="#">Three</a></li>
+							</ul>
+						</div>
+					</div>
+					<div>
+			   			<div class="wrapper-dropdown-5 bigger" tabindex="1">Speciality
+							<ul class="dropdown">
+								<li><a href="#">One</a></li>
+								<li><a href="#">Two</a></li>
+								<li><a href="#">Three</a></li>
+							</ul>
+						</div>
+					</div>
+					<div>
+			   			<div class="wrapper-dropdown-5 bigger" tabindex="1">Gym Affliation
+							<ul class="dropdown">
+								<li><a href="#">One</a></li>
+								<li><a href="#">Two</a></li>
+								<li><a href="#">Three</a></li>
+							</ul>
+						</div>
+					</div>
+					<div>
+			   			<div class="wrapper-dropdown-5 bigger" tabindex="1">Years experience
+							<ul class="dropdown">
+								<li><a href="#">One</a></li>
+								<li><a href="#">Two</a></li>
+								<li><a href="#">Three</a></li>
+							</ul>
+						</div>
+					</div>
+					<div>
+			   			<div class="wrapper-dropdown-5 bigger" tabindex="1">Qualifications
+							<ul class="dropdown">
+								<li><a href="#">One</a></li>
+								<li><a href="#">Two</a></li>
+								<li><a href="#">Three</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
 		</form>
 	</div>
 	
@@ -141,56 +205,19 @@
 			<h3><span class="quantity">3</span> Results</h3>
 		</div>
 		<div class="carousel js-flickity" data-flickity-options='{ "contain": true, "wrapAround": true }'>
-		<div class="result wide">
-			<img src="img/size-a.png"></img>
-			<div class="text">
-				<div class="result-header">
-					<span class="name">Gold Gym</span>
-					<span class="distance">2.2KM</span>
-				</div>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc a dui tempus, ornare metus ut, dapibus orci. Donec vestibulum ornare urna vel eleifend. Ut tellus libero
-				</p>
-			</div>
-			<div class="map">
-				<img src="img/map.png">
-				<div class="floater">
-					<div>
-						<span class="street">BriarHill 34</span>
-						<span class="city">04403 New York</span>
-						<div class="contact-details">
-							<a href="mailto:eggybread@work.anet">working@a.net</a>
-							<span class="telephone">+20 1179 5699 21</span>
-							<a>www.thebestgymever.com</a>
+			<div class="result">
+				<img class="circle" src="img/movie1.png"></img>
+				<div>
+					<div class="review-header">
+						<div class="text">
+							<h3>Headline</h3>
+							<span class="category-title">Action</span>
 						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="result wide">
-				<img src="img/size-a.png"></img>
-				<div class="text">
-					<div class="result-header">
-						<span class="name">Gold Gym</span>
-						<span class="distance">2.2KM</span>
+						<span class="score">8.7</span>
 					</div>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc a dui tempus, ornare metus ut, dapibus orci. Donec vestibulum ornare urna vel eleifend. Ut tellus libero
 					</p>
-				</div>
-				<div class="map">
-					<img src="img/map.png">
-					<div class="floater">
-						<div>
-							<span class="street">BriarHill 34</span>
-							<span class="city">04403 New York</span>
-							<div class="contact-details">
-								<a href="mailto:eggybread@work.anet">working@a.net</a>
-								<span class="telephone">+20 1179 5699 21</span>
-								<a>www.thebestgymever.com</a>
-							</div>
-						</div>
-					</div>
 				</div>
 			</div>
 		</div>

@@ -418,11 +418,29 @@ img {
 /* Circular elements
 -----------------------------------*/
 .circle {
+  display: block;
+  margin: auto;
+  width: 60%;
+  height: auto;
   border-radius: 50%;
-  width: 15em;
-  height: 15em;
   background-color: transparent; }
 
+/*
+
+.circle{
+  border-radius:50%;
+  width: 15em;
+  height: 15em;
+  background-color: transparent;
+}
+
+@media (max-width: $mq-l){
+  .circle{
+    width: 12em;
+    height: 12em;
+  }
+}
+*/
 /* Circular elements
 -----------------------------------*/
 .circle-list h2 {
@@ -1067,7 +1085,7 @@ input[type="checkbox"] {
   margin-left: 0.5em;
   position: relative;
   min-height: 3em;
-  padding: 0em 0 0em 24px;
+  padding: 0 0 0 24px;
   text-align: left; }
 
 .checkbox.square label {
@@ -2453,6 +2471,81 @@ td:last-child {
     margin: 1em 1.5%;
     height: 2.5em; }
 
+/* Directory Search
+-----------------------------------*/
+.directory-search {
+  background-color: #4d5558;
+  color: #79848a; }
+  .directory-search h2 {
+    font-family: "Heroic Condensed Regular";
+    color: #b8c5ce;
+    font-size: 1.9em;
+    text-transform: none; }
+
+.directory-search form .wrapper-dropdown-5, .directory-search form input[type="text"] {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #b8c5ce;
+  border-color: #79848a;
+  margin: 0.75em auto; }
+
+.directory-search form label {
+  color: #9cA9b1; }
+
+.directory-search form input[type="submit"] {
+  float: right;
+  margin: 2.5em 4em 3em;
+  color: #b8c5ce;
+  border-color: #79848a;
+  width: 10em; }
+
+.directory-search form .section-header {
+  margin-bottom: -2em; }
+
+.directory-search form .form-section label {
+  padding: 1em 0 0.5em; }
+
+.directory-search form .checkbox {
+  margin-left: 5%;
+  overflow: auto; }
+
+.directory-search form .form-section .checkboxes-label {
+  padding: 0; }
+
+.directory-search form .checkbox label {
+  padding: 0 0 0 1.5em;
+  min-height: 0; }
+
+.directory-search form .sex-select {
+  float: right;
+  margin-top: -2em; }
+
+.directory-search form .image-select.sex + label {
+  margin: 0.5em 0;
+  padding: 0;
+  height: 3.2em; }
+
+.directory-search form .image-select.sex:checked + label {
+  border-color: #79848a; }
+  .directory-search form .image-select.sex:checked + label .male {
+    background: url("../img/male-white.svg") no-repeat 50% center; }
+  .directory-search form .image-select.sex:checked + label .female {
+    background: url("../img/female-white.svg") no-repeat 50% center; }
+  .directory-search form .image-select.sex:checked + label .male, .directory-search form .image-select.sex:checked + label .female {
+    height: 3em;
+    background-size: auto 80%; }
+
+.directory-search form .male, .directory-search form .female {
+  height: 3em;
+  background-size: auto 80%; }
+
+.directory-search form .wizard {
+  width: 96%;
+  background: transparent url("../img/wizard-line-dk.svg") repeat scroll 0% 0%; }
+  .directory-search form .wizard .step-circle {
+    background: url("../img/wizard-step-dk.svg") no-repeat 50% 0; }
+  .directory-search form .wizard .step-name {
+    color: #9cA9b1; }
+
 /* Trainer profile
 -----------------------------------*/
 .profile {
@@ -2568,12 +2661,18 @@ td:last-child {
   font-family: "Heroic Condensed Regular";
   font-size: 2.5em; }
 
-.directory-results .result {
+.directory-results .result .text {
+  padding: 0 5% 2em; }
+
+.directory-results .result .circle {
+  margin-top: 1em; }
+
+.directory-results.wide {
   padding: 0; }
-  .directory-results .result > img {
+  .directory-results.wide img {
     width: 100%;
     height: auto; }
-  .directory-results .result .text {
+  .directory-results.wide .text {
     padding: 0 5% 2em; }
 
 .quantity {
@@ -2611,6 +2710,13 @@ td:last-child {
   background: White url("../img/map-pin.png") no-repeat;
   background-position: 25px center;
   box-shadow: 1px 1px 1px 1px #9cA9b1; }
+
+@media (max-width: 992px) {
+  .map .floater {
+    font-size: 0.8em;
+    background-position: 18px center !important; }
+    .map .floater > div {
+      padding: 1em 25px 1em 75px !important; } }
 
 .floater:after {
   content: "";
