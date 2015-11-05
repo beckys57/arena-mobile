@@ -1780,6 +1780,11 @@ http://flickity.metafizzy.co
   /* IE8 */
   opacity: 1; }
 
+@media (max-width: 480px) {
+  .flickity-page-dots .dot {
+    width: 7px;
+    height: 7px; } }
+
 .headliner {
   background-color: #363b3E; }
   .headliner .text-overlay {
@@ -2545,6 +2550,34 @@ td:last-child {
     background: url("../img/wizard-step-dk.svg") no-repeat 50% 0; }
   .directory-search form .wizard .step-name {
     color: #9cA9b1; }
+
+/* Trainer search
+-----------------------------------*/
+.plans {
+  background-color: #edf2f5; }
+  .plans .section-header {
+    padding: 2em 0 1em; }
+  .plans h3 {
+    font-size: 2.5em;
+    font-family: "Heroic Condensed Book";
+    color: #79848a; }
+  .plans .carousel {
+    margin-bottom: 0;
+    padding-bottom: 1em; }
+
+.plan {
+  width: 90%;
+  overflow: auto;
+  margin-right: 5px;
+  margin-bottom: 0.5em;
+  text-align: center; }
+  .plan img {
+    margin-bottom: 1em; }
+  .plan h4 {
+    font-family: "Heroic Condensed Medium";
+    color: #4b4f52; }
+  .plan .read-more {
+    text-transform: uppercase; }
 
 /* Trainer profile
 -----------------------------------*/

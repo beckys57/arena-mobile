@@ -203,8 +203,14 @@ http://flickity.metafizzy.co
   background: $clay-blue;
 }
 
-
 .flickity-page-dots .dot.is-selected {
   filter: alpha(opacity=100); /* IE8 */
   opacity: 1;
+}
+
+@media (max-width: $mq-s){
+  .flickity-page-dots .dot {
+    width: 7px;
+    height: 7px;
+  }
 }
