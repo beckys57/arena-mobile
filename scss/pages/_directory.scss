@@ -201,7 +201,7 @@
 		margin-top: 1em;
 	}
 	& .text{
-		padding: 0 2em;
+		padding: 0;
 	}
 }
 
@@ -213,6 +213,52 @@
 	}
 	& .text{
 		padding: 0 5% 2em;
+	}
+}
+
+//Results in circle list format
+.circle-list{
+	& .distance{
+		position: absolute;
+		text-align: right;
+		right: 0;
+		top: 0;
+		font-size: 1.7em;
+		font-family: $heading-lt;
+		letter-spacing: -1px;
+		text-transform: uppercase;
+		line-height: 1.4;
+	}
+	& .section-header{
+		overflow: auto;
+	}
+	& .wrapper-dropdown-5.smaller{
+		float: left;
+		width: 47%;
+		margin: 1em 1.5%;
+		color: $blue-grey;
+		text-transform: none;
+		font-size: 1em;
+		padding: 0.6em 2.5em 0.6em 1.2em;
+		background: url("../img/arrowthin.svg") no-repeat 88%/auto 1em;
+	}
+}
+
+.circle-list .booking{
+	position: relative;
+	padding: 1.5em 0 0.5em;
+	overflow: auto;
+	& a{
+		float: left;
+		width: 50%;
+		padding-left: 2%;
+		padding-right: 2%;
+		text-align: center;
+		margin: 0;
+		font-size: 0.95em;
+	}
+	& .read-more{
+		padding: 0.7em 2%;
 	}
 }
 

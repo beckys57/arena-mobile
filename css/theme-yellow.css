@@ -60,10 +60,10 @@ body image/aspired look - any size, perhaps size D?
 letter from editor: 360 x 550 but not important as long as taller than wide
 */
 .color {
-  color: #facc0A; }
+  color: #facc0A !important; }
 
 button.color {
-  border-color: #facc0A; }
+  color: #facc0A; }
 
 input.color-fill[type='button'], .button.color-fill, .button.right {
   border: 1px solid #facc0A;

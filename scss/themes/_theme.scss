@@ -1,9 +1,9 @@
 .color{
-	color: $main-color;
+	color: $main-color !important;
 }
 
 button.color{
-  border-color: $main-color;
+  color: $main-color;
 }
 
 //Theme specific colours

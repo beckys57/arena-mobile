@@ -2667,6 +2667,9 @@ td:last-child {
 .directory-results .result .circle {
   margin-top: 1em; }
 
+.directory-results .result .text {
+  padding: 0; }
+
 .directory-results.wide {
   padding: 0; }
   .directory-results.wide img {
@@ -2674,6 +2677,45 @@ td:last-child {
     height: auto; }
   .directory-results.wide .text {
     padding: 0 5% 2em; }
+
+.circle-list .distance {
+  position: absolute;
+  text-align: right;
+  right: 0;
+  top: 0;
+  font-size: 1.7em;
+  font-family: "Heroic Condensed Book";
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  line-height: 1.4; }
+
+.circle-list .section-header {
+  overflow: auto; }
+
+.circle-list .wrapper-dropdown-5.smaller {
+  float: left;
+  width: 47%;
+  margin: 1em 1.5%;
+  color: #79848a;
+  text-transform: none;
+  font-size: 1em;
+  padding: 0.6em 2.5em 0.6em 1.2em;
+  background: url("../img/arrowthin.svg") no-repeat 88%/auto 1em; }
+
+.circle-list .booking {
+  position: relative;
+  padding: 1.5em 0 0.5em;
+  overflow: auto; }
+  .circle-list .booking a {
+    float: left;
+    width: 50%;
+    padding-left: 2%;
+    padding-right: 2%;
+    text-align: center;
+    margin: 0;
+    font-size: 0.95em; }
+  .circle-list .booking .read-more {
+    padding: 0.7em 2%; }
 
 .quantity {
   display: inline-block;
