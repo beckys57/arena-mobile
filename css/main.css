@@ -320,7 +320,7 @@ body, html {
   max-width: 768px;
   margin: 0;
   font-family: "Proxima Nova Rg Regular", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.42857;
   color: #363b3E;
   background-color: #b8c5ce; }
@@ -337,6 +337,10 @@ body, html {
 img {
   width: 100%;
   height: auto; }
+
+@media (min-width: 480px) {
+  body {
+    font-size: 22px !important; } }
 
 .category-bar, .category-bar ul li {
   position: relative;
@@ -2976,6 +2980,11 @@ td:last-child {
     font-size: 10em;
     right: -4%; } }
 
+/* Product reviews
+-----------------------------------*/
+.product-reviews {
+  margin-bottom: 1em; }
+
 /* Equivalent to four squares on desktop
 -----------------------------------*/
 .quarters {
@@ -3068,10 +3077,11 @@ td:last-child {
   content: "";
   position: relative;
   display: block;
-  margin: 2em auto 0.5em; }
+  margin: 0 auto 0.5em; }
 
 .pros p {
-  color: #743b96; }
+  color: #743b96;
+  margin-bottom: 2em; }
 
 .pros:before {
   background: url("../img/pros.png") no-repeat;
@@ -3103,9 +3113,9 @@ td:last-child {
 @media (min-width: 480px) {
   .item-header {
     height: 24em;
-    padding: 3em 0; }
+    padding: 3em 0 0; }
   .item-feature h4 {
-    font-size: 6em; }
+    font-size: 5em; }
   .item-header img {
     right: 10%;
     padding: 2em 0; }

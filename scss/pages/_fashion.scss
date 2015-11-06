@@ -86,6 +86,12 @@
 	}
 }
 
+/* Product reviews
+-----------------------------------*/
+.product-reviews{
+	margin-bottom: 1em;
+}
+
 /* Equivalent to four squares on desktop
 -----------------------------------*/
 .quarters{
@@ -205,12 +211,13 @@
 	content: "";
 	position: relative;
 	display: block;
-	margin: $fairly-thick auto 0.5em;
+	margin: 0 auto 0.5em;
 }
 
 .pros{
 	& p{
 		color: $fashion;
+		margin-bottom: $fairly-thick;
 	}
 	&:before{
 		background: url("../img/pros.png") no-repeat;
@@ -253,10 +260,10 @@
 @media (min-width: $mq-s){
 	.item-header{
 		height: 24em;
-		padding: $thick 0;
+		padding: $thick 0 0;
 	}
 	.item-feature h4{
-		font-size: 6em;
+		font-size: 5em;
 	}
 	.item-header img{
 		right: 10%;
