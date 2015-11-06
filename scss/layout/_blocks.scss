@@ -163,3 +163,39 @@
     height: 100%;
   }
 }
+
+/* Other articles - sidebar equivalent
+-----------------------------------*/
+.other-articles{
+  background-color: $ghost-blue;
+  & .section-header{
+    padding: 2em 0 1em;
+  }
+  h3{
+    font-size: 2.5em;
+    font-family: $heading-lt;
+    color: $blue-grey;
+  }
+  .carousel{
+    margin-bottom: 0;
+    padding-bottom: 1em;
+  }
+}
+
+.other-article{
+  width: 90%;
+  overflow: visible;
+  margin-right: 5px;
+  margin-bottom: 0.5em;
+  text-align: center;
+  & img{
+    margin-bottom: 1em;
+  }
+  & h4{
+    font-family: $heading-md;
+    color: $slate;
+  }
+  .read-more{
+    text-transform: uppercase;
+  }
+}

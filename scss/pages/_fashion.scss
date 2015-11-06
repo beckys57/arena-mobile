@@ -50,3 +50,227 @@
 .product-highlights{
 	background-color: $ghost-blue;
 }
+
+.tips{
+	background-color: white;
+	& .other-article{
+		width: 85%;
+		margin-right: 5%;
+	}
+
+	& .other-article > div{
+		position: relative;
+		overflow: visible;
+	}
+
+	& .number{
+		position: absolute;
+		bottom: 10%;
+		font-family: $heading-md;
+		color: $fashion;
+		line-height: 1;
+	}
+}
+
+@media (max-width: $mq-s){
+	.tips .number{
+		font-size: 8em;
+		right: -5%;
+	}
+}
+
+@media (min-width: $mq-s){
+	.tips .number{
+		font-size: 10em;
+		right: -4%;
+	}
+}
+
+/* Equivalent to four squares on desktop
+-----------------------------------*/
+.quarters{
+	background-color: $ghost-blue;
+	padding: 2em 0;
+	& .grid-item > div{
+		background-color: $slate;
+		overflow: auto;
+	}
+	& img{
+		opacity: 0.65;
+	}
+	& h4{
+		color: white;
+		text-transform: uppercase;
+		line-height: 1;
+	}
+	.text-overlay{
+		bottom: 1em !important;
+	}
+	.category-title{
+		font-size: 1.25em;
+		font-family: $heading-md;
+		text-transform: uppercase;
+		line-height: 1;
+		//text-shadow: none;
+	}
+}
+
+@media (max-width: $mq-s){
+	.quarters{
+		& h4{
+			font-size: 2em;
+		}
+		.category-title{
+			font-size: 1.25em;
+		}
+	}
+}
+
+@media (min-width: $mq-s){
+	.quarters{
+		& h4{
+			font-size: 3em;
+		}
+		.category-title{
+			font-size: 1.75em;
+		}
+	}
+}
+
+/* Latest Product Reviews
+-----------------------------------*/
+.review .review-image{
+	position: relative;
+}
+
+.liked{
+	position: absolute;
+	top: 2px;
+	right: 0;
+	background: transparent url("../img/like.png") no-repeat;
+	background-size: 100%;
+	height: 3em;
+	width: 3em;
+}
+
+.disliked{
+	@extend .liked;
+	background: transparent url("../img/dislike.png") no-repeat;
+	background-size: 100%;
+}
+
+
+/* Item Feature
+-----------------------------------*/
+.item-feature{
+	background-color: $ghost-blue;
+	overflow: auto;
+	padding-bottom: 2em;
+}
+
+.item-header{
+	position: relative;
+	height: 16em;
+	overflow: auto;
+	img{
+		position: absolute;
+		top: 0;
+		right: 5%;
+		display: block;
+		margin: auto;
+		height: 100%;
+		width: auto;
+		padding: $thin 0 0;
+		z-index: 1;
+	}
+	& h4{
+		width: 3em;
+		float: right;
+		margin-right: 45%;
+		font-size: 6em;
+		text-transform: uppercase;
+		font-family: $heading-bold;
+		line-height: 0.85;
+		color: $soft-blue;
+		text-align: right;
+	}
+}
+
+.pros, .cons{
+	text-align: center;
+	padding: 0 15%;
+}
+
+.pros:before, .cons:before{
+	content: "";
+	position: relative;
+	display: block;
+	margin: $fairly-thick auto 0.5em;
+}
+
+.pros{
+	& p{
+		color: $fashion;
+	}
+	&:before{
+		background: url("../img/pros.png") no-repeat;
+		background-size: 100%;
+	}
+}
+.cons{
+	& p{
+		color: $blue-grey-lt;
+	}
+	&:before{
+		background: url("../img/cons.png") no-repeat;
+		background-size: 100%;
+	}
+}
+
+@media (max-width: $mq-l){
+	.item-feature p{
+		font-size: 0.95em;
+	}
+	.item-feature h3{
+		font-size: 2em;
+	}
+	.item-feature h4{
+		font-size: 4em;
+	}
+	.pros:before, .cons:before{
+		height: 2em;
+		width: 2em;
+	}
+	.like{
+		width: 2em;
+		height: 2em;
+	}
+	.item-header{
+		padding: $fairly-thick 0 0;
+	}
+}
+
+@media (min-width: $mq-s){
+	.item-header{
+		height: 24em;
+		padding: $thick 0;
+	}
+	.item-feature h4{
+		font-size: 6em;
+	}
+	.item-header img{
+		right: 10%;
+		padding: $fairly-thick 0;
+	}
+	.pros:before, .cons:before{
+		height: 3em;
+		width: 3em;
+	}
+}
+
+
+/* Item Feature
+-----------------------------------*/
+.inspiration .button{
+	margin-top: 0;
+}
