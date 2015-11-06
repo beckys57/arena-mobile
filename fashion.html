@@ -1,0 +1,387 @@
+<!--4-->
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="stylesheet" href="css/main.css"/>
+	<link rel="stylesheet" href="css/theme-cyan.css"/>
+
+
+	<script type="text/javascript" src="js/flickity.pkgd.min.js"></script>
+	<script type="text/javascript" src="js/flickity-options.js"></script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="dropdown.js"></script>
+	<noscript><link rel="stylesheet" type="text/css" href="noJS.css" /></noscript>
+
+
+	<title></title>
+</head>
+<body>
+<div class="wrapper fashion">	
+	<!--Header-->
+	<nav class="topbar">
+		<div class="topbar-logo"></div>
+		<div class="icons">		
+			<a class="login topbar-icon"></a>
+			<a class="search topbar-icon"></a>
+			<a class="share topbar-icon"></a>
+			<a class="topbar-options topbar-icon"></a>
+			<div class="search-bar">
+				<form>
+					<a class="search-button"></a>
+					<input type="text" placeholder="Search"/>
+					<a class="close"></a>
+				</form>
+			</div>
+			<div class="share-bar">
+				<div class="social-icons-sm">
+					<div>
+						<a class="facebook"></a>
+					</div>
+					<div>
+						<a class="twitter"></a>
+					</div>
+					<div>
+						<a class="youtube"></a>
+					</div>
+					<div>
+						<a class="snapchat"></a>
+					</div>
+					<div>
+						<a class="instagram"></a>
+					</div>
+					<div>
+						<a class="google"></a>
+					</div>
+				</div>
+			</div>
+			<div class="category-options">
+				<a class="active">
+					<i class="category-icon training"></i>
+					<label>Training</label>
+				</a>
+				<a>
+					<i class="category-icon nutrition"></i>
+					<label>Nutrition</label>
+				</a>
+				<a>
+					<i class="category-icon fashion"></i>
+					<label>Fashion</label>
+				</a>
+				<a>
+					<i class="category-icon sports"></i>
+					<label>Sports</label>
+				</a>
+				<a>
+					<i class="category-icon entertainment"></i>
+					<label>Entertainment</label>
+				</a>
+				<a>
+					<i class="category-icon interactive"></i>
+					<label>Interactive</label>
+				</a>
+				<a>
+					<i class="category-icon prime"></i>
+					<label>Prime</label>
+				</a>
+				<a>
+					<i class="category-icon directory"></i>
+					<label>Directory</label>
+				</a>
+			</div>
+		</div>
+	</nav>
+	<!--Choose Category bar-->
+	<div class="category-bar">
+		<span>Choose category</span>
+		<a class="toggle-arrow"></a>
+		<ul>
+			<li>About Us
+				<a class="toggle-arrow"></a>
+			</li>
+			<li>Contact</li>
+			<li>Letter from the editor</li>
+		</ul>
+	</div>
+
+	<!--Image slideshow article-->
+	<div class="fashion-header no-dots carousel js-flickity" data-flickity-options='{ "cellAlign": "left", "contain": true, "wrapAround": false }' >
+		<div class="headliner-cell">
+			<img src="img/imagine.jpg">
+			<div class="text-overlay">
+				<h2>Armani Look Book 2014</h2> 
+				<a class="button white">Read more</a>
+			</div>
+		</div>
+		<div class="headliner-cell">
+			<img src="img/jason.jpg">
+			<div class="text-overlay">
+				<h2>Armani Look Book 2014</h2> 
+				<a class="button white">Read more</a>
+			</div>
+		</div>
+	</div>
+
+	<!--Product Highlights section-->
+	<div class="product-highlights">
+		<!--Section header-->
+		<div class="section-header">
+			<h3>Product Highlights</h3>
+		</div>
+		<div class="grid carousel js-flickity" data-flickity-options='{ "contain": true, "wrapAround": true }'>
+			<a class="grid-item">
+				<img src="img/imagine.jpg">
+			</a>
+			<a class="grid-item">
+				<img src="img/imagine.jpg">
+			</a>
+			<a class="grid-item">
+				<img src="img/imagine.jpg">
+			</a>
+			<a class="grid-item">
+				<img src="img/imagine.jpg">
+			</a>
+		</div>
+	</div>
+	<div class="plans">
+		<div class="section-header">
+			<h3>Training Plans</h3>
+		</div>
+		<div class="carousel js-flickity" data-flickity-options='{ "contain": true, "wrapAround": true }'>
+			<div class="plan">
+				<img src="img/size-a.png">
+				<h4>Be healthy</h4>
+				<a class="read-more">Buy plan</a>
+			</div>
+			<div class="plan">
+				<img src="img/size-a.png">
+				<h4>Be healthy</h4>
+				<a class="read-more">Buy plan</a>
+			</div>
+			<div class="plan">
+				<img src="img/size-a.png">
+				<h4>Be healthy</h4>
+				<a class="read-more">Buy plan</a>
+			</div>
+			<div class="plan">
+				<img src="img/size-a.png">
+				<h4>Be healthy</h4>
+				<a class="read-more">Buy plan</a>
+			</div>
+			
+		</div>
+	</div>	
+
+		<!--Nutritional Highlights section-->
+	<div class="nutritional-highlights">
+		<!--Section header-->
+		<div class="section-header">
+			<h2>Nutritional Highlights</h2>
+		</div>
+
+		<div class="nutrition grid carousel js-flickity" data-flickity-options='{ "contain": true, "wrapAround": true }'>
+			<a class="grid-item">
+				<div class="cover">
+					<img src="img/imagine.jpg">
+					<div>
+						<div class="text-overlay">
+							<span class="category-title">Category</span>
+							<h4>Headline</h4>
+							<div class="bottom">
+								<span class="date">08:34 pm - 08.07.15</span>
+							</div>	
+						</div>
+					</div>
+				</div>
+			</a>
+			<a class="grid-item">
+				<div class="cover">
+					<img src="img/imagine.jpg">
+					<div>
+						<div class="text-overlay">
+							<span class="category-title">Category</span>
+							<h4>Headline</h4>
+							<div class="bottom">
+								<span class="date">08:34 pm - 08.07.15</span>
+							</div>	
+						</div>
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class="centered">
+			<a class="button">View more</a>
+		</div>
+	</div>
+
+			<!--Videos section-->
+	<div class="videos">
+		<!--Section header-->
+		<div class="section-header">
+			<h2>Videos</h2>
+		</div>
+
+		<div class="grid carousel js-flickity" data-flickity-options='{ "contain": true, "wrapAround": true }'>
+			<a class="grid-item">
+				<div class="training cover">
+					<img src="img/imagine.jpg">
+					<div>
+						<div class="text-overlay">
+							<div class="play-circle"></div>
+							<div class="video-text">
+								<span class="category-title">Category</span>
+								<h4>Headline</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</a>
+			<a class="grid-item">
+				<div class="training cover">
+					<img src="img/imagine.jpg">
+					<div>
+						<div class="text-overlay">
+							<div class="play-circle"></div>
+							<div class="video-text">
+								<span class="category-title">Category</span>
+								<h4>Headline</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class="centered">
+			<a class="button">See All Videos</a>
+		</div>
+	</div>
+	<div class="reviews circle-list">
+		<div class="section-header">
+		<h2>Tv/film latest reviews</h2>
+		</div>
+		<div class="carousel js-flickity" data-flickity-options='{ "contain": true, "wrapAround": true }'>
+			<div class="result">
+				<img class="circle" src="img/movie1.png"></img>
+				<div>
+					<div class="review-header">
+						<div class="text">
+							<h3>Headline</h3>
+							<span class="category-title">Action</span>
+						</div>
+						<span class="score">8.7</span>
+					</div>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc a dui tempus, ornare metus ut, dapibus orci. Donec vestibulum ornare urna vel eleifend. Ut tellus libero
+					</p>
+				</div>
+			</div>
+			<div class="result">
+				<img class="circle" src="img/movie1.png"></img>
+				<div>
+					<div class="review-header">
+						<div class="text">
+							<h3>Headline</h3>
+							<span class="category-title">Action</span>
+						</div>
+						<span class="score">8.7</span>
+					</div>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc a dui tempus, ornare metus ut, dapibus orci. Donec vestibulum ornare urna vel eleifend. Ut tellus libero
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="centered">
+			<a class="button">View more</a>
+		</div>
+	</div>
+
+		<!--Social Media-->
+	<div class="section-header">
+		<h2>Follow us on</h2>
+	</div>
+	<div class="social-follow">
+		<div>
+			<a class="facebook"></a>
+		</div>
+		<div>
+			<a class="twitter"></a>
+		</div>
+		<div>
+			<a class="youtube"></a>
+		</div>
+		<div>
+			<a class="snapchat"></a>
+		</div>
+		<div>
+			<a class="pinterest"></a>
+		</div>
+		<div>
+			<a class="google"></a>
+		</div>
+	</div>
+	
+	<div class="sitemap">
+		<div class="links">
+			<h4>Sitemap</h4>
+			<div>
+				<a>Home</a>
+				<a>Training</a>
+				<a>Fashion</a>
+				<a>Sports</a>
+				<a>Entertainment</a>
+				<a>Interactive</a>
+				<a>Prime</a>
+				<a>Directory</a>
+			</div>
+			<div>
+				<a>Login</a>
+				<a>Search</a>
+				<a>Privacy Policy</a>
+				<a>Cookie Policy</a>
+				<a>Terms of Use</a>
+				<a>FAQ</a>
+			</div>
+		</div>
+		<div class="newsletter">
+			<form>
+				<h4>Newsletter</h4>
+				<input type="email" placeholder="Email address" required></input>
+				<div class="centered">
+					<input type="submit" value="Send" class="button color-fill">
+				</div>
+			</form>
+		</div>
+		<div>
+			<h4>Follow us on</h4>
+			<div class="social-icons-sm">
+				<div>
+					<a class="facebook"></a>
+				</div>
+				<div>
+					<a class="twitter"></a>
+				</div>
+				<div>
+					<a class="youtube"></a>
+				</div>
+				<div>
+					<a class="snapchat"></a>
+				</div>
+				<div>
+					<a class="instagram"></a>
+				</div>
+				<div>
+					<a class="google"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</div>
+
+
+</body>
+</html>

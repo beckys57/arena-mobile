@@ -1,0 +1,52 @@
+/* General fashion styling
+-----------------------------------*/
+.fashion{
+	& h3{
+		color: $blue-grey;
+		font-size: 2em;
+	}
+	& h4{
+		font-size: 1.6em
+	}
+	& .read-more{
+		font-size: 0.9em;
+	}
+	& .carousel{
+		margin-bottom: 0;
+	}
+}
+
+/* Header 2 image slider
+-----------------------------------*/
+.fashion-header{
+	position: relative;
+	padding: 0 0 1em 2.5%;
+	background-color: $slate-dk;
+	overflow: hidden;
+	& h2{
+		color: white;
+		font-size: 4em;
+		text-transform: uppercase;
+		line-height: 1;
+	}
+	& .text-overlay{
+		overflow: visible;
+		bottom: 0em;
+	}
+	& .button{
+		font-size: 1em;
+		margin: 1em 0;
+	}
+}
+
+@media (max-width: $mq-l){
+	.fashion-header h2{
+		font-size: 3.5em;
+	}
+}
+
+/* Fashion sections
+-----------------------------------*/
+.product-highlights{
+	background-color: $ghost-blue;
+}
