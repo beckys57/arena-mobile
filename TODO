@@ -10,8 +10,6 @@ Image sizes:
 - header on article
 - top image on index
 
-sort next/prev on headline slideshow on index.html
-training.html interview has gone weird
 
 tell tom:
 size-v looks bit better on desktop about us
@@ -20,6 +18,7 @@ index has the category dropdown. but a bit funny for the slider behind it. make 
 category-options needs colours correct for active anchor class.
 Caret colour of search bar can't be blue with CSS alone - needs js
 Put 'active' class in and out of topbar-icon (share/topbar-options)
+training.html interview looks weird as it should be different image
 
 there's no:
 contact page
@@ -27,5 +26,4 @@ letter from the editor
 results template for the directory searches (except where to train and PT)
 
 // PAGES //
-fashion page 4.jpg
 booking form 9.jpg

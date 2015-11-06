@@ -58,6 +58,23 @@ $category-icons: sports, nutrition, fashion, training, entertainment, interactiv
   background-size:100%;
 }
 
+/*
+@media (max-width: $mq-s){
+  .topbar-icon, .topbar.active .topbar-icon.topbar-options{
+    width: ($topbar-icon-size - 0.5rem) !important;
+    height: ($topbar-icon-size - 0.5rem) !important;
+  }
+  .topbar-logo{
+    height: ($topbar-icon-size - 0.5rem) !important;
+    width: $topbar-icon-size !important;
+    margin: 1.75rem 0 1.75rem 1rem !important;
+  }
+  .topbar .icons{
+    padding: 1.75rem 0.75rem 1.75rem 0;
+  }
+}
+*/
+
 .topbar-logo{
   background: White url('../img/welcome_04.png') no-repeat;
   height: ($topbar-icon-size);
@@ -65,6 +82,7 @@ $category-icons: sports, nutrition, fashion, training, entertainment, interactiv
   background-size:100%;
   float: left;
   margin: ($bar / 4);
+  margin-right: 0;
 }
 
 

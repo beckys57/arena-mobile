@@ -320,7 +320,7 @@ body, html {
   max-width: 768px;
   margin: 0;
   font-family: "Proxima Nova Rg Regular", Helvetica, Arial, sans-serif;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.42857;
   color: #363b3E;
   background-color: #b8c5ce; }
@@ -694,13 +694,30 @@ a.active .category-icon.prime {
   height: 3rem;
   background-size: 100%; }
 
+/*
+@media (max-width: $mq-s){
+  .topbar-icon, .topbar.active .topbar-icon.topbar-options{
+    width: ($topbar-icon-size - 0.5rem) !important;
+    height: ($topbar-icon-size - 0.5rem) !important;
+  }
+  .topbar-logo{
+    height: ($topbar-icon-size - 0.5rem) !important;
+    width: $topbar-icon-size !important;
+    margin: 1.75rem 0 1.75rem 1rem !important;
+  }
+  .topbar .icons{
+    padding: 1.75rem 0.75rem 1.75rem 0;
+  }
+}
+*/
 .topbar-logo {
   background: White url("../img/welcome_04.png") no-repeat;
   height: 3rem;
   width: 3.5rem;
   background-size: 100%;
   float: left;
-  margin: 1.5rem; }
+  margin: 1.5rem;
+  margin-right: 0; }
 
 .topbar.active {
   position: relative;
@@ -1675,8 +1692,16 @@ http://flickity.metafizzy.co
 .grid {
   margin-bottom: 1em; }
 
+.headliner {
+  position: relative; }
+
+.headliner-cell.is-selected {
+  opacity: 1; }
+
 .headliner-cell {
-  width: 90% !important; }
+  width: 90% !important;
+  opacity: 0.05;
+  background-color: #000; }
 
 .flickity-enabled {
   position: relative; }
@@ -1723,12 +1748,12 @@ http://flickity.metafizzy.co
   display: block;
   position: absolute;
   top: 50%;
-  width: 44px;
-  height: 44px;
+  width: 10%;
+  height: 1em;
+  margin: 0;
   border: none;
-  border-radius: 50%;
-  background: white;
-  background: rgba(255, 255, 255, 0.75);
+  border-radius: 0;
+  height: 100%;
   cursor: pointer;
   /* vertically center */
   -webkit-transform: translateY(-50%);
@@ -1736,40 +1761,33 @@ http://flickity.metafizzy.co
   transform: translateY(-50%);
   /* right to left */
   /* color & size if no SVG - IE8 and Android 2.3 */ }
-  .headliner > .flickity-prev-next-button:hover {
-    background: white; }
   .headliner > .flickity-prev-next-button:focus {
     outline: none;
     box-shadow: 0 0 0 5px #09F; }
-  .headliner > .flickity-prev-next-button:active {
-    filter: alpha(opacity=60);
-    /* IE8 */
-    opacity: 0.6; }
   .headliner > .flickity-prev-next-button.previous {
-    left: 10px; }
+    display: none;
+    left: 0em; }
+    .headliner > .flickity-prev-next-button.previous svg {
+      left: 0; }
   .headliner > .flickity-prev-next-button.next {
-    right: 10px; }
+    right: 0; }
+    .headliner > .flickity-prev-next-button.next svg {
+      left: 68%; }
   .flickity-rtl .headliner > .flickity-prev-next-button.previous {
     left: auto;
     right: 10px; }
   .flickity-rtl .headliner > .flickity-prev-next-button.next {
     right: auto;
     left: 10px; }
-  .headliner > .flickity-prev-next-button:disabled {
-    filter: alpha(opacity=30);
-    /* IE8 */
-    opacity: 0.3;
-    cursor: auto; }
   .headliner > .flickity-prev-next-button svg {
     position: absolute;
-    left: 20%;
     top: 20%;
-    width: 60%;
+    width: 20%;
     height: 60%; }
   .headliner > .flickity-prev-next-button .arrow {
-    fill: #333; }
+    fill: #FFF; }
   .headliner > .flickity-prev-next-button.no-svg {
-    color: #333;
+    color: #FFF;
     font-size: 26px; }
 
 /* ---- page dots ---- */
@@ -1850,17 +1868,12 @@ http://flickity.metafizzy.co
     width: 100%;
     height: auto; }
 
-.next.button {
-  position: absolute;
-  right: 0;
-  top: 0;
-  height: 100%;
-  width: 10%;
-  margin-top: 0;
-  background: rgba(75, 79, 82, 0.5) url(../img/next-button.svg) no-repeat 50%;
-  padding: 0 2.5%; }
-  .next.button:hover {
-    background: transparent url(../img/next-button-hover.svg) no-repeat 50%; }
+@media (max-width: 480px) {
+  .headliner h2 {
+    font-size: 3em; }
+  .headliner .button {
+    margin: 1em 0;
+    font-size: 1em; } }
 
 .modalDialog.scores .banner {
   background: url("../img/fball.jpg") no-repeat;
