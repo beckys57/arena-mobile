@@ -3143,9 +3143,10 @@ td:last-child {
 
 .food {
   overflow: auto;
-  padding: 3em 0 !important;
+  padding: 3em 0 0 !important;
   border-bottom: 1px solid #f2f6f9;
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 0 !important; }
 
 .food .details {
   width: 100%;
@@ -3158,7 +3159,7 @@ td:last-child {
     display: inline-block;
     width: 100%;
     height: auto;
-    padding-right: 2%; }
+    padding: 0 10%; }
   .food .details h4 {
     width: 100%;
     margin: 0 0 0.5em 0.5em;
