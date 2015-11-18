@@ -3141,6 +3141,98 @@ td:last-child {
 .inspiration .button {
   margin-top: 0; }
 
+.food {
+  overflow: auto;
+  padding: 3em 0 !important;
+  border-bottom: 1px solid #f2f6f9;
+  width: 100%; }
+
+.food .details {
+  width: 100%;
+  float: left;
+  margin-bottom: 2em;
+  overflow: hidden; }
+  .food .details > * {
+    float: left; }
+  .food .details img {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    padding-right: 2%; }
+  .food .details h4 {
+    width: 100%;
+    margin: 0 0 0.5em 0.5em;
+    font-family: "Heroic Condensed Medium";
+    font-size: 2.2em;
+    color: #4b4f52;
+    text-transform: uppercase; }
+
+.stats {
+  width: 100%;
+  padding: 0 2%;
+  text-align: center; }
+  .stats > * {
+    display: inline-block; }
+  .stats span {
+    font-family: "Heroic Condensed Medium";
+    letter-spacing: -0.5px;
+    display: block;
+    color: #85c44a;
+    font-size: 2.5em;
+    line-height: 1; }
+  .stats label {
+    font-family: "Proxima Nova Light", Helvetica, Arial, sans-serif; }
+  .stats .measure, .stats .stat {
+    width: 48%;
+    margin-bottom: 1.5em; }
+
+.food th {
+  background-color: white;
+  border: none; }
+
+.food tr:nth-child(odd) {
+  background-color: #f2f6f9; }
+
+.food td {
+  font-size: 1.2em;
+  padding: 0;
+  border: none; }
+  .food td span {
+    float: left; }
+
+.food td:first-child, .food th:first-child {
+  padding-left: 2%; }
+
+.food td:last-child, .food th:last-child {
+  padding-right: 2%; }
+
+.food .nutrient {
+  font-family: "Heroic Condensed Medium";
+  display: inline-block;
+  padding-right: 5px; }
+
+.food .sub {
+  padding-left: 3em; }
+
+.recipe {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 12em;
+  overflow: hidden; }
+  .recipe img {
+    width: 100%;
+    min-height: 100%; }
+  .recipe .text-overlay {
+    left: 1.5em;
+    bottom: 1.2em; }
+  .recipe .category-title {
+    color: #85c44a; }
+  .recipe h4 {
+    color: white;
+    font-size: 1.5em;
+    margin: 0; }
+
 .quote-wrap:before, .open-quote:before {
   content: '';
   background: url("../img/quote-open.png") no-repeat;
